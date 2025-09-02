@@ -1,6 +1,22 @@
+
+
+
+// @import 'components';
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+
+// 定義@font-face
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/assets/fonts/jf-openhuninn-2.1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "../../node_modules/bootstrap";
+// 客製化元件
+@import "/assets/scss/utils/components/btn.scss";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

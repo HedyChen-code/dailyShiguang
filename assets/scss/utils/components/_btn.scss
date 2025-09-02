@@ -1,0 +1,99 @@
+//以下為textbtn設定
+// 預設顏色變數
+$btn-text-color: $primary-900; // default 深咖啡
+$btn-text-hover: $primary-500; // hover 橘色
+$btn-text-active: $primary-900; // active 深咖啡
+
+.textbtn {
+  border: none;
+  background: transparent;
+  font-weight: 400;
+  color: $btn-text-color;
+  cursor: pointer;
+
+  // 尺寸
+  &.btn-lg {
+    font-size: 1.25rem; // L
+  }
+
+  &.btn-sm {
+    font-size: 0.875rem; // S
+  }
+
+  // 狀態
+  &:hover {
+    color: $btn-text-hover;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $btn-text-active;
+    text-decoration: underline;
+  }
+}
+
+
+//以下為btn 設定
+// _buttons.scss
+
+// 基礎按鈕樣式
+
+
+// _variables.scss
+$color-primary: $primary-500;
+$color-fill: #F6B846;
+$color-disabled: #E0E0E0;
+
+$button-height-l: 40px;
+$button-height-s: 32px;
+$button-padding-l: 16px;
+$button-padding-s: 12px;
+.btn{
+  color:$primary-900;
+  &:hover{
+    color:$primary-900;
+    background-color: $primary-300;
+  }
+ &.is-disalbed{
+  background-color: $neutral-200;
+  color:$neutral-50;
+ }
+  
+}
+
+// .btn-outline-primary{
+//   &.is-disalbed{
+//   background-color: $neutral-200;
+//   color:$neutral-50;
+//   border: 1px solid $neutral-50;
+//  }
+// }
+// 🔴 新增：btn-outline 類別
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid $primary-500;
+  color: $primary-500;
+  
+  &:hover {
+    background-color: $primary-300;
+    border-color: $primary-500;
+    color: $primary-900;
+  }
+  
+  &:active {
+    background-color: $primary-500;
+    border-color: $primary-500;
+    color: white;
+  }
+  
+  &.is-disalbed {
+    background-color: $neutral-200;
+    color: $neutral-50;
+    border: 1px solid $neutral-50;
+  }
+}
+
+// 🔴 向後相容性：讓 btn-outline-primary 繼承 btn-outline 的樣式
+.btn-outline-primary {
+  @extend .btn-outline;
+}
