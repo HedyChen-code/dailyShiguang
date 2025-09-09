@@ -1,4 +1,243 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+<header>
+  <!-- <div class="d-flex">
+    <div class="headerLogo me-auto">
+      <a href="#" class="text-decoration-none">
+        <img
+          src="/assets/images/logo/type=iconOnly.svg"
+          alt="一隻手大拇指捏著食指跟中指"
+        />
+        <span class="text-neutral-800">日常時光</span>
+      </a>
+    </div>
+    <div></div>
+    <div class="hederFunctions">
+      <span class="material-symbols-outlined"> search </span>
+      <span class="material-symbols-outlined"> shopping_cart </span>
+    </div>
+  </div> -->
+  <nav class="navbar bg-primary-50 py-0">
+    <div class="container py-6 position-relative">
+      <!-- logo -->
+      <div class="headerLogo">
+        <a
+          href="#"
+          class="text-decoration-none d-flex align-items-center gap-0"
+        >
+          <img
+            src="/assets/images/logo/type=iconOnly.png"
+            alt="一隻手大拇指捏著食指跟中指"
+          />
+          <span class="text-neutral-800 h4 mb-0">日常時光</span>
+        </a>
+      </div>
+      <!-- 搜尋欄位 -->
+      <form class="position-relative d-none d-lg-block headerSearch">
+        <span
+          class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-7 text-neutral-600"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control border-1 rounded-0 ps-12"
+          id="headerInputColumn"
+          placeholder="搜尋，拾回你的理想家具"
+        />
+        <button
+          class="btn btn-primary position-absolute top-50 end-0 translate-middle-y me-3"
+        >
+          搜尋
+        </button>
+      </form>
+      <div class="d-flex align-items-center gap-5 gap-lg-9">
+        <div class="collapse" id="headerInput">
+          <div
+            class="d-flex align-items-center position-absolute top-50 start-0 translate-middle-y start-0 end-0 px-5 z-100"
+          >
+            <form class="position-relative w-100">
+              <span
+                class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-7 text-neutral-600"
+              >
+                search
+              </span>
+              <input
+                type="search"
+                class="form-control border-1 rounded-0 ps-12"
+                id="headerInputColumn"
+                placeholder="搜尋理想家具"
+              />
+              <button
+                class="btn bg-primary-500 text-white position-absolute top-50 end-0 translate-middle-y me-3"
+              >
+                搜尋
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <button
+          class="btn p-3"
+          data-bs-toggle="collapse"
+          data-bs-target="#headerInput"
+        >
+          <span class="d-lg-none material-symbols-outlined align-bottom">
+            search
+          </span>
+        </button>
+        <!-- 手機版購物車 -->
+        <button class="btn p-3 text-neutral-900 d-lg-none">
+          <span class="material-symbols-outlined align-bottom">
+            shopping_cart
+          </span>
+        </button>
+        <!-- 電腦版購物車 -->
+        <button
+          class="btn p-3 text-neutral-900 rounded-circle bg-white p-2 d-none d-lg-block"
+        >
+          <div class="position-relative">
+            <img src="/assets/images/icons/type=cart_filled.svg" alt="" />
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-accent border border-light rounded-circle"
+            >
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div>
+        </button>
+        <!-- 下拉選單 -->
+        <div class="dropdown d-none d-lg-block">
+          <button
+            class="btn btn-outline-primary bg-white dropdown-toggle px-7"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="icon text-primary me-6 align-bottom"></span>
+            Hi，拾光君
+          </button>
+          <div class="headerDropdown">
+            <ul
+              class="dropdown-menu mt-4 px-5 pt-3"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span
+                    class="icon-member text-primary-500 me-2 p-2 align-bottom"
+                  ></span
+                  >會員中心</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom me-2">
+                    favorite </span
+                  >我的收藏</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom me-2">
+                    favorite </span
+                  >我的訂單</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom">
+                    logout </span
+                  >登出</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 手風琴 -->
+        <button
+          class="btn border-0 p-3 d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <img src="/assets/images/icons/type=icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end w-100"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item border-bottom border-primary-300 pt-0 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >最新商品<span class="ms-2 text-neutral-600">New</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >熱門商品<span class="ms-2 text-neutral-600">hot</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >關於拾光<span class="ms-2 text-neutral-600">About</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >購買流程<span class="ms-2 text-neutral-600">Process</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >聯絡我們<span class="ms-2 text-neutral-600">contact</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >登入/註冊<span class="ms-2 text-neutral-600"
+                  >Log in / Sign up</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

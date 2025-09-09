@@ -1,3 +1,296 @@
-.index-title {
-  font-size: 100px;
+body {
+  font-family: sans-serif;
 }
+.container {
+position: relative; /* 重要：讓箭頭相對於 container 定位 */
+}
+.swiper-button-prev {
+  left: -30px; /* 負值讓箭頭跑到容器外 */
+}
+
+.swiper-button-next {
+  right: -30px;
+}
+.headSwiper .card-img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border: 2px solid $primary-300;
+border-radius:50%;
+@media (max-width:992px) {
+width: 60px;
+height: 60px;
+border: 1px solid $primary-300;
+}
+
+}
+// .card-content {
+//   padding: 16px;
+// }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none; 
+}
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 16px; 
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: $primary-500;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+  @media (max-width:976px){
+    display: none;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #333;
+}
+
+
+// 主視覺
+.mainSwiper  {
+  height: auto;
+  //因為每張照片不同，所以這裡使用 height: auto; 將所有 .swiper-slide 設定為自適應高度。下面的 height: 100%; 會使圖片內容填滿外部容器的高度。
+  
+  img {
+
+    display: block;
+    width: 100%;
+    // height: 100%;
+    height: 400px;
+    object-fit:cover;
+    // object-fit 可設定其圖片內容與外框的關係，使用 cover 即表示內容會縮放到整個外框。
+    @media(min-width: 992px){
+      height: 100%;
+    }
+  }
+  .swiper-slide .card-img-overlay{
+  
+    padding: 57px 0 0 0;
+    @media (min-width:992px) {
+      padding-right: 160px;
+    }
+
+  }
+
+}
+
+//最新產品
+.hotProd,.newtestProd{
+
+  text-align: center;
+  @media (min-width:992px) {
+  text-align: start;
+  }
+  
+}
+.hotProdtext,.newtestProdtext, .orderProcessTitle{
+  border-bottom: 4px solid $primary-500;
+  &-english{
+    @media (min-width:992px) {
+      padding-top:19px;
+    }
+    
+  }
+}
+.latestCard,.hotSelling{
+    border:0.54px solid $primary-300;
+    @media (min-width:992px) {
+      border:1px solid $primary-300;
+    }
+    img{
+      position: relative;
+      object-fit: cover;
+      height: 120px;
+     @media (min-width:992px) {
+    height: 221px;
+    }
+  }
+    .material-symbols-outlined{
+      color: white;
+      position: absolute;
+      top: 12px;;
+      right: 12px;
+    }
+}
+//文宣
+
+
+.slogan{
+  background-color: $primary-50;
+  min-width: 312px;
+  height: 312px;
+  @media (min-width:992px) {
+    height: auto;
+    background-color: white;
+    width: auto;
+    flex: 1;
+    // width: 50%;
+    // flex-shrink: 1;
+    margin-top:136px;
+    img{
+      width: 200px;
+      height: 230px;
+    }
+    
+  }
+}
+.brandPromote{
+  @media (min-width:992px) {
+    height: 936px;
+  }
+}
+.slogan-textarea{
+    width: 50%;
+    }
+
+.sloganImgArea {
+  background-color: white;
+  position: relative;
+  min-width: 214.38px;
+  height: 312px; // 手機版與 slogan 同高
+  flex: 1;
+  
+  @media(min-width: 992px){
+    height: 936px; // 桌面版與 brandPromote 同高
+  }
+  
+  img {
+    object-fit: cover;
+    object-position: center;
+    @media (min-width:992px) {
+      right: calc(100%/12);
+      top:calc(100%/23.4);
+      // max-height: 70.1%;
+      max-width: 100%; 
+      position: absolute;
+    }
+  }
+}
+.appImgArea{ 
+  background-color: white;
+  position: relative;
+  min-width: 214.38px;
+  height: 312px; // 手機版與 slogan 同高
+  flex: 1;
+
+
+  // transform: rotate(-0.5turn);
+  @media(min-width: 992px){
+    height: 936px; // 桌面版與 brandPromote 同高
+  }
+}
+.sloganImgArea-top, .appImgArea-top{
+  
+  background-color: $primary-50;
+  flex-shrink: 0; // 防止被壓縮
+  @media (min-width:992px) {
+    height: calc(100%/6.88235);
+  }
+}
+.sloganImgArea-middle{
+  flex: 1; // 佔據剩餘的所有空間
+}
+.appImgArea-middle{
+  flex: 1; // 佔據剩餘的所有空間
+  position: relative;
+}
+
+.sloganImgArea-bottom,.appImgArea-bottom{
+  height: calc(100%/6.88235);
+  background-color: $primary-50;
+  flex-shrink: 0; // 防止被壓縮
+}
+// 背景圖片樣式
+  .background-img {
+    object-fit: cover;
+    object-position: center;
+    // filter: blur(6px); //變模糊 
+    @media (min-width:992px) {
+      // left: calc(100%/12);
+      // top:calc(100%/23.4);
+      // bottom: 80px;
+      max-height: 736px;
+      max-width: 100%; 
+      position: absolute;
+      // position: relative;
+    // width: 100%;
+    // height: auto;
+    // display: block;
+    // // border-radius: 8px;
+    
+    // // 如果你使用 Bootstrap 的 img-fluid
+    // &.img-fluid {
+    //   max-width: 100%;
+    //   height: auto;
+    }
+  }
+  
+  // // 手機圖片樣式 - 居中疊加
+  // .phone-img {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   max-width: 574px;
+  //   width: auto;
+  //   height: auto;
+  //   z-index: 2;
+    
+  //   // 添加陰影效果讓手機看起來更立體
+  //   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    
+  //   // 響應式調整
+  //   @media (max-width: 768px) {
+  //     max-width: 250px;
+  //   }
+    
+  //   @media (max-width: 576px) {
+  //     max-width: 200px;
+  //   }
+  // }
+.decorated-title {
+      position: relative;
+      text-align: center;
+      font-size: 24px;
+      color: #8B4513;
+      font-weight: normal;
+      margin: 40px 0;
+      display: inline-block;
+      width: 100%;
+}
+
+.decorated-title::before,
+.decorated-title::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 39.06px;
+      height: 1px;
+      background-color: $primary-900;
+      transform: translateY(-50%);
+
+}
+.decorated-title::before {
+      transform: translateX(-39.06-8px);
+}
+.decorated-title::after {
+      transform: translateX(8px);
+}
+

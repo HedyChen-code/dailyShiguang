@@ -1,4 +1,60 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.headerLogo{
+  img{
+    width: 44px;
+    height: 44px;
+  }
+}
+#headerInputColumn::placeholder {
+  color: $neutral-600; /* 改成你想要的顏色 */
+  opacity: 1;     /* 預設有透明度，建議設為 1 才會是原色 */
+}
+.headerSearch{
+   flex: 1 1 0;      /* 可以伸縮 */
+  max-width: 620px; /* 最寬不超過 620px */
+}
+.dropdown-toggle svg {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+.icon {
+  display: inline-block;
+  width: 24px;          /* 想要多大就改這兩行 */
+  height: 24px;
+  background-color: currentColor;
+  -webkit-mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+          mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+  vertical-align: middle; /* 和文字置中對齊 */
+}
+
+// .icon-member {
+//   display: inline-block;
+//   width: 24px; /* 想要的大小 */
+//   height: 24px;
+//   background-color: currentColor;
+//   -webkit-mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+//           mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+//   vertical-align: middle;
+//   // &:hover {
+//   //   background-color: $primary-900; // hover 時改變
+//   // }
+// }
+
+.headerDropdown {
+  .dropdown-item {
+    &:hover,
+    &:focus {
+      background-color: $primary-300 !important;
+      color: $primary-900 !important;
+    }
+    .icon-member {
+       display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: currentColor; // 跟隨文字顏色
+    -webkit-mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+          mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+  vertical-align: middle;
+  }
+  }
 }

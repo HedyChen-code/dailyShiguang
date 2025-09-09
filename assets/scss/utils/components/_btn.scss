@@ -50,6 +50,15 @@ $button-padding-l: 16px;
 $button-padding-s: 12px;
 .btn{
   color:$primary-900;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: none;
+  border-radius: 0%;
+  line-height: 1.2;
+  span{
+    margin-left: 4px;;
+  }
+
   &:hover{
     color:$primary-900;
     background-color: $primary-300;

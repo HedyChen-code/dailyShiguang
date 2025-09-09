@@ -1,11 +1,35 @@
 
 
 
-// @import 'components';
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+// // @import 'components';
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import './utils/variables';
 
-// 定義@font-face
+// // 定義@font-face
+// @font-face {
+//   font-family: 'CustomFont';
+//   src: url('/assets/fonts/jf-openhuninn-2.1.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @import "../../node_modules/bootstrap";
+// @import"/assets/scss/utils/utilities";
+// // 客製化元件
+// @import "/assets/scss/utils/components/btn.scss";
+
+// @import './layout/header.scss';
+// @import './layout/footer.scss';
+
+// @import './pages/index.scss';
+// Bootstrap Sass functions & variables// Bootstrap functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 變數
+@import "./utils/variables";
+
+// 字型定義
 @font-face {
   font-family: 'CustomFont';
   src: url('/assets/fonts/jf-openhuninn-2.1.ttf') format('truetype');
@@ -14,11 +38,16 @@
   font-display: swap;
 }
 
-@import "../../node_modules/bootstrap";
-// 客製化元件
+// Bootstrap 主體
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// 自訂 utilities API（⚡ 要在 bootstrap/scss/bootstrap 之後，utilities 才存在）
+@import "./utils/utilities";
+
+// 自訂元件
 @import "/assets/scss/utils/components/btn.scss";
 
+// 頁面與 layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
 @import './pages/index.scss';
