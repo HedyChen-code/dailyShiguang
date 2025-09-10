@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/dailyShiguang/assets/index-jkAjPtHN.js"></script>
+    <link rel="stylesheet" crossorigin href="/dailyShiguang/assets/index-CFA38M1-.css">
+  </head>
+
+  <body>
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+<header>
+  <!-- <div class="d-flex">
+    <div class="headerLogo me-auto">
+      <a href="#" class="text-decoration-none">
+        <img
+          src="/assets/images/logo/type=iconOnly.svg"
+          alt="一隻手大拇指捏著食指跟中指"
+        />
+        <span class="text-neutral-800">日常時光</span>
+      </a>
+    </div>
+    <div></div>
+    <div class="hederFunctions">
+      <span class="material-symbols-outlined"> search </span>
+      <span class="material-symbols-outlined"> shopping_cart </span>
+    </div>
+  </div> -->
+  <nav class="navbar bg-primary-50 py-0">
+    <div class="container py-6 position-relative">
+      <!-- logo -->
+      <div class="headerLogo">
+        <a
+          href="#"
+          class="text-decoration-none d-flex align-items-center gap-0"
+        >
+          <img
+            src="/dailyShiguang/assets/type_iconOnly-DxwjB7Hq.png"
+            alt="一隻手大拇指捏著食指跟中指"
+          />
+          <span class="text-neutral-800 h4 mb-0">日常時光</span>
+        </a>
+      </div>
+      <!-- 搜尋欄位 -->
+      <form class="position-relative d-none d-lg-block headerSearch">
+        <span
+          class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-7 text-neutral-600"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control border-1 rounded-0 ps-12"
+          id="headerInputColumn"
+          placeholder="搜尋，拾回你的理想家具"
+        />
+        <button
+          class="btn btn-primary position-absolute top-50 end-0 translate-middle-y me-3"
+        >
+          搜尋
+        </button>
+      </form>
+      <div class="d-flex align-items-center gap-5 gap-lg-9">
+        <div class="collapse" id="headerInput">
+          <div
+            class="d-flex align-items-center position-absolute top-50 start-0 translate-middle-y start-0 end-0 px-5 z-100"
+          >
+            <form class="position-relative w-100">
+              <span
+                class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-7 text-neutral-600"
+              >
+                search
+              </span>
+              <input
+                type="search"
+                class="form-control border-1 rounded-0 ps-12"
+                id="headerInputColumn"
+                placeholder="搜尋理想家具"
+              />
+              <button
+                class="btn bg-primary-500 text-white position-absolute top-50 end-0 translate-middle-y me-3"
+              >
+                搜尋
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <button
+          class="btn p-3"
+          data-bs-toggle="collapse"
+          data-bs-target="#headerInput"
+        >
+          <span class="d-lg-none material-symbols-outlined align-bottom">
+            search
+          </span>
+        </button>
+        <!-- 手機版購物車 -->
+        <button class="btn p-3 text-neutral-900 d-lg-none">
+          <span class="material-symbols-outlined align-bottom">
+            shopping_cart
+          </span>
+        </button>
+        <!-- 電腦版購物車 -->
+        <button
+          class="btn p-3 text-neutral-900 rounded-circle bg-white p-2 d-none d-lg-block"
+        >
+          <div class="position-relative">
+            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.8%2020C8.36%2020%207.98333%2019.8433%207.67%2019.53C7.35667%2019.2167%207.2%2018.84%207.2%2018.4C7.2%2017.96%207.35667%2017.5833%207.67%2017.27C7.98333%2016.9567%208.36%2016.8%208.8%2016.8C9.24%2016.8%209.61667%2016.9567%209.93%2017.27C10.2433%2017.5833%2010.4%2017.96%2010.4%2018.4C10.4%2018.84%2010.2433%2019.2167%209.93%2019.53C9.61667%2019.8433%209.24%2020%208.8%2020ZM16.8%2020C16.36%2020%2015.9833%2019.8433%2015.67%2019.53C15.3567%2019.2167%2015.2%2018.84%2015.2%2018.4C15.2%2017.96%2015.3567%2017.5833%2015.67%2017.27C15.9833%2016.9567%2016.36%2016.8%2016.8%2016.8C17.24%2016.8%2017.6167%2016.9567%2017.93%2017.27C18.2433%2017.5833%2018.4%2017.96%2018.4%2018.4C18.4%2018.84%2018.2433%2019.2167%2017.93%2019.53C17.6167%2019.8433%2017.24%2020%2016.8%2020ZM7.36%205.6H19.16C19.4667%205.6%2019.7%205.73667%2019.86%206.01C20.02%206.28333%2020.0267%206.56%2019.88%206.84L17.04%2011.96C16.8933%2012.2267%2016.6967%2012.4333%2016.45%2012.58C16.2033%2012.7267%2015.9333%2012.8%2015.64%2012.8H9.68L8.8%2014.4H18.4V16H8.8C8.2%2016%207.74667%2015.7367%207.44%2015.21C7.13333%2014.6833%207.12%2014.16%207.4%2013.64L8.48%2011.68L5.6%205.6H4V4H6.6L7.36%205.6Z'%20fill='%23614C2B'/%3e%3c/svg%3e" alt="" />
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-accent border border-light rounded-circle"
+            >
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div>
+        </button>
+        <!-- 下拉選單 -->
+        <div class="dropdown d-none d-lg-block">
+          <button
+            class="btn btn-outline-primary bg-white dropdown-toggle px-7"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="icon text-primary me-6 align-bottom"></span>
+            Hi，拾光君
+          </button>
+          <div class="headerDropdown">
+            <ul
+              class="dropdown-menu mt-4 px-5 pt-3"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span
+                    class="icon-member text-primary-500 me-2 p-2 align-bottom"
+                  ></span
+                  >會員中心</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom me-2">
+                    favorite </span
+                  >我的收藏</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom me-2">
+                    favorite </span
+                  >我的訂單</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-500 mb-2" href="#"
+                  ><span class="material-symbols-outlined align-bottom">
+                    logout </span
+                  >登出</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 手風琴 -->
+        <button
+          class="btn border-0 p-3 d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='6.72705'%20y='4'%20width='13'%20height='2'%20rx='1'%20fill='%23614C2B'/%3e%3crect%20x='4'%20y='10.8182'%20width='14'%20height='2'%20rx='1'%20fill='%23614C2B'/%3e%3crect%20x='6.72705'%20y='17.6365'%20width='13'%20height='2'%20rx='1'%20fill='%23614C2B'/%3e%3c/svg%3e" alt="" />
+        </button>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end w-100"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item border-bottom border-primary-300 pt-0 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >最新商品<span class="ms-2 text-neutral-600">New</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >熱門商品<span class="ms-2 text-neutral-600">hot</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >關於拾光<span class="ms-2 text-neutral-600">About</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >購買流程<span class="ms-2 text-neutral-600">Process</span></a
+              >
+            </li>
+            <li class="nav-item border-bottom border-primary-300 pb-5">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >聯絡我們<span class="ms-2 text-neutral-600">contact</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary-900 py-5"
+                aria-current="page"
+                href="#"
+                >登入/註冊<span class="ms-2 text-neutral-600"
+                  >Log in / Sign up</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- 分類選單 - Section 1 -->
+    <div class="container py-10">
+      <div class="swiper-wrapper-area">
+        <div class="swiper headSwiper">
+          <ul class="swiper-wrapper">
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img01_%20type_outline_%20size_S-BheaC4oK.svg"
+                alt="客廳家具"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  客廳家具
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img02_%20type_outline_%20size_L-CLHPqfYo.svg"
+                alt="小型家具"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  小型家具
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img03_%20type_outline_%20size_L-m4haEGOb.svg"
+                alt="辦公家具"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  辦公家具
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img04_%20type_outline_%20size_L-BQ5iRujY.svg"
+                alt="大型家電"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  大型家電
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img05_%20type_outline_%20size_L-Uvdw7HjC.svg"
+                alt="小型家電"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  小型家電
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="data:image/svg+xml,%3csvg%20width='150'%20height='150'%20viewBox='0%200%20150%20150'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%20clip-path='url(%23clip0_1035_2866)'%3e%3crect%20x='0.833008'%20y='20'%20width='150'%20height='113'%20fill='url(%23pattern0_1035_2866)'/%3e%3c/g%3e%3cdefs%3e%3cpattern%20id='pattern0_1035_2866'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_1035_2866'%20transform='matrix(0.00674157%200%200%200.00898876%200.311236%200.107865)'/%3e%3c/pattern%3e%3cclipPath%20id='clip0_1035_2866'%3e%3crect%20width='150'%20height='150'%20rx='75'%20fill='white'/%3e%3c/clipPath%3e%3cimage%20id='image0_1035_2866'%20width='56'%20height='86'%20preserveAspectRatio='none'%20xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABWCAYAAACaeFU0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHoSURBVHgB7ZxBTgIxFIZfBwiBFYEFuCs30Fu4lBvoyq2udOkNjCfgCHoD9QS6dEeXrHB2OBCoryQmZCQizLThzfxf0jBTmsCXvk4fbYMiptfr6fl8PrTWHvNti4SjlHqq1WrX4/HYVJ3cbDZ74/qH5XI5iBkSTIuJoujcObHbCXU6ncd2u31FBYOd7tjt2V1YrbX4sEzjepLdPleCqfdGXKzQMloXcW4RFZzqhro+FYjC9yAEpRNacESBCS2oKTAIUelAUDoQlA4EpQNB6ZTyB+/e8BKBS6b1WpWZTCb9vNrvQ66CjOYvqH5uNqz3ZG2/MxiD0oGgdCAonbynCZN61Juc2++Oj7nnD0J+Vjn2JiAoHQhKB4LSgaB0ICid0IKGAhNaMPgRFYSodEov6FaeD/nw3a8DeLsKimfbmoz4g3lYVcvCht2jNLnvJqXxKkip3aM0IVb0MA9Kx3eImi1haMgzXgV9P0D+A1I1Qqp22CBVkw5StYwgVfMNxmBGkKr5BmNQOshFpYNcVDrIRTOCXNQ3GIMZQS7qGxeicVH/bsW9VprN5mmSJEfT6fSFCgR7XVprk0q9Xn9VSg0bjUbS7XY/4jj+IsG4aIyi6IYvb1lwsJqjuDc1S95zOSP5xOzxvlgsLrizzDcw60DgD+Rm8QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e"
+                alt="櫥櫃"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  櫥櫃
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img07_%20type_outline_%20size_L-C5_wzw71.svg"
+                alt="桌椅"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  桌椅
+                </a>
+              </div>
+            </li>
+
+            <li
+              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/dailyShiguang/assets/item_img08_%20type_outline_%20size_L-D3CJmnVw.svg"
+                alt="裝飾/藝品"
+                class="card-img"
+              />
+              <div class="card-content">
+                <a
+                  href="#"
+                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                >
+                  裝飾/藝品
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 導航按鈕 -->
+        <div class="swiper-button-prev">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主視覺輪播 -->
+    <section class="mb-11">
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <!-- 輪播項目 1 -->
+          <div class="swiper-slide">
+            <div class="card bg-white border-0">
+              <img
+                src="/dailyShiguang/assets/slide1-DPOcQ5Rz.png"
+                class="card-img"
+                alt="使用橘色畫出的客廳"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-lg-center justify-content-lg-end justify-content-center"
+              >
+                <div class="text-content text-center" style="max-width: 760px">
+                  <div class="mb-7 mb-lg-9">
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">
+                      在每段被遺忘的日常裡，拾回那些閃閃發光的片段
+                    </p>
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">精選質感家具，等你入手</p>
+                  </div>
+                  <button class="btn btn-primary fs-7 fs-lg-5">馬上購買</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 輪播項目 2 -->
+          <div class="swiper-slide">
+            <div class="card bg-white border-0">
+              <img
+                src="/dailyShiguang/assets/slide2-DzU3qKon.png"
+                class="card-img"
+                alt="使用橘色畫出的臥室"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-lg-center justify-content-lg-end justify-content-center"
+              >
+                <div class="text-content text-center" style="max-width: 760px">
+                  <div class="mb-7 mb-lg-9">
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">
+                      重要的角落缺了一部份，等待你的獨特品味來填滿
+                    </p>
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">精選質感家具，等你入手</p>
+                  </div>
+                  <button class="btn btn-primary fs-7 fs-lg-5">馬上購買</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 輪播項目 3 -->
+          <div class="swiper-slide">
+            <div class="card bg-white border-0">
+              <img
+                src="/dailyShiguang/assets/slide3-Bj-F8VHJ.png"
+                class="card-img"
+                alt="使用橘色畫出的廚房"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-lg-center justify-content-lg-end justify-content-center"
+              >
+                <div class="text-content text-center" style="max-width: 760px">
+                  <div class="mb-7 mb-lg-9">
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">
+                      我們即將選中彼此，只消你的一個眼神
+                    </p>
+                    <p class="fs-8 fs-lg-3 my-3 mx-5">精選質感家具，等你入手</p>
+                  </div>
+                  <button class="btn btn-primary fs-7 fs-lg-5">馬上購買</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <main class="pb-lg-13" style="background-color: #fafafa">
+      <!-- 最新商品區塊 -->
+      <section class="mb-lg-13">
+        <div class="container">
+          <!-- 標題區 -->
+          <div
+            class="mb-9 d-flex justify-content-lg-between justify-content-center align-items-end newtestProd"
+          >
+            <div class="d-inline-flex align-items-center newtestProdtext">
+              <p class="text-primary-900 fs-5 fs-lg-2 me-2 mb-0 py-3">
+                最新商品
+              </p>
+              <p
+                class="text-neutral-600 fs-7 fs-lg-4 mb-0 newtestProdtext-english"
+              >
+                New
+              </p>
+            </div>
+            <button
+              class="btn btn-primary fs-7 fs-lg-5 py-5 px-lg-7 px-5 d-none d-lg-block"
+            >
+              查看更多<span class="material-symbols-outlined align-bottom"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+
+          <!-- 商品網格 -->
+          <div class="row">
+            <!-- 商品 1 -->
+            <div class="col-6 col-lg-3 mb-9 mb-lg-0">
+              <div class="latestCard">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/sofaBed-rUbzSGv7.jpg"
+                    class="card-img-top rounded-0"
+                    alt="沙發床"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      亞麻灰 3 人沙發床
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>2,599</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 2 -->
+            <div class="col-6 col-lg-3 mb-9 mb-lg-0">
+              <div class="latestCard">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/bedsideTable-Bh5CEfeG.jpg"
+                    class="card-img-top rounded-0"
+                    alt="床頭櫃"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      床頭櫃
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>2,000</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 3 -->
+            <div class="col-6 col-lg-3">
+              <div class="latestCard">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/woodBookcase-De6f1xCC.jpg"
+                    class="card-img-top rounded-0"
+                    alt="白藍書櫃"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      白藍書櫃
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>2,599</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 4 -->
+            <div class="col-6 col-lg-3">
+              <div class="latestCard">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/aircon-HM3R6DMB.jpg"
+                    class="card-img-top rounded-0"
+                    alt="國 X 牌變頻冷氣"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      國 X 牌變頻冷氣
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>8,999</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 行動版查看更多按鈕 -->
+          <div class="d-flex justify-content-center py-11 py-lg-0">
+            <button
+              class="btn btn-primary fs-7 fs-lg-5 py-5 px-lg-7 px-5 d-lg-block d-lg-none"
+            >
+              查看更多<span class="material-symbols-outlined align-bottom"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 熱門商品區塊 -->
+      <section>
+        <div class="container">
+          <!-- 標題區 -->
+          <div
+            class="mb-9 d-flex justify-content-lg-between justify-content-center align-items-end hotProd"
+          >
+            <div class="d-inline-flex align-items-center hotProdtext">
+              <p class="text-primary-900 fs-5 fs-lg-2 me-2 mb-0 py-3">
+                熱門商品
+              </p>
+              <p class="text-neutral-600 fs-7 fs-lg-4 mb-0 hotProdtext-english">
+                Hot
+              </p>
+            </div>
+            <button
+              class="btn btn-primary fs-7 fs-lg-5 py-5 px-lg-7 px-5 d-none d-lg-block"
+            >
+              查看更多<span class="material-symbols-outlined align-bottom"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+
+          <!-- 商品網格 -->
+          <div class="row">
+            <!-- 商品 1 -->
+            <div class="col-6 col-lg-3 mb-9 mb-lg-0">
+              <div class="hotSelling">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/closet-0OujAo0M.jpg"
+                    class="card-img-top rounded-0"
+                    alt="詩肯柚木書櫃"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      詩肯柚木書櫃
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>7,499</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 2 -->
+            <div class="col-6 col-lg-3 mb-9 mb-lg-0">
+              <div class="hotSelling">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/leatherSofa-DSP4CRpK.jpg"
+                    class="card-img-top rounded-0"
+                    alt="限量全新 L 型皮沙發"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      限量全新 L 型皮沙發
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>4,399</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 3 -->
+            <div class="col-6 col-lg-3">
+              <div class="hotSelling">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/TVcabinet-DF0U2Wcg.jpg"
+                    class="card-img-top rounded-0"
+                    alt="黑白鋼烤電視櫃"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      黑白鋼烤電視櫃
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>5,800</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 商品 4 -->
+            <div class="col-6 col-lg-3">
+              <div class="hotSelling">
+                <div class="card rounded-0">
+                  <img
+                    src="/dailyShiguang/assets/sideChair-Dbd0BmCH.jpg"
+                    class="card-img-top rounded-0"
+                    alt="麻花藍餐椅"
+                  />
+                  <span class="material-symbols-outlined">favorite</span>
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                      麻花藍餐椅
+                    </h5>
+                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                      <span class="me-2">NT$</span>
+                      <span>500</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 行動版查看更多按鈕 -->
+          <div class="d-flex justify-content-center py-11 py-lg-0">
+            <button
+              class="btn btn-primary fs-7 fs-lg-5 py-5 px-lg-7 px-5 d-lg-block d-lg-none"
+            >
+              查看更多<span class="material-symbols-outlined align-bottom"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 品牌文宣區塊 -->
+    <div class="d-flex flex-column flex-lg-row bg-primary-50 brandPromote">
+      <!-- 文字區  -->
+      <div
+        class="slogan d-flex align-items-center justify-content-center position-relative"
+      >
+        <img
+          src="/dailyShiguang/assets/deco_logo-C3UdZh1-.svg"
+          alt=""
+          class="deco-hand position-absolute top-0 start-0"
+        />
+        <div class="slogan-textarea d-flex flex-column align-items-center">
+          <h5 class="text-primary-900 decorated-title fs-lg-1">日常拾光</h5>
+          <div>
+            <p class="text-primary-900 fs-8 fs-lg-3 mb-lg-11 mb-7">
+              <span class="bg-primary-100">在每段被遺忘的日常裡，拾回那些</span>
+              <span class="bg-primary-100">閃閃發光的片段</span>
+            </p>
+            <p class="text-primary-900 fs-8 fs-lg-5">
+              <span>在這裡，二手家居用品被好好保存、再次流轉</span>
+              <span>陪伴另一個家庭走過溫柔的日常</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 圖片區 -->
+      <div class="sloganImgArea d-flex flex-column">
+        <div class="sloganImgArea-top d-none d-lg-block"></div>
+        <div class="sloganImgArea-middle p-5 p-lg-0">
+          <img
+            src="/dailyShiguang/assets/sloganImg-5r9XcP6V.jpg"
+            alt="房間照片"
+            class="img-fluid"
+          />
+        </div>
+        <div class="sloganImgArea-bottom d-none d-lg-block"></div>
+      </div>
+    </div>
+    <!-- 購買流程 -->
+    <div class="container">
+      <!-- 標題區 -->
+      <div
+        class="d-flex justify-content-center justify-content-lg-between mb-lg-10 mb-5"
+      >
+        <div
+          class="d-inline-flex align-items-center orderProcessTitle mb-5 mb-lg-10"
+        >
+          <p class="text-primary-900 fs-5 fs-lg-2 me-2 mb-0 py-3">購買流程</p>
+          <p
+            class="text-neutral-600 fs-7 fs-lg-4 mb-0 orderProcessTitle-english"
+          >
+            Order Process
+          </p>
+        </div>
+      </div>
+
+      <!-- 購買流程圖 -->
+      <section
+        class="d-flex align-items-center flex-column flex-lg-row mb-lg-15 mb-11"
+      >
+        <div
+          class="d-flex flex-column orderProcess justify-content-center align-items-center"
+        >
+          <!-- title -->
+          <p
+            class="bg-primary-900 d-inline text-white px-7 py-3 PurchaseProcessTitle"
+          >
+            <span>step</span>
+            <span>1</span>
+          </p>
+          <!-- 圖片 -->
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA4VSURBVHgB7ZwJXFTVHsf/dwYYQEMwUfZlGNYQUEQEUlEe+Ahyycxck1x7KS6gpr2EslIrK6FySVwws9RXuJRWvvcwc3sqkh/NDWWQfREnNmdY7nnn3NkH6IHP4ALn+/lc7nbOmeH/O8v//78zwwDlsSOW+Ex7KFdsRwhMxWJX2PJZKkjEbtoCDN6QwbFqLwDKYwMhxNg7SzbW1sn3EDGeDguBr/ama8XARmcY1SGjPNeDaX6J8oiEhkb1Lykt3FenkI82MTGByZMmQvKav2PDYxMjfUvrDhC9M0QFeSyQkeEk9s6sr28Y0cvcHF5bkQjTp74Iyi6P8F8Gl9GW5zRST1N6DdEp67HwVEBQQL2ifgQ5XrY0HqZPmwLa+UegFYPREYNguMf3hEB5ZMLCwpxYECXJH8o/wjY1I4YtKMiHsbExYGZqBpo5SL0RJRhG/xqA3kihgrQTBwcPe8u+VrOfsLR+935l9UY8XYWxLDIbOXI4NDY2QH5+ATx48AAiIyK0KziBGwWMehZTojtloeaXKK0QHh4ecCe3cCLLwlgWsRJ8yVw97YwYHgYL5s+FwMGBcP3GdXju+cmABYIPP9gA48eO1Y4MDkZvpwcVpHX8/Px61dYqhtY3Mc82NDaMwwZ1RcRfwtYyFZmCv58vTBg/DiJGj4Ynn7RSelEcCLal7YT1G96Hftb94OBXX4KTo2PLL6KtoudoUUEwEolEJJfLHVnGZITIWBRXJ5eHMgKBQGkkBNbW/cFvoA+MfTYWxkRFgomJqHlgpzp++PAhzJ3/Cpw5ex5CQ4IhfdcOEDACQ19XW1eNSpgeLUhoaKhzcblsbmND44TGJtYTTzVCtUGcXZwgJHgoRP4lAoKGDIHevXsrb2iMqtu1daYifJp3Lw/GPTcJqqqqYdHCBbB0cbx+LNKSMD15hMTExFjdyMlNqK2Rr8ZuKXFEwcqqDwwaNAj8fH0gKjISPD09sHEMooKWpplWev6hI0dhacJyPMWZQdrnmyFkWLB+uWb1kd5L9BjwAm2ZIy083tjIBpN/Pyx0GOemRowehUWx4oI4pbvaQvTWQiDXHO3ck7B8JXx76Ag4OztCxj/2Qx+LPjr2V7+Gsg7Z/TvzZM9ye8PHh1vm3izJaGhoCrPqawXvrVsLry1fDk/5eIOZmVkrvdNgWOiNCNTCfW3XH4anvJ9O/BOk0nsgeyCDiFGjQC/4YJT1mpqaYNv2NHj9jeSeI0hycrLRyRPnd8gVDTFmZiL4In0nPB0WpiNCS3Ko1wbU/LImO6griv7eVCQCLy8vOHb8OGRl/8qtS95enqoyyjZ/r6qCpYkrYPeevSQF03MEuZtbuF6uaJzXy9wU9uzeDQF+A7USND/QOTeM4gyFUPZ0pJrstCjr2dvZgUIhh/MXLsKpU79AbMwzYNmnD3fv1u3bEDdnPly4mAXYp5OZmQkTe0Quy9nVY6GikU0knfrN5DdgcICf/vTfbC3QTifKU0anKNKvoAr8GHVDemG4cgpbEh8PQUGBgJ+RwN8WxkMT2wTHf/oRXpgyHXLu3AGBEPJMjYVjcnNufdrtF/XAoYHji4pkX+OErMmKhMU4qp4HLSVa1b1eeU/V65Fuv2++XiBQC2E4dek1yXHql1Mw8+W5nPsrFrvA3bu5gGMdMBIyR1GjcFZh4Y37pJwRdGOwGxtSVFR1AIthNH3aZJg/b16rZdXG1fT01p5NcEbWytDc79UZITqHe/bu48QlVe/eleIpSlBnbCRIuSe9tVq3gW47QnD07VYjh5/xv2r3THQUbHx/A4jwgyNC877cQpbP4DpCLHfOMIYCGNI8WCkpK4UR4ZE4+dgIFk/0TsILuYdFnz77bl/P/s6wdrccITY2Li519cxP2Ih2HhIxbFj3Tqti3MQL646duyBXKgV7ezvw9PDEicJBEODvD8ZGSvOUlZfD1BkzccQeBOvefguaP/4zbFU/jtn6eRoWowmEAub8rRu/kgagtKjl997tBElOnmTyeVrW/qYm1lXs6gxp27cCeYqnhtGZYi5cysKL7GK4X1nJGe/ipct4/x1nRydHe4iOHgMTJ0zAeamzeJrJAxcXF2gWYuvFJDqo0u1VtdXwww8nuAvGItMk+B90K0Gio6NFu7+4eriJhSBra2vY/EkK2Nva6wXFjMpwR77/HhISVkIDDsr8B/rCnNlxUFJSjBff03A5+wrkFxTiYG0H7NyVDuQZOWljbGyszqvp5j1aW/gBNm1KheKSEpKEyQoa5HNCmnMNegyOrh4f2NhLkMTLH505+x9UW6PQbHW1yg2n1VHajnTk5RuIbOzd0OQpLyGpNB/fq+c2cn/FqjXcPXfczgA7MXccHBKO7lfINO3U1Sl0jutVx8o21OdZWVeQz8AhXBvuPj7B0JOwcxCvGYANZ+vghr7JOKI0fo1SAI0w+DgldQtnYM7IoSORTFajMSa5X1ZWiQYGBHNG/DbjqFIUezHavCVNJaiu8XX3WsHJPj+/GEX+dRz3OraOrrvb+n90iynLw9tvZnV13UoyHb2+agWMiYzSTFMEpPr71tvvQvqeLzUTi03/AWBibKy5TyDRc3l5Bc5tmcKp02dwCr0Ge2ximDZlCnef0cQqSG8KVEParW9owInF1+DK1WskAi8WsMLXoY10+Ujd198/qqambjMO4sznzImDl2fFaaZydUz9UP4QVr+RBOnpJF8ErJmp8VlSV2gkBIO4GlycnLCX1p+Lqvft+5prIWHpYjAyUmaZWvCnNHvSCQqLimHajJe4NAmDUKmJQBBRWJhTAG2kSwviN2SI5/3K2gP4wZI58YhWLU9UBng6z4uqfq+CuNnz4OsDB8mQqbO0NH8Z99pPSDzRiBd0NWrD9u3bFz5N+ZhzefGjcYiIGAV/jYrSlNPLWOnFgwhO/nwSxk6YCJeysnEAiIqb6huj8/JuX4d20GUFcXd3F5cUVBxHLLIICPCHtclruDlKN2yT5uXB1OkzsDt7CccAApmpmXH0jWtXdpub96ogwhUVlehF5KReE8tyqXASxLk6O8H6d9YaxOHaM/Uneu4/qITElatwonABPJD9TuKNq71EpiPKy/MuQ0/Azc3X0c5Rkk0WW+L95ObmKxfvWrlmUf3tt9soaNhI9QKeK5F4hajrB4QHWNo4iItsHCTo4DeHNYtxTbUcLUtczS3ovv5D0fkLlzXtqT212lqto0DO9x/IQG4eA5ENdiawU1Hv6Cz5AD8E69YpKUOYAbbio8TQxBu6du0WNgwWokau8aYyT55BAUPCOCNhr+um2DvA3bARN0/v94iL7O4VgPYfzODqb9m2A5eXcNvhI8f0vCZdj4pcq8Au8MLFiVxZTnQHt7NeXoNGQk/D3l7yAnFv/QPD0OVfr2p7rMpoP/z4LyR29+WMhEfRyeHDh9u21M6iRYtEXt5++0g5MiKeDo8i5TkX9/2Nm5QC1OjEFjpu7fUbOWh0ZCwnOK5fa+vo9nZPGxUabOzESUSQlNTNnME00wfeDuCe7iz2UYnhdgwv0BZ/1FZKyiKRk4tklZ2je80A5ZSDFry6RBu/GIwMsp09dxF5q4JKB2ePsv52bmHwGOl6i7rAiFuD++CnburPp7GoCT5OTYUlCStAUV8PQiFsmjd7RkxlZWXVHzUVH5+quCfNWWcuEkwlLpWFRW/uIzvqhK7WQUDcs5FtaTtg8tQZ3MItYOAcMmYHlxXdOQ2PkS43zIwA1Tbi/WdbtnKflWrC3tCBbzLg9OmzgBOKYCISfigSsqvxM3S2rW3WyhuMiArBQ4eCg72D0pPScZ1ZLEbSm2s515lkbQUMyuj/5BNx2dnZMnjMdDlBrKxMt5dX1Lyal1fgvDB+GXcNKXtwHQOCt/Jzb70Hf/zAohm4Lhf1lZaWaCJwUDVSVFQE8UuXcQlH7osgAmadh5tjUmZmZiP8CXS5DzmUlZXJ3d1d9+LknhmJvoBhC3E0vN3SQvRi7t2bJ+ARGDzIr7ryQdWrpWXlQhIQOjo4cNH9oSOH4aW4uVBUXIpLsTJTU0FMgfROmlQqbfPoay/d9olhe3ERey6WKxo2YpMIRSJjIMurQqFQ56uOmBqz8VgIKfzJ0G9QqZg1c0qqiTEzWyBgrtXXN2DfoL4BR9znevUWzS4uuDOuI8Qg0BFiQGBgoHFFRUU/kUgksLOzK/2z1gpKF6HTRoglRiAQzCKH0D6c4dHIa0dZGcuyGTKZTAodTKcIgiPoJXj3EfAcLMpSLMrH0IF0uCB4YLjgkZFLjqNGDoGnPNrX4Q8c/RkKisuhvUyKHQEOttZtKpuP2z+IX4eARXHtyJHS4YEhFmM82RMDbUx6BdrLuazrjyTI87EjISTQp111iCiq99tho6Qz3F5uzWhrb+0sHLXvr71r3P8FjUN4BhWEZ1BBeAYVhGdQQXgGFYRnUEF4BhWEZ1BBeEa3EcTiCXPeR/9toVsIMmywNxzfux7OHE6BJXMnQlemSwtCRsWaZTNh/9Y1mtGxbN7zcPpQSpcdLV1OkEicsieoR8WcKdHNyjjaWeuNFlK2vZnezqLLfS6LCNCSCC1BRgvZuhLUy+IZVBCeQQXhGVQQnkEF4RlUEJ5BBeEZVBCeQQXhGVQQnkEF4RlUEJ5BBeEZVBCeQQXhGVQQnkEF4RlUEJ5BBeEZVBCeQQXhGVQQntEZgnC/MVVVXQd8Jr+4AjqDzvhadDbLspD21TGoqqkDB9t+wDdIZzl49CR3jN/rLuhAOuuXHJLxLgl4DhbjTZlMlgwdSGf+1kmA+kcE+Ah+b5kVFRWZQKFQKBQKhUKhUCgUCoVCoVAoFEq7+S9moK7+TwcOaQAAAABJRU5ErkJggg=="
+            alt="一隻手選擇產品"
+          />
+          <p class="text-center text-primary-900 PurchaseProcessText">
+            選擇商品
+          </p>
+        </div>
+        <!-- 箭頭icon -->
+        <div class="d-none d-lg-block">
+          <span class="material-symbols-outlined align-bottom">
+            arrow_forward_ios
+          </span>
+        </div>
+        <div class="d-block d-lg-none">
+          <span class="material-symbols-outlined"> stat_minus_1 </span>
+        </div>
+
+        <!-- 第二張圖 -->
+        <div
+          class="d-flex flex-column orderProcess justify-content-center align-items-center"
+        >
+          <!-- title -->
+          <p
+            class="bg-primary-900 d-inline text-white px-7 py-3 PurchaseProcessTitle"
+          >
+            <span>step</span>
+            <span>2</span>
+          </p>
+          <!-- 圖片 -->
+          <img
+            src="data:image/png;base64,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"
+            alt="一個產品被放進去購物車"
+          />
+          <p class="text-center text-primary-900 PurchaseProcessText">
+            加入購物車
+          </p>
+        </div>
+        <!-- 箭頭icon -->
+        <div class="d-none d-lg-block">
+          <span class="material-symbols-outlined align-bottom">
+            arrow_forward_ios
+          </span>
+        </div>
+        <div class="d-block d-lg-none">
+          <span class="material-symbols-outlined"> stat_minus_1 </span>
+        </div>
+        <!-- 第三張圖 -->
+        <div
+          class="d-flex flex-column orderProcess justify-content-center align-items-center"
+        >
+          <!-- title -->
+          <p
+            class="bg-primary-900 d-inline text-white px-7 py-3 PurchaseProcessTitle"
+          >
+            <span>step</span>
+            <span>3</span>
+          </p>
+          <!-- 圖片 -->
+          <img
+            src="data:image/png;base64,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"
+            alt="一台貨車載貨物"
+          />
+          <p class="text-center text-primary-900 PurchaseProcessText">
+            選擇運送方式
+          </p>
+        </div>
+        <!-- 箭頭icon -->
+        <div class="d-none d-lg-block">
+          <span class="material-symbols-outlined align-bottom">
+            arrow_forward_ios
+          </span>
+        </div>
+        <div class="d-block d-lg-none">
+          <span class="material-symbols-outlined"> stat_minus_1 </span>
+        </div>
+        <!-- 第四張圖 -->
+        <div
+          class="d-flex flex-column orderProcess justify-content-center align-items-center"
+        >
+          <!-- title -->
+          <p
+            class="bg-primary-900 d-inline text-white px-7 py-3 PurchaseProcessTitle"
+          >
+            <span>step</span>
+            <span>4</span>
+          </p>
+          <!-- 圖片 -->
+          <img
+            src="data:image/png;base64,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"
+            alt="一隻手拿著信用卡"
+          />
+          <p class="text-center text-primary-900 PurchaseProcessText">
+            結帳繳費
+          </p>
+        </div>
+        <!-- 箭頭icon -->
+        <div class="d-none d-lg-block">
+          <span class="material-symbols-outlined align-bottom">
+            arrow_forward_ios
+          </span>
+        </div>
+        <div class="d-block d-lg-none">
+          <span class="material-symbols-outlined"> stat_minus_1 </span>
+        </div>
+        <!-- 第五張圖 -->
+        <div
+          class="d-flex flex-column orderProcess justify-content-center align-items-center"
+        >
+          <!-- title -->
+          <p
+            class="bg-primary-900 d-inline text-white px-7 py-3 PurchaseProcessTitle"
+          >
+            <span>step</span>
+            <span>5</span>
+          </p>
+          <!-- 圖片 -->
+          <img
+            src="data:image/png;base64,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"
+            alt="一隻手頂著貨物"
+          />
+          <p class="text-center text-primary-900 PurchaseProcessText">
+            收到商品開始使用
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- 品牌文宣區塊 -->
+    <div class="d-flex flex-column flex-lg-row bg-primary-50 brandPromote">
+      <!-- 圖片區
+      <div class="appImgArea d-flex flex-column">
+        <div class="appImgArea-top d-none d-lg-block"></div>
+        <div class="appImgArea-middle p-5 p-lg-0">
+          <img
+            src="/assets/images/appImg/leftImg.png"
+            alt=""
+            class="background-img"
+          />
+        </div>
+        <div class="appImgArea-bottom d-none d-lg-block"></div>
+      </div> -->
+      <!-- 圖片區 -->
+      <div class="appImgArea d-flex flex-column">
+        <img
+          src="/dailyShiguang/assets/leftImg-WZQKX0EF.png"
+          alt=""
+          class="background-img"
+        />
+      </div>
+      <!-- 文字區  -->
+      <div
+        class="slogan d-flex align-items-center justify-content-center position-relative"
+      >
+        <img
+          src="/dailyShiguang/assets/deco_logo-C3UdZh1-.svg"
+          alt=""
+          class="deco-hand position-absolute top-0 start-0"
+        />
+        <div class="slogan-textarea d-flex flex-column align-items-center">
+          <h5 class="text-primary-900 decorated-title fs-lg-1">日常拾光</h5>
+          <div>
+            <p class="text-primary-900 fs-8 fs-lg-3 mb-lg-11 mb-7">
+              <span class="bg-primary-100">在每段被遺忘的日常裡，拾回那些</span>
+              <span class="bg-primary-100">閃閃發光的片段</span>
+            </p>
+            <p class="text-primary-900 fs-8 fs-lg-5">
+              <span>在這裡，二手家居用品被好好保存、再次流轉</span>
+              <span>陪伴另一個家庭走過溫柔的日常</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer引入 -->
+    <footer class="footer">
+  <!-- 聯絡方式 -->
+  <section class="container">
+    <div
+      class="d-flex flex-column flex-lg-row justify-content-center gap-lg-15 gap-11"
+    >
+      <!-- logo區 -->
+      <div
+        class="headerLogo-bottom pe-lg-9 d-flex align-items-center justify-content-center flex-column"
+      >
+        <img
+          src="/dailyShiguang/assets/type_iconOnly-DxwjB7Hq.png"
+          alt="一隻手大拇指捏著食指跟中指"
+          class="mb-7"
+        />
+
+        <p class="mb-7 text-primary-900 fs-3 fs-lg-1">日常拾光</p>
+        <p class="text-primary-900 fs-lg-4 fs-7 text-center">
+          <span>在每段被遺忘的日常裡</span>
+          <span>拾回那些閃閃發光的片段</span>
+        </p>
+      </div>
+      <!-- category -->
+      <div class="category">
+        <!-- 標題 -->
+        <p class="category-title">
+          <span class="text-primary-900 fs-lg-3 fs-6">商品分類</span>
+          <span class="text-neutral-600 categoryTitle-english fs-9 fs-lg-5"
+            >Category</span
+          >
+        </p>
+        <!-- 分類 -->
+        <div class="mb-lg-7 mb-3">
+          <div class="d-flex mb-lg-5 mb-2">
+            <a href="#">客廳家具</a>
+            <a href="#">櫥櫃</a>
+          </div>
+          <div class="d-flex mb-lg-5 mb-2">
+            <a href="#">桌椅</a>
+            <a href="#">臥室</a>
+          </div>
+          <div class="d-flex mb-lg-5 mb-2">
+            <a href="#">辦公家具</a>
+            <a href="#">裝飾/藝品</a>
+          </div>
+          <div class="d-flex mb-lg-5 mb-2">
+            <a href="#">大型家電</a>
+            <a href="#">運動器材</a>
+          </div>
+          <div class="d-flex mb-lg-5 mb-2">
+            <a href="#">小型家電</a>
+            <a href="#">休閒用品</a>
+          </div>
+        </div>
+      </div>
+      <!-- 聯絡我們 -->
+      <div class="contactUs">
+        <!-- 聯絡我們標題 -->
+        <div class="mb-lg-7 mb-3 contactUs-title">
+          <span class="text-primary-900 fs-lg-3 fs-6">聯絡我們</span>
+          <span class="text-neutral-600 categoryTitle-english fs-9 fs-lg-5"
+            >Contact</span
+          >
+        </div>
+        <!-- 聯絡我們icon -->
+        <div class="mb-8 mb-lg-9">
+          <div class="d-flex gap-11">
+            <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20fill='%23FFC972'/%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20stroke='white'%20stroke-width='0.5'/%3e%3cpath%20d='M15.8586%2010.07C14.7944%2010.12%2014.0678%2010.29%2013.4336%2010.5392C12.7667%2010.7918%2012.1627%2011.1865%2011.6636%2011.6959C11.1564%2012.1964%2010.764%2012.8012%2010.5136%2013.4684C10.2678%2014.105%2010.1003%2014.8334%2010.0536%2015.8967C10.0069%2016.96%209.99612%2017.3034%2010.0011%2020.0192C10.0061%2022.7351%2010.0186%2023.075%2010.0703%2024.1417C10.1211%2025.2059%2010.2903%2025.9326%2010.5394%2026.5676C10.7961%2027.2251%2011.1394%2027.7817%2011.6961%2028.3367C12.1971%2028.8442%2012.8025%2029.2366%2013.4703%2029.4867C14.1061%2029.7326%2014.8336%2029.9001%2015.8978%2029.9467C16.9628%2029.9934%2017.3053%2030.0042%2020.0203%2029.9992C22.7353%2029.9942%2023.0769%2029.9817%2024.1428%2029.9309C25.2094%2029.8809%2025.9319%2029.7101%2026.5678%2029.4617C27.2344%2029.209%2027.8381%2028.8143%2028.3369%2028.305C28.8444%2027.8041%2029.2368%2027.1987%2029.4869%2026.5309C29.7328%2025.8951%2029.9003%2025.1676%2029.9461%2024.1042C29.9928%2023.0375%2030.0044%2022.6959%2029.9986%2019.9809C29.9936%2017.2659%2029.9819%2016.925%2029.9311%2015.8584C29.8811%2014.7917%2029.7111%2014.0684%2029.4611%2013.4325C29.2086%2012.766%2028.8142%2012.1624%2028.3053%2011.6634C27.8045%2011.156%2027.1994%2010.7636%2026.5319%2010.5134C25.8953%2010.2684%2025.1686%2010.1%2024.1036%2010.055C23.0394%2010.0075%2022.6969%209.99505%2019.9811%2010C17.2653%2010.005%2016.9253%2010.0175%2015.8586%2010.07ZM15.9753%2028.1476C15.0003%2028.1059%2014.4711%2027.9434%2014.1186%2027.8076C13.6836%2027.6486%2013.2899%2027.3937%2012.9669%2027.0617C12.6339%2026.7401%2012.3776%2026.3476%2012.2169%2025.9134C12.0794%2025.5609%2011.9144%2025.0317%2011.8694%2024.0567C11.8194%2023.0034%2011.8094%2022.6867%2011.8028%2020.0167C11.7978%2017.3467%2011.8078%2017.0309%2011.8536%2015.9767C11.8953%2015.0025%2012.0586%2014.4725%2012.1936%2014.12C12.3736%2013.6525%2012.5911%2013.32%2012.9394%2012.9684C13.2613%2012.6352%2013.6541%2012.3789%2014.0886%2012.2184C14.4411%2012.0809%2014.9694%2011.9175%2015.9444%2011.8709C16.9986%2011.8209%2017.3144%2011.8109%2019.9844%2011.8042C22.6536%2011.7992%2022.9703%2011.8092%2024.0261%2011.8559C24.9994%2011.8975%2025.5294%2012.0592%2025.8819%2012.1959C26.3486%2012.3759%2026.6819%2012.5917%2027.0336%2012.9417C27.3853%2013.2917%2027.6011%2013.6225%2027.7836%2014.09C27.9211%2014.4417%2028.0853%2014.97%2028.1311%2015.9459C28.1811%2017%2028.1928%2017.3167%2028.1978%2019.9859C28.2019%2022.6551%2028.1928%2022.9717%2028.1469%2024.0259C28.1044%2025.0009%2027.9428%2025.5301%2027.8069%2025.8842C27.6269%2026.3509%2027.4094%2026.6842%2027.0603%2027.0342C26.7387%2027.3673%2026.3462%2027.6236%2025.9119%2027.7842C25.5603%2027.9217%2025.0303%2028.0859%2024.0569%2028.1326C23.0019%2028.1826%2022.6861%2028.1926%2020.0153%2028.1984C17.3444%2028.2042%2017.0303%2028.1926%2015.9753%2028.1476ZM24.1278%2014.655C24.1281%2014.8924%2024.1988%2015.1244%2024.331%2015.3215C24.4632%2015.5187%2024.6508%2015.6723%2024.8703%2015.7628C25.0897%2015.8532%2025.3311%2015.8766%2025.5638%2015.8299C25.7966%2015.7832%2026.0102%2015.6686%2026.1778%2015.5004C26.3453%2015.3323%2026.4593%2015.1182%2026.5051%2014.8853C26.551%2014.6524%2026.5268%2014.4112%2026.4356%2014.192C26.3443%2013.9729%2026.1901%2013.7858%2025.9925%2013.6543C25.7948%2013.5228%2025.5627%2013.4529%2025.3253%2013.4534C25.0072%2013.454%2024.7023%2013.581%2024.4778%2013.8063C24.2532%2014.0317%2024.1273%2014.3369%2024.1278%2014.655ZM14.8661%2020.01C14.8688%2021.3718%2015.4123%2022.6768%2016.3771%2023.6378C17.3419%2024.5989%2018.6489%2025.1373%2020.0107%2025.1346C21.3725%2025.132%2022.6774%2024.5885%2023.6385%2023.6237C24.5995%2022.6589%2025.1379%2021.3518%2025.1353%2019.99C25.1156%2018.6395%2024.5647%2017.3511%2023.6018%2016.4039C22.6388%2015.4567%2021.3415%2014.9271%2019.9908%2014.9297C18.6401%2014.9323%2017.3449%2015.467%2016.3857%2016.418C15.4264%2017.3689%2014.8805%2018.6594%2014.8661%2020.01ZM16.6669%2020.0067C16.6656%2019.3474%2016.8598%2018.7026%2017.225%2018.1537C17.5902%2017.6048%2018.1099%2017.1765%2018.7185%2016.923C19.3271%2016.6695%2019.9972%2016.6022%2020.644%2016.7295C21.2909%2016.8568%2021.8855%2017.1731%2022.3526%2017.6383C22.8197%2018.1036%2023.1383%2018.6969%2023.2683%2019.3432C23.3982%2019.9896%2023.3335%2020.6599%2023.0824%2021.2695C22.8313%2021.8791%2022.4051%2022.4005%2021.8577%2022.7679C21.3103%2023.1353%2020.6662%2023.3321%2020.0069%2023.3334C19.5692%2023.3343%2019.1356%2023.2489%2018.7308%2023.0822C18.3261%2022.9155%2017.9581%2022.6707%2017.648%2022.3618C17.3378%2022.0529%2017.0916%2021.6859%2016.9232%2021.2818C16.7549%2020.8777%2016.6678%2020.4445%2016.6669%2020.0067Z'%20fill='white'/%3e%3c/svg%3e" alt="ig的icon" />
+            <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20fill='%23FFC972'/%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20stroke='white'%20stroke-width='0.5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.9997%2019.9987C11.9999%2018.4594%2012.4442%2016.9528%2013.2794%2015.6597C14.1145%2014.3666%2015.3051%2013.3419%2016.7082%2012.7087C18.1112%2012.0754%2019.6672%2011.8605%2021.1894%2012.0896C22.7116%2012.3188%2024.1354%2012.9823%2025.2899%2014.0005C26.4443%2015.0187%2027.2805%2016.3485%2027.698%2017.8301C28.1154%2019.3118%2028.0965%2020.8824%2027.6435%2022.3536C27.1905%2023.8248%2026.3225%2025.134%2025.1439%2026.1242C23.9652%2027.1143%2022.5259%2027.7433%2020.9986%2027.9358V21.9985H22.9984C23.2636%2021.9985%2023.5179%2021.8932%2023.7054%2021.7056C23.8929%2021.5181%2023.9982%2021.2638%2023.9982%2020.9986C23.9982%2020.7334%2023.8929%2020.4791%2023.7054%2020.2916C23.5179%2020.1041%2023.2636%2019.9987%2022.9984%2019.9987H20.9986V17.999C20.9986%2017.7338%2021.104%2017.4795%2021.2915%2017.292C21.479%2017.1045%2021.7333%2016.9991%2021.9985%2016.9991H22.4984C22.7636%2016.9991%2023.0179%2016.8938%2023.2055%2016.7063C23.393%2016.5188%2023.4983%2016.2644%2023.4983%2015.9992C23.4983%2015.7341%2023.393%2015.4797%2023.2055%2015.2922C23.0179%2015.1047%2022.7636%2014.9994%2022.4984%2014.9994H21.9985C21.2029%2014.9994%2020.44%2015.3154%2019.8774%2015.8779C19.3149%2016.4405%2018.9989%2017.2034%2018.9989%2017.999V19.9987H16.9991C16.7339%2019.9987%2016.4796%2020.1041%2016.2921%2020.2916C16.1046%2020.4791%2015.9992%2020.7334%2015.9992%2020.9986C15.9992%2021.2638%2016.1046%2021.5181%2016.2921%2021.7056C16.4796%2021.8932%2016.7339%2021.9985%2016.9991%2021.9985H18.9989V27.9358C17.0657%2027.6922%2015.2879%2026.7514%2013.9993%2025.2901C12.7106%2023.8287%2011.9996%2021.9472%2011.9997%2019.9987ZM19.9987%2029.9975C25.5211%2029.9975%2029.9975%2025.5211%2029.9975%2019.9987C29.9975%2014.4764%2025.5211%2010%2019.9987%2010C14.4764%2010%2010%2014.4764%2010%2019.9987C10%2025.5211%2014.4764%2029.9975%2019.9987%2029.9975Z'%20fill='white'/%3e%3c/svg%3e" alt="fb的icon" />
+            <img
+              src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20fill='%23FFC972'/%3e%3crect%20x='0.25'%20y='0.25'%20width='39.5'%20height='39.5'%20rx='19.75'%20stroke='white'%20stroke-width='0.5'/%3e%3cpath%20d='M17.4612%2017.52C17.1334%2017.295%2016.0454%2016.5175%2016.0454%2016.5175C16.9634%2015.1663%2018.174%2014.64%2019.8485%2014.64C21.0324%2014.64%2022.0379%2015.0487%2022.7555%2015.825C23.4731%2016.6012%2023.8824%2017.7112%2023.9759%2019.13C24.3741%2019.3025%2024.7405%2019.5042%2025.0748%2019.735C26.4214%2020.6663%2027.1621%2022.06%2027.1621%2023.6562C27.1621%2027.0513%2024.4591%2030%2019.5656%2030C15.3641%2030%2011%2027.4837%2011%2019.9925C11%2012.5425%2015.2281%2010%2019.5534%2010C21.4538%2010%2025.7847%2010.2746%2027.7196%2015.4516C27.8897%2015.9065%2027.6133%2016.3983%2027.1441%2016.5237C26.6987%2016.6427%2026.2424%2016.3888%2026.0692%2015.9615C24.6197%2012.3834%2021.9592%2011.7875%2019.5073%2011.7875C15.1784%2011.7875%2012.7291%2014.5013%2012.7291%2020.275C12.7291%2025.4538%2015.4661%2028.2038%2019.5656%2028.2038C22.9376%2028.2038%2025.4512%2026.4%2025.4512%2023.7587C25.4512%2021.9613%2023.9844%2021.1%2023.9091%2021.1C23.6225%2022.6425%2022.8551%2025.2375%2019.4842%2025.2375C17.5195%2025.2375%2015.8256%2023.84%2015.8256%2022.01C15.8256%2019.3975%2018.2347%2018.4513%2020.1363%2018.4513C20.8479%2018.4513%2021.7076%2018.5013%2022.1556%2018.5938C22.1556%2017.7975%2021.4999%2016.4337%2019.8485%2016.4337C18.3318%2016.4337%2017.9475%2016.9392%2017.4611%2017.5174C17.4605%2017.5182%2017.4605%2017.5193%2017.4612%2017.52ZM20.3694%2020.2375C17.8923%2020.2375%2017.5717%2021.325%2017.5717%2022.0075C17.5717%2023.105%2018.8382%2023.4675%2019.5146%2023.4675C20.7531%2023.4675%2022.0245%2023.115%2022.2249%2020.4387C21.6169%2020.2927%2020.9936%2020.2251%2020.3694%2020.2375Z'%20fill='white'/%3e%3c/svg%3e"
+              alt="thread的icon"
+            />
+          </div>
+        </div>
+        <!-- 聯絡我們地址/電話/時間 -->
+        <div class="d-flex flex-column gap-2 gap-lg-3">
+          <p class="text-primary-900 fs-8 fs-lg-9">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.5494%2011.3918C11.9524%2011.3918%2012.2969%2011.2483%2012.5829%2010.9612C12.8691%2010.6742%2013.0122%2010.3292%2013.0122%209.92627C13.0122%209.52329%2012.8687%209.17871%2012.5817%208.89251C12.2947%208.60644%2011.9497%208.46341%2011.5465%208.46341C11.1436%208.46341%2010.7991%208.60691%2010.513%208.89392C10.2268%209.18093%2010.0837%209.52599%2010.0837%209.9291C10.0837%2010.3321%2010.2272%2010.6766%2010.5142%2010.9627C10.8012%2011.2487%2011.1463%2011.3918%2011.5494%2011.3918ZM11.548%2017.5868C13.1326%2016.1683%2014.3452%2014.8076%2015.1859%2013.5048C16.0265%2012.2021%2016.4468%2011.0611%2016.4468%2010.0818C16.4468%208.60516%2015.9777%207.39124%2015.0395%206.44003C14.1012%205.48882%2012.9374%205.01321%2011.548%205.01321C10.1585%205.01321%208.99471%205.48882%208.05646%206.44003C7.11821%207.39124%206.64908%208.60516%206.64908%2010.0818C6.64908%2011.0611%207.0694%2012.2021%207.91005%2013.5048C8.75069%2014.8076%209.96333%2016.1683%2011.548%2017.5868ZM11.548%2019.2036C9.50946%2017.4373%207.98086%2015.7934%206.96215%2014.2721C5.94344%2012.7507%205.43408%2011.3539%205.43408%2010.0818C5.43408%208.21258%206.03868%206.6993%207.24787%205.54194C8.4572%204.38459%209.89057%203.80591%2011.548%203.80591C13.2054%203.80591%2014.6387%204.38459%2015.8481%205.54194C17.0572%206.6993%2017.6618%208.21258%2017.6618%2010.0818C17.6618%2011.3539%2017.1525%2012.7507%2016.1338%2014.2721C15.1151%2015.7934%2013.5865%2017.4373%2011.548%2019.2036Z'%20fill='%23614C2B'/%3e%3c/svg%3e"
+              alt="位置的icon"
+              class="me-3"
+            />
+            <span>106 台北市大安區復興南路一段123 號 6 樓</span>
+          </p>
+          <p class="text-primary-900 fs-8 fs-lg-9">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M18.2005%2019.0834C16.6301%2019.0834%2015.0524%2018.7183%2013.4674%2017.988C11.8825%2017.2577%2010.4264%2016.2276%209.09887%2014.8976C7.77151%2013.5674%206.74269%2012.1112%206.01241%2010.5288C5.28213%208.94661%204.91699%207.37029%204.91699%205.79987C4.91699%205.54751%205.00033%205.33723%205.16699%205.16904C5.33366%205.00084%205.54199%204.91675%205.79199%204.91675H8.50991C8.72033%204.91675%208.90595%204.98543%209.06678%205.12279C9.22762%205.26001%209.32991%205.4296%209.37366%205.63154L9.85137%208.08341C9.88442%208.31091%209.87748%208.5064%209.83053%208.66987C9.78345%208.83335%209.69901%208.97064%209.5772%209.08175L7.65262%2010.9553C7.96234%2011.5225%208.31623%2012.0591%208.71428%2012.5651C9.1122%2013.0709%209.54303%2013.554%2010.0068%2014.0145C10.464%2014.4718%2010.9501%2014.8965%2011.4651%2015.2886C11.9801%2015.6807%2012.5362%2016.0456%2013.1335%2016.3832L15.0035%2014.497C15.1339%2014.3613%2015.2918%2014.2661%2015.4772%2014.2115C15.6625%2014.1571%2015.855%2014.1438%2016.0549%2014.1715L18.3689%2014.6428C18.5793%2014.6983%2018.751%2014.8057%2018.8841%2014.9649C19.0171%2015.124%2019.0837%2015.3046%2019.0837%2015.5065V18.2084C19.0837%2018.4584%2018.9996%2018.6667%2018.8314%2018.8334C18.6632%2019.0001%2018.4529%2019.0834%2018.2005%2019.0834ZM7.06116%209.77258L8.54845%208.34946C8.57512%208.32807%208.59248%208.29869%208.60053%208.26133C8.60859%208.22397%208.60727%208.18925%208.59658%208.15716L8.23428%206.29487C8.22359%206.25223%208.20491%206.22022%208.17824%206.19883C8.15158%206.17744%208.11685%206.16675%208.07408%206.16675H6.29199C6.25991%206.16675%206.23317%206.17744%206.21178%206.19883C6.19053%206.22022%206.17991%206.24696%206.17991%206.27904C6.22255%206.84848%206.31574%207.42696%206.45949%208.01446C6.6031%208.6021%206.80366%209.18814%207.06116%209.77258ZM14.3112%2016.9745C14.8635%2017.232%2015.4396%2017.4288%2016.0395%2017.5651C16.6395%2017.7012%2017.2001%2017.7821%2017.7214%2017.8078C17.7534%2017.8078%2017.7802%2017.7971%2017.8016%2017.7757C17.823%2017.7543%2017.8337%2017.7276%2017.8337%2017.6955V15.9424C17.8337%2015.8996%2017.823%2015.8649%2017.8016%2015.8382C17.7802%2015.8115%2017.7482%2015.7929%2017.7055%2015.7822L15.9555%2015.4263C15.9234%2015.4156%2015.8954%2015.4143%2015.8714%2015.4224C15.8473%2015.4304%2015.8219%2015.4478%2015.7951%2015.4745L14.3112%2016.9745Z'%20fill='%23614C2B'/%3e%3c/svg%3e"
+              alt="位置的icon"
+              class="me-3"
+            />
+            <span>聯絡電話：(02) 2758 -1234</span>
+          </p>
+          <p class="text-primary-900 fs-8 fs-lg-9">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.6937%2015.0092L11.8999%2012.2154V8.26922H13.0999V11.7246L15.5291%2014.1538L14.6937%2015.0092ZM11.8999%206.70002V5.10002H13.0999V6.70002H11.8999ZM17.2999%2012.1V10.9H18.8999V12.1H17.2999ZM11.8999%2017.9V16.3H13.0999V17.9H11.8999ZM6.0999%2012.1V10.9H7.6999V12.1H6.0999ZM12.5013%2019.1C11.4501%2019.1%2010.462%2018.9006%209.5371%2018.5016C8.61217%2018.1027%207.80764%2017.5613%207.1235%2016.8774C6.43937%2016.1936%205.8977%2015.3894%205.4985%2014.4648C5.09944%2013.5403%204.8999%2012.5525%204.8999%2011.5014C4.8999%2010.4502%205.09937%209.46216%205.4983%208.53722C5.89724%207.61229%206.43864%206.80776%207.1225%206.12362C7.80637%205.43949%208.61057%204.89782%209.5351%204.49862C10.4596%204.09956%2011.4474%203.90002%2012.4985%203.90002C13.5497%203.90002%2014.5378%204.09949%2015.4627%204.49842C16.3876%204.89736%2017.1922%205.43876%2017.8763%206.12262C18.5604%206.80649%2019.1021%207.61069%2019.5013%208.53522C19.9004%209.45976%2020.0999%2010.4476%2020.0999%2011.4986C20.0999%2012.5498%2019.9004%2013.5379%2019.5015%2014.4628C19.1026%2015.3878%2018.5612%2016.1923%2017.8773%2016.8764C17.1934%2017.5606%2016.3892%2018.1022%2015.4647%2018.5014C14.5402%2018.9005%2013.5524%2019.1%2012.5013%2019.1ZM12.4999%2017.9C14.2866%2017.9%2015.7999%2017.28%2017.0399%2016.04C18.2799%2014.8%2018.8999%2013.2867%2018.8999%2011.5C18.8999%209.71336%2018.2799%208.20002%2017.0399%206.96002C15.7999%205.72002%2014.2866%205.10002%2012.4999%205.10002C10.7132%205.10002%209.1999%205.72002%207.9599%206.96002C6.7199%208.20002%206.0999%209.71336%206.0999%2011.5C6.0999%2013.2867%206.7199%2014.8%207.9599%2016.04C9.1999%2017.28%2010.7132%2017.9%2012.4999%2017.9Z'%20fill='%23614C2B'/%3e%3c/svg%3e"
+              alt="位置的icon"
+              class="me-3"
+            />
+            <span>聯絡時間：上班日 09:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-primary-50 text-center py-lg-5 py-2">
+    <p class="fs-8 fs-lg-7">Copyright © 2025 The Second Light</p>
+  </div>
+</footer>
+    <!-- 腳本引入 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
