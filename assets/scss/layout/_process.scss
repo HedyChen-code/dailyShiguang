@@ -1,0 +1,67 @@
+.process-area {
+  // 購物流程區塊的下底線
+  border-bottom: 1px solid $neutral-200;
+  @media (min-width: 992px) {
+    border-bottom: none;
+  }
+}
+.process-number {
+  // 購物流程區塊的數字
+  &-inProgress {
+    // 步驟進行中的數字
+    width: 24px;
+    height: 24px;
+    margin: 0px 32px 8px 32px;
+    border: 2px solid $primary-500;
+    border-radius: 4px;
+    @media (min-width: 992px) {
+      width: 40px;
+      height: 40px;
+      margin: 0px;
+    }
+  }
+  &-done {
+    // 完成流程的數字
+    width: 24px;
+    height: 24px;
+    margin: 0px 32px 8px 32px;
+    border: 2px solid $primary-500;
+    border-radius: 4px;
+    background-color: $primary-500;
+    @media (min-width: 992px) {
+      width: 40px;
+      height: 40px;
+      margin: 0px;
+    }
+  }
+  &-next {
+    // 下一階段的數字
+    width: 24px;
+    height: 24px;
+    margin: 0px 32px 8px 32px;
+    border: 1px solid $neutral-200;
+    border-radius: 4px;
+    background-color: $neutral-100;
+    @media (min-width: 992px) {
+      width: 40px;
+      height: 40px;
+      margin: 0px;
+    }
+  }
+}
+.process-line {
+  // 購物流程區塊中的實線
+  width: 20px;
+  border-top: 2px solid $primary-700;
+  @media (min-width: 992px) {
+    width: 100px;
+  }
+  &-dashed {
+    // 購物流程區塊中的虛線
+    width: 20px;
+    border-top: 2px dashed $neutral-500;
+    @media (min-width: 992px) {
+      width: 100px;
+    }
+  }
+}

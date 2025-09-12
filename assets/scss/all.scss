@@ -1,6 +1,3 @@
-
-
-
 // // @import 'components';
 // @import "../../node_modules/bootstrap/scss/functions";
 // @import './utils/variables';
@@ -24,10 +21,10 @@
 
 // @import './pages/index.scss';
 // Bootstrap Sass functions & variables// Bootstrap functions
-@import "../../node_modules/bootstrap/scss/functions";
+@import '../../node_modules/bootstrap/scss/functions';
 
 // 變數
-@import "./utils/variables";
+@import './utils/variables';
 
 // 字型定義
 @font-face {
@@ -39,15 +36,17 @@
 }
 
 // Bootstrap 主體
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // 自訂 utilities API（⚡ 要在 bootstrap/scss/bootstrap 之後，utilities 才存在）
-@import "./utils/utilities";
+@import './utils/utilities';
 
 // 自訂元件
-@import "/assets/scss/utils/components/btn.scss";
+@import '/assets/scss/utils/components/btn.scss';
 
 // 頁面與 layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/process.scss';
 @import './pages/index.scss';
+@import './pages/checkout.scss';
