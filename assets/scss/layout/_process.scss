@@ -1,8 +1,10 @@
 .process-area {
-  // 購物流程區塊的下底線
+  // 購物流程區塊
+  background-color: $white;
   border-bottom: 1px solid $neutral-200;
   @media (min-width: 992px) {
     border-bottom: none;
+    background-color: unset;
   }
 }
 .process-number {

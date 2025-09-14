@@ -51,6 +51,8 @@ $cyan: #0dcaf0 !default;
 $strong: #58a7b3 !default; //custom
 $favorite: #ff4a96 !default; //custom
 $tag-levels: #ffe169 !default; //custom
+$tag-used: #ffb0b0 !default; //custom-lu
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -73,7 +75,10 @@ $colors: (
   //custom
   'favorite': $favorite,
   //custom
-  'tag-levels': $tag-levels //custom
+  'tag-levels': $tag-levels,
+  //custom
+  'tag-used': $tag-used,
+  //custom-lu
 ) !default;
 // scss-docs-end colors-map
 
@@ -342,6 +347,7 @@ $light: $gray-100 !default;
 $dark: $gray-900 !default;
 $alert: #ff6a6a; //custom
 $accent: #ffe169;
+$tag-used-10: #a93434; //custom-lu
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -361,6 +367,10 @@ $theme-colors: (
   //custom
   'tag-levels': $tag-levels,
   //custom
+  'tag-used': $tag-used,
+  //custom-lu
+  'tag-used-10': $tag-used-10,
+  //custom-lu
   'accent': $accent,
   //custom
   //custom
@@ -726,7 +736,7 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
+$line-height-sm: 1.2 !default; //1.25 !default;custom-Lu
 $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
