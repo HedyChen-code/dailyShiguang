@@ -1,3 +1,8 @@
+.member{
+  &:hover{
+    color:$primary-700;
+  }
+}
 .headerLogo{
   img{
     width: 44px;
@@ -17,16 +22,43 @@
   width: 24px;
   height: 24px;
 }
-.icon {
-  display: inline-block;
-  width: 24px;          /* 想要多大就改這兩行 */
-  height: 24px;
-  background-color: currentColor;
-  -webkit-mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
-          mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
-  vertical-align: middle; /* 和文字置中對齊 */
-}
+// .icon {
+//   display: inline-block;
+//   width: 24px;          /* 想要多大就改這兩行 */
+//   height: 24px;
+//   background-color: currentColor;
+//   -webkit-mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+//           mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+//   vertical-align: middle; /* 和文字置中對齊 */
+//   &:hover{
+//     color:$primary-700;
+//   }
+// }
 
+// .icon {
+//   display: inline-block;
+//   width: 24px;
+//   height: 24px;
+//   vertical-align: middle; /* 和文字置中對齊 */
+// }
+
+// /* 確保 SVG 填滿父容器並繼承顏色 */
+// .icon svg {
+//   display: block; /* 避免 SVG 下方有空白 */
+//   width: 100%;
+//   height: 100%;
+//   fill: currentColor; /* 讓 SVG 的填充顏色繼承 .icon 的 color 屬性 */
+// }
+
+// /* 這是你希望的初始顏色 */
+// .text-primary-700 {
+//   color: #A36B28; /* 假設這是你的 $primary-700 顏色 */
+// }
+
+// /* Hover 效果 */
+// .icon:hover {
+//   color: #69441B; /* 假設這是你 hover 時的 $primary-700 的深色版本 */
+// }
 // .icon-member {
 //   display: inline-block;
 //   width: 24px; /* 想要的大小 */

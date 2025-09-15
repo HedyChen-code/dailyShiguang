@@ -1,15 +1,99 @@
 body {
-  font-family: sans-serif;
+  font-family: CustomFont;
 }
-.container {
+.swiper-navigation-container{
 position: relative; /* 重要：讓箭頭相對於 container 定位 */
+position: relative;
+
+}
+// swiper 遮罩
+.swiper-overlay {
+  position: absolute;
+  top: 0; // top: 0; →； 讓元素頂到父容器的最上方。
+  bottom: 0; // bottom: 0; → 讓元素頂到父容器的最下方。
+//   因為 .swiper-overlay 用的是 position: absolute;，它會相對於最近的定位父層（這裡是 .swiper-navigation-container）定位。
+// 這樣兩行合起來，overlay 就會「從上到下佔滿整個高度」，形成一條直條遮罩。
+  width: 100px; /* 可以依需求調整 */
+  z-index: 5;  /* 小於按鈕 z-index, 但要大於 slides */
+  pointer-events: none; /* 讓滑動不受影響 */
+}
+/* 左邊 overlay */
+.swiper-overlay.left {
+  left: -20px;
+  background: linear-gradient(to right, #fff 80%, transparent);
+}
+/* 右邊 overlay */
+.swiper-overlay.right {
+  right: -20px;
+  background: linear-gradient(to left, #fff 80%, transparent);
+}
+
+.custom-pagination-wrapper{
+  display: flex;
+  justify-content: center ; /* 水平置中 */
+  align-items: center;
+  gap: 60px; /* 箭頭和分頁點之間的間距 */
+  position: relative;
+  z-index: 10;
+}
+.swiper-pagination-bullet{
+      // transform: translateY(-30%);
+      margin-right: 12px;
+      // margin-left: 6px;
+      width: 12px;
+      height: 12px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      background-color: white;
+      border:1px solid $neutral-500;
+      opacity: 1;
+      // background: rgba(0, 0, 0, 0.2);
+      transform: translateY(-40%);
+      &-active{
+      color: #fff;
+      background: $primary-600;
+      
+    }
+}
+.custom-pagination-wrapper .swiper-button-prev,
+.custom-pagination-wrapper .swiper-button-next {
+  position: absolute;   /* 重點：取消 Swiper 預設的絕對定位 */
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  // margin-top: 20px;
+  // transform: translateY(5%);
+  background-color: #fff;
+  border: 1px solid white;
+  // display: flex;
+  // justify-content: center;
+  color: $primary-900;
+
+}
+.custom-pagination-wrapper .swiper-button-prev{
+  left: 43%; 
+}
+.custom-pagination-wrapper .swiper-button-next{
+  right: 43%; 
+}
+
+.custom-pagination-wrapper .swiper-button-prev::after,
+.custom-pagination-wrapper .swiper-button-next::after {
+  font-size: 14px; /* 改小一點，不會太突兀 */
+  color: inherit;
+}
+// 左右按鈕
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;// 調整 z-index 確保按鈕在最上層
 }
 .swiper-button-prev {
-  left: -30px; /* 負值讓箭頭跑到容器外 */
+  left: -20px; /* 負值讓箭頭跑到容器外 */
 }
 
 .swiper-button-next {
-  right: -30px;
+  right: -20px;
 }
 .headSwiper .card-img {
 width: 150px;
@@ -132,7 +216,7 @@ border: 1px solid $primary-300;
 //文宣
 
 
-.slogan{
+.slogan, .apptextArea{
   background-color: $primary-50;
   min-width: 312px;
   height: 312px;
@@ -157,8 +241,27 @@ border: 1px solid $primary-300;
   }
 }
 .slogan-textarea{
-    width: 50%;
+    display: flex;
+    width: 614px;
+    gap:15.63px;
+    &-buttons{
+      @media (min-width:992px) {
+      display: flex;
+      gap:40px;
+      }
     }
+    img{
+      max-width: 139.19px; // 設定最大寬度，避免圖片太大
+      width: 100%; // 讓圖片在容器內自動縮放
+      height: auto; // 保持圖片比例
+      @media (min-width:992px) {
+      max-width: 287px; // 設定最大寬度，避免圖片太大 
+      }
+    }
+    &-paragraph{
+      width: 77%;
+    }
+ }
 
 .sloganImgArea {
   background-color: white;
@@ -210,6 +313,7 @@ border: 1px solid $primary-300;
 .appImgArea-middle{
   flex: 1; // 佔據剩餘的所有空間
   position: relative;
+  background-color: white;
 }
 
 .sloganImgArea-bottom,.appImgArea-bottom{
@@ -218,62 +322,46 @@ border: 1px solid $primary-300;
   flex-shrink: 0; // 防止被壓縮
 }
 // 背景圖片樣式
-  .background-img {
+  .appImgArea-middle-wrapper {
     object-fit: cover;
     object-position: center;
-    // filter: blur(6px); //變模糊 
     @media (min-width:992px) {
-      // left: calc(100%/12);
-      // top:calc(100%/23.4);
-      // bottom: 80px;
-      max-height: 736px;
-      max-width: 100%; 
+
       position: absolute;
-      // position: relative;
-    // width: 100%;
-    // height: auto;
-    // display: block;
-    // // border-radius: 8px;
-    
-    // // 如果你使用 Bootstrap 的 img-fluid
-    // &.img-fluid {
-    //   max-width: 100%;
-    //   height: auto;
+      top: -96px; /* 往上位移 */
+      left: 80px; /* 往右位移 */
+      width: 100%; 
+      z-index: 1;
     }
   }
-  
+  .background-img{
+  width: 100%;
+  display: block;
+  transform: scaleX(-1); // /鏡像反轉/
+  filter: blur(6px); //圖片變模糊
+  }
   // // 手機圖片樣式 - 居中疊加
-  // .phone-img {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   max-width: 574px;
-  //   width: auto;
-  //   height: auto;
-  //   z-index: 2;
-    
-  //   // 添加陰影效果讓手機看起來更立體
-  //   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-    
-  //   // 響應式調整
-  //   @media (max-width: 768px) {
-  //     max-width: 250px;
-  //   }
-    
-  //   @media (max-width: 576px) {
-  //     max-width: 200px;
-  //   }
-  // }
+  .phone-img {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 59.7%;
+  z-index: 2;
+
+  }
 .decorated-title {
       position: relative;
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
       color: #8B4513;
       font-weight: normal;
       margin: 40px 0;
       display: inline-block;
       width: 100%;
+      @media (min-width:992px) {
+      font-size: 24px;
+      }
 }
 
 .decorated-title::before,
@@ -285,10 +373,13 @@ border: 1px solid $primary-300;
       height: 1px;
       background-color: $primary-900;
       transform: translateY(-50%);
+      @media (min-width:992px) {
+        width: 100px;
+      }
 
 }
 .decorated-title::before {
-      transform: translateX(-39.06-8px);
+      transform: translateX(-108px);
 }
 .decorated-title::after {
       transform: translateX(8px);

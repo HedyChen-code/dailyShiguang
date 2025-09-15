@@ -17,172 +17,177 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
     <%- include('./layout/header'); -%>
-
     <!-- 分類選單 - Section 1 -->
     <div class="container py-10">
-      <div class="swiper-wrapper-area">
-        <div class="swiper headSwiper">
-          <ul class="swiper-wrapper">
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img01, type=outline, size=S.svg"
-                alt="客廳家具"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  客廳家具
-                </a>
-              </div>
-            </li>
+      <div class="swiper-navigation-container">
+        <!-- 左右 overlay -->
+        <div class="swiper-overlay left d-none d-lg-block"></div>
+        <div class="swiper-overlay right d-none d-lg-block"></div>
+        <!-- 主要 swiper -->
+        <div class="swiper-wrapper-area">
+          <div class="swiper headSwiper">
+            <ul class="swiper-wrapper">
+              <!-- slides -->
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img01, type=outline, size=S.svg"
+                  alt="客廳家具"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    客廳家具
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img02, type=outline, size=L.svg"
-                alt="小型家具"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  小型家具
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img02, type=outline, size=L.svg"
+                  alt="小型家具"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    小型家具
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img03, type=outline, size=L.svg"
-                alt="辦公家具"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  辦公家具
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img03, type=outline, size=L.svg"
+                  alt="辦公家具"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    辦公家具
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img04, type=outline, size=L.svg"
-                alt="大型家電"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  大型家電
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img04, type=outline, size=L.svg"
+                  alt="大型家電"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    大型家電
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img05, type=outline, size=L.svg"
-                alt="小型家電"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  小型家電
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img05, type=outline, size=L.svg"
+                  alt="小型家電"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    小型家電
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img06, type=outline, size=L.svg"
-                alt="櫥櫃"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  櫥櫃
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img06, type=outline, size=L.svg"
+                  alt="櫥櫃"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    櫥櫃
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img07, type=outline, size=L.svg"
-                alt="桌椅"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  桌椅
-                </a>
-              </div>
-            </li>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img07, type=outline, size=L.svg"
+                  alt="桌椅"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    桌椅
+                  </a>
+                </div>
+              </li>
 
-            <li
-              class="swiper-slide d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/categoryitemimg/item=img08, type=outline, size=L.svg"
-                alt="裝飾/藝品"
-                class="card-img"
-              />
-              <div class="card-content">
-                <a
-                  href="#"
-                  class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
-                >
-                  裝飾/藝品
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- 導航按鈕 -->
-        <div class="swiper-button-prev">
-          <i class="fas fa-chevron-left"></i>
-        </div>
-        <div class="swiper-button-next">
-          <i class="fas fa-chevron-right"></i>
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img08, type=outline, size=L.svg"
+                  alt="裝飾/藝品"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    裝飾/藝品
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 導航按鈕 -->
+          <div class="swiper-button-prev">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- 主視覺輪播 -->
     <section class="mb-11">
       <div class="swiper mainSwiper">
@@ -210,7 +215,6 @@
               </div>
             </div>
           </div>
-
           <!-- 輪播項目 2 -->
           <div class="swiper-slide">
             <div class="card bg-white border-0">
@@ -259,7 +263,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="custom-pagination-wrapper">
+          <div class="swiper-button-prev text-center d-none d-lg-block">
+            <i class="fas fa-chevron-left align-bottom"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next text-center d-none d-lg-block">
+            <i class="fas fa-chevron-right align-bottom"></i>
+          </div>
+        </div>
       </div>
     </section>
     <main class="pb-lg-13" style="background-color: #fafafa">
@@ -538,12 +550,12 @@
       >
         <img
           src="/assets/images/deco_logo.svg"
-          alt=""
+          alt="logo圖案"
           class="deco-hand position-absolute top-0 start-0"
         />
         <div class="slogan-textarea d-flex flex-column align-items-center">
           <h5 class="text-primary-900 decorated-title fs-lg-1">日常拾光</h5>
-          <div>
+          <div class="slogan-textarea-paragraph">
             <p class="text-primary-900 fs-8 fs-lg-3 mb-lg-11 mb-7">
               <span class="bg-primary-100">在每段被遺忘的日常裡，拾回那些</span>
               <span class="bg-primary-100">閃閃發光的片段</span>
@@ -690,7 +702,7 @@
           </p>
           <!-- 圖片 -->
           <img
-            src="/assets/images/flow/flow=shipping, size=L.png"
+            src="/assets/images/flow/flow=pay, size=L.png"
             alt="一隻手拿著信用卡"
           />
           <p class="text-center text-primary-900 PurchaseProcessText">
@@ -719,7 +731,7 @@
           </p>
           <!-- 圖片 -->
           <img
-            src="/assets/images/flow/flow=shipping, size=L.png"
+            src="/assets/images/flow/flow=receive, size=L.png"
             alt="一隻手頂著貨物"
           />
           <p class="text-center text-primary-900 PurchaseProcessText">
@@ -729,48 +741,45 @@
       </section>
     </div>
 
-    <!-- 品牌文宣區塊 -->
-    <div class="d-flex flex-column flex-lg-row bg-primary-50 brandPromote">
-      <!-- 圖片區
-      <div class="appImgArea d-flex flex-column">
+    <!-- 推廣app區塊 -->
+
+    <div class="d-flex flex-column flex-lg-row brandPromote bg-primary-50">
+      <!-- 左半邊圖片區 -->
+      <div class="appImgArea d-flex flex-column order-2 order-lg-1">
         <div class="appImgArea-top d-none d-lg-block"></div>
         <div class="appImgArea-middle p-5 p-lg-0">
-          <img
-            src="/assets/images/appImg/leftImg.png"
-            alt=""
-            class="background-img"
-          />
+          <div class="appImgArea-middle-wrapper">
+            <img
+              src="/assets/images/appImg/appImg.png"
+              alt=""
+              class="background-img"
+            />
+            <img
+              src="/assets/images/appImg/appHandImg.png"
+              alt=""
+              class="phone-img"
+            />
+          </div>
         </div>
         <div class="appImgArea-bottom d-none d-lg-block"></div>
-      </div> -->
-      <!-- 圖片區 -->
-      <div class="appImgArea d-flex flex-column">
-        <img
-          src="/assets/images/appImg/leftImg.png"
-          alt=""
-          class="background-img"
-        />
       </div>
-      <!-- 文字區  -->
+      <!-- 右半邊文字區  -->
       <div
-        class="slogan d-flex align-items-center justify-content-center position-relative"
+        class="apptextArea d-flex align-items-center justify-content-center order-1 order-lg-2"
       >
-        <img
-          src="/assets/images/deco_logo.svg"
-          alt=""
-          class="deco-hand position-absolute top-0 start-0"
-        />
         <div class="slogan-textarea d-flex flex-column align-items-center">
-          <h5 class="text-primary-900 decorated-title fs-lg-1">日常拾光</h5>
-          <div>
-            <p class="text-primary-900 fs-8 fs-lg-3 mb-lg-11 mb-7">
-              <span class="bg-primary-100">在每段被遺忘的日常裡，拾回那些</span>
-              <span class="bg-primary-100">閃閃發光的片段</span>
-            </p>
-            <p class="text-primary-900 fs-8 fs-lg-5">
-              <span>在這裡，二手家居用品被好好保存、再次流轉</span>
-              <span>陪伴另一個家庭走過溫柔的日常</span>
-            </p>
+          <h5 class="text-primary-900 decorated-title fs-lg-1">
+            APP 版本全新上線
+          </h5>
+          <div class="slogan-textarea-buttons">
+            <img
+              src="/assets/images/appImg/google Store.svg"
+              alt="google play 下載按鈕"
+            />
+            <img
+              src="/assets/images/appImg/app Store.svg"
+              alt="App Store 下載按鈕"
+            />
           </div>
         </div>
       </div>
@@ -779,7 +788,10 @@
     <!-- footer引入 -->
     <%- include('./layout/footer'); -%>
     <!-- 腳本引入 -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </body>
 </html>
