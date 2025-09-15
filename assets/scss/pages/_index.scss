@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: CustomFont;
 }
 .swiper-navigation-container{
 position: relative; /* 重要：讓箭頭相對於 container 定位 */
@@ -9,7 +9,7 @@ position: relative;
 // swiper 遮罩
 .swiper-overlay {
   position: absolute;
-  top: 0; // top: 0; → 讓元素頂到父容器的最上方。
+  top: 0; // top: 0; →； 讓元素頂到父容器的最上方。
   bottom: 0; // bottom: 0; → 讓元素頂到父容器的最下方。
 //   因為 .swiper-overlay 用的是 position: absolute;，它會相對於最近的定位父層（這裡是 .swiper-navigation-container）定位。
 // 這樣兩行合起來，overlay 就會「從上到下佔滿整個高度」，形成一條直條遮罩。
