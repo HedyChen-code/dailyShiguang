@@ -1,0 +1,32 @@
+
+// / 下單區
+.input-group-order{
+  width: auto;
+  border-color: #DBDBDB;
+  border-radius: 4px;
+}
+.orderNum{
+  flex: 0 0 50px !important;
+  width: 50px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.orderNum:disabled {
+  background-color: #fff !important; 
+  opacity: 1;  
+}
+.input-group-order button{
+  margin: 4px !important;
+  cursor: pointer;
+}
+.input-group-order button span{
+  font-size: 24px;
+  padding: 4px !important;
+  margin: 0;
+}
+.btnOrder{
+  padding: 0;
+  &:hover{
+    background: inherit !important;
+  }
+}

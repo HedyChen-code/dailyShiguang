@@ -33,3 +33,21 @@ const swiper = new Swiper(".mainSwiper", {
     clickable: true, // ✅ 點 pagination 可以切換
   },
 });
+
+
+// 下單數量
+const input = document.getElementById('orderNum');
+const btnIncrease = document.querySelector('.btn-increase');
+const btnDecrease = document.querySelector('.btn-decrease');
+
+btnIncrease.addEventListener('click', () => {
+  if (input.value < input.max) {
+    input.value = parseInt(input.value) + 1;
+  }
+});
+
+btnDecrease.addEventListener('click', () => {
+  if (input.value > input.min) {
+    input.value = parseInt(input.value) - 1;
+  }
+});
