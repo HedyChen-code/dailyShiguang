@@ -103,3 +103,21 @@ if (url.includes('cart.html')) {
 } else if (url.includes('order-complete.html')) {
   setActiveStep(3);
 }
+
+// 結帳頁面選取radio時變更CSS
+const radios = document.querySelectorAll('input[type="radio"][name="shipping-information-radio"]');
+
+  function updateBorders() {
+    document.querySelectorAll('.form-check').forEach(el => el.classList.remove('active-border'));
+    radios.forEach(radio => {
+      if (radio.checked) {
+        radio.closest('.form-check').classList.add('active-border');
+      }
+    });
+  }
+  radios.forEach(radio => {
+    radio.addEventListener('change', updateBorders);
+  });
+
+  // 初始呼叫一次以設定預設 checked 的CSS
+  updateBorders();
