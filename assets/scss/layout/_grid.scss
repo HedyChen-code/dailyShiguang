@@ -1,0 +1,19 @@
+@media (min-width: 992px) {
+  // 自製row col
+  .my-row-lg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  //共7欄
+  $columns: 7;
+
+  @for $i from 1 through $columns {
+    .my-col-lg-#{$i} {
+      padding-left: 16px;
+      padding-right: 16px;
+      width: (100% / $columns) * $i;
+    }
+  }
+}

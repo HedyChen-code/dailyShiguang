@@ -1,10 +1,3 @@
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .checkout-product-img {
   width: 100px;
   height: 100px;
@@ -14,27 +7,8 @@ li {
   }
 }
 @media (min-width: 992px) {
-  .lh-lg-lg {
-    line-height: 1.5;
-  }
   .Py-lg-13 {
-    padding: 13px 0;
-  }
-  // 自製row col
-  .checkout-row-lg {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-  //共7欄
-  $columns: 7;
-
-  @for $i from 1 through $columns {
-    .checkout-col-lg-#{$i} {
-      padding-left: 16px;
-      padding-right: 16px;
-      width: (100% / $columns) * $i;
-    }
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }
