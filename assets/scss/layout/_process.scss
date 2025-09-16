@@ -1,9 +1,7 @@
 .process-area {
   // 購物流程區塊
   background-color: $white;
-  border-bottom: 1px solid $neutral-200;
   @media (min-width: 992px) {
-    border-bottom: none;
     background-color: unset;
   }
 }
@@ -73,10 +71,10 @@
   @media (min-width: 992px) {
     width: 100px;
   }
-  &.dashed {
+  &.gray {
     // 購物流程區塊中的虛線
     width: 20px;
-    border-top: 2px dashed $neutral-500;
+    border-top: 2px solid $neutral-500;
     @media (min-width: 992px) {
       width: 100px;
     }

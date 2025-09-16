@@ -22,35 +22,38 @@
   .w-64 {
     width: 64px;
   }
-  .Py-1-5 {
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
-  }
-  .Py-2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  .Py-2-5 {
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-  }
-  .border-lg-end {
-    border-bottom: 1px solid $neutral-900;
-    @media (min-width: 992px) {
-      border-bottom: 0px;
-      border-right: 1px solid $neutral-900;
-    }
-  }
+}
+.w-160 {
+  width: 160px;
+}
+.mb-104 {
+  margin-bottom: 104px;
 }
 
 @media (min-width: 992px) {
-  .Py-lg-13 {
-    padding-top: 13px;
-    padding-bottom: 13px;
+  .Py-lg-10 {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-260 {
+    width: 260px;
+  }
+  .pe-lg-64 {
+    padding-right: 64px;
   }
   .checkout {
     .w-lg-auto {
       width: auto;
     }
+  }
+  .border-top-lg-1-neutral-200 {
+    border-top: 1px solid $neutral-200 !important;
+  }
+  .border-lg-end {
+    border-bottom: 0px !important;
+    border-right: 1px solid $neutral-900;
   }
 }
