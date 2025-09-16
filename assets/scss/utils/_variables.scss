@@ -488,6 +488,7 @@ $spacers: (
   13: $spacer * 3.75, //60px
   14: $spacer * 4.25, //68px
   15: $spacer * 5, //80px
+  16: $spacer * 6.875, //110px
 
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -613,7 +614,7 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $primary-300; //$gray-300 !default; //custom
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -703,7 +704,7 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+$line-height-sm:              1.2;// 1.25 !default;// custom
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
@@ -1715,7 +1716,7 @@ $breadcrumb-font-size:              null !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         .5rem !default;
-$breadcrumb-margin-bottom:          0; //1rem !default; // custom
+$breadcrumb-margin-bottom:          0; //1rem !default; //custom
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
