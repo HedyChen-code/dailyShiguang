@@ -56,3 +56,8 @@ btnDecrease.addEventListener('click', () => {
 document.querySelectorAll(".btn-ghost").forEach(icon => {
   icon.addEventListener("click", () => icon.classList.toggle("active"));
 });
+
+// 商品輪播縮列圖中的 .active ( 商品詳情頁 )
+document.querySelectorAll(".btnSwiper").forEach(icon => {
+  icon.addEventListener("click", () => icon.classList.toggle("active"));
+});

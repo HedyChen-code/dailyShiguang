@@ -1,6 +1,5 @@
 // 外容器 border
 .borderOuter{
-  // border-top: none !important;
   border-left: none;
   border-right: none;
   @media (min-width: 992px){
@@ -14,6 +13,80 @@
   @media (min-width: 992px){
     border-top: 1px solid $primary-300;
   }
+}
+
+// 商品圖輪播區
+.prodGallery .pdImg{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  // border: 2px solid $primary-300;
+}
+
+// PC 版 輪播縮列圖
+.prodGallery {
+  .carousel-indicators.smallImg{
+    position: relative;
+  }
+  /* 縮圖按鈕外框：去除預設點點樣式 */
+  .carousel-indicators.smallImg [data-bs-target]{
+    width: 100px; 
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    background: transparent; 
+    text-indent: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    flex-shrink: 0;      // 最小不要縮
+    min-width: 100px;    // 就算要縮也不能小於 100px
+  }
+  .carousel-indicators.smallImg [data-bs-target] img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+  .carousel-indicators.smallImg .active img{
+    /* 選中時的橘色邊框 */
+    border-color: #F6A23C;
+  }
+    /* ===== 客製左右控制鈕（橘色圓形） ===== */
+  .carousel-control-prev,
+  .carousel-control-next { 
+    width: auto; top: 90%; transform: translateY(-50%); 
+  }
+
+  /* 先把預設 icon 隱藏，改用偽元素畫箭頭也可；這裡直接換成圓底色 */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background: none; width: 40px; height: 40px; position: relative;
+  }
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before{
+    content: ""; position: absolute; inset: 0;
+    border-radius: 999px; background: #F6A23C;
+  }
+  .carousel-control-prev-icon::after,
+  .carousel-control-next-icon::after{
+    /* 純 CSS 箭頭 */
+    content: ""; position: absolute; top: 50%; left: 50%;
+    width: 10px; height: 10px; border: 2px solid #fff; border-left: 0; border-top: 0;
+    transform: translate(-60%, -50%) rotate(135deg);
+  }
+  .carousel-control-next-icon::after{
+    transform: translate(-40%, -50%) rotate(315deg);
+  }
+}
+
+// PC 版 縮略圖與左右箭頭
+.prodGallery .pc-prev, .prodGallery .pc-next{
+  transform: translateY(0);
 }
 
 // / 下單區
