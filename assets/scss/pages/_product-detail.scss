@@ -1,18 +1,18 @@
 // 外容器 border
 .borderOuter{
   // border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
+  border-left: none;
+  border-right: none;
   @media (min-width: 992px){
-    border-top: 1px solid $primary-300 !important;
-    border-left: 1px solid $primary-300 !important;
-    border-right:1px solid $primary-300 !important;
+    border-top: 1px solid $primary-300;
+    border-left: 1px solid $primary-300;
+    border-right:1px solid $primary-300;
   }
 }
 .borderTopNone{
-  border-top: none !important;
+  border-top: none;
   @media (min-width: 992px){
-    border-top: 1px solid $primary-300 !important;
+    border-top: 1px solid $primary-300;
   }
 }
 
@@ -29,7 +29,7 @@
   padding-bottom: 0;
 }
 .orderNum:disabled {
-  background-color: #fff !important; 
+  background-color: white !important; 
   opacity: 1;  
 }
 .input-group-order button{
@@ -74,4 +74,9 @@
   @media (min-width: 992px){
     aspect-ratio: 4 / 3;
   }
+}
+
+// 猜你喜歡
+.bgWhite{
+  background-color: #fff;
 }
