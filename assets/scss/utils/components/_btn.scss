@@ -106,3 +106,26 @@ $button-padding-s: 12px;
 .btn-outline-primary {
   @extend .btn-outline;
 }
+
+// 新增 btn-ghost 樣式
+.btn-ghost{
+  background-color: transparent;
+  border: none;
+  color: $btn-text-color;
+  cursor: pointer;
+  padding: 8px 16px;
+
+  &:hover{
+    color: $alert;
+    background-color: transparent;
+  }
+
+  &.active{
+    color: $alert;
+    background-color: transparent;
+
+    .iconFav{
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+}

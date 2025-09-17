@@ -51,3 +51,8 @@ btnDecrease.addEventListener('click', () => {
     input.value = parseInt(input.value) - 1;
   }
 });
+
+// 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
+document.querySelectorAll(".btn-ghost").forEach(icon => {
+  icon.addEventListener("click", () => icon.classList.toggle("active"));
+});
