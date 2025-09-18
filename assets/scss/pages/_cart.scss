@@ -1,0 +1,46 @@
+.bg-color{
+     background: #FAFAFA;
+}
+
+.number-input .form-control {
+     max-width: 44px;
+
+}
+
+.sofa-img{
+     height: 100px;
+     width: 100px;
+}
+
+
+.form-check {
+     margin-bottom: 0;
+}
+
+.Ps-lg-486{
+     padding-right: 486px;
+}
+
+.guesscard{
+     border: 0.54px solid #F4DDB9;
+}
+
+
+.btn-next{
+     width:160px;
+}
+
+.mb-97{
+     margin-bottom: 97px;
+}
+
+
+@media (min-width: 992px) {
+     .btn-next{
+     width:260px;
+     }
+     .mb-lg-120{
+          margin-bottom: 120px;
+     }
+
+}
