@@ -5,12 +5,30 @@
 $utilities: map-merge(
   $utilities,
   (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-      (
-        responsive: true,
-      ),
-    ),
+    'font-size':
+      map-merge(
+        map-get($utilities, 'font-size'),
+        (
+          responsive: true
+        )
+      )
+  )
+);
+// 行高(可使用響應式用法)
+$utilities: map-merge(
+  $utilities,
+  (
+    'line-height': (
+      property: line-height,
+      class: lh,
+      responsive: true,
+      values: (
+        1: 1,
+        sm: 1.2,
+        base: 1.5,
+        lg: 2
+      )
+    )
   )
 );
 
@@ -29,4 +47,4 @@ $utilities: map-merge(
 
 
 // 重新 build utilities
-@import "../../node_modules/bootstrap/scss/utilities/api";
+@import '../../node_modules/bootstrap/scss/utilities/api';

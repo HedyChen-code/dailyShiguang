@@ -111,13 +111,17 @@
         <!-- 下拉選單 -->
         <div class="dropdown d-none d-lg-block">
           <button
-            class="btn btn-outline-primary bg-white dropdown-toggle px-7"
+            class="member btn btn-outline-primary bg-white dropdown-toggle px-7 d-flex align-items-center"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <span class="icon text-primary me-6 align-bottom"></span>
-            Hi，拾光君
+            <!-- <span class="icon text-primary-700 me-6"></span> -->
+            <img
+              src="/assets/images/icons/leftIcon.svg"
+              alt="一個人頭代表會員"
+            />
+            <span>Hi，拾光君</span>
           </button>
           <div class="headerDropdown">
             <ul
@@ -125,32 +129,43 @@
               aria-labelledby="dropdownMenuButton1"
             >
               <li>
-                <a class="dropdown-item text-primary-500 mb-2" href="#"
-                  ><span
-                    class="icon-member text-primary-500 me-2 p-2 align-bottom"
-                  ></span
-                  >會員中心</a
+                <a
+                  class="dropdown-item text-primary-700 mb-2 p-0"
+                  href="#"
+                  class=""
+                >
+                  <img
+                    src="/assets/images/icons/memberCard-icon.svg"
+                    alt="一個會員卡的圖案"
+                  />
+                  會員中心</a
                 >
               </li>
               <li>
-                <a class="dropdown-item text-primary-500 mb-2" href="#"
-                  ><span class="material-symbols-outlined align-bottom me-2">
-                    favorite </span
-                  >我的收藏</a
+                <a class="dropdown-item text-primary-700 mb-2 p-0" href="#">
+                  <img
+                    src="/assets/images/icons/love-icon.svg"
+                    alt="一個愛心"
+                  />
+                  我的收藏</a
                 >
               </li>
               <li>
-                <a class="dropdown-item text-primary-500 mb-2" href="#"
-                  ><span class="material-symbols-outlined align-bottom me-2">
-                    favorite </span
-                  >我的訂單</a
+                <a class="dropdown-item text-primary-700 mb-2 p-0" href="#">
+                  <img
+                    src="/assets/images/icons/order-icon.svg"
+                    alt="訂單的圖案"
+                  />
+                  我的訂單</a
                 >
               </li>
               <li>
-                <a class="dropdown-item text-primary-500 mb-2" href="#"
-                  ><span class="material-symbols-outlined align-bottom">
-                    logout </span
-                  >登出</a
+                <a class="dropdown-item text-primary-700 mb-2 p-0" href="#">
+                  <img
+                    src="/assets/images/icons/logout-icon.svg"
+                    alt="一個門的圖示"
+                  />
+                  登出</a
                 >
               </li>
             </ul>

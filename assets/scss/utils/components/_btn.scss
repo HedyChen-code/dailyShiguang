@@ -78,20 +78,20 @@ $button-padding-s: 12px;
 //  }
 // }
 // 🔴 新增：btn-outline 類別
-.btn-outline {
+.btn-outline-primary {
   background-color: transparent;
-  border: 1px solid $primary-500;
-  color: $primary-500;
+  border: 1px solid $primary-700;
+  color: $primary-700;
   
   &:hover {
-    background-color: $primary-300;
-    border-color: $primary-500;
-    color: $primary-900;
+    background-color: $primary-700;
+    border-color: $primary-700;
+    color: white;
   }
   
   &:active {
-    background-color: $primary-500;
-    border-color: $primary-500;
+    background-color: $primary-800;
+    border-color: $primary-800;
     color: white;
   }
   
