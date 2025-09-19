@@ -333,6 +333,7 @@ $neutral-400: #bdbdbd;
 $neutral-300: #c7c7c7;
 $neutral-200: #d9d9d9;
 $neutral-100: #f6f6f6;
+$neutral-80: #FAFAFA; // custom-jia
 $neutral-50: #ffffff;
 
 // scss-docs-start theme-color-variables
@@ -393,6 +394,7 @@ $theme-colors: (
   'neutral-300': $neutral-300,
   'neutral-200': $neutral-200,
   'neutral-100': $neutral-100,
+  'neutral-80': $neutral-80, // custom-jia
   'neutral-50': $neutral-50
 ) !default;
 // scss-docs-end theme-colors-map
@@ -521,6 +523,8 @@ $spacers: (
   15: $spacer * 5,
 
   //80px
+  16: $spacer * 6.875, 
+  //110px //custom-jia
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -557,7 +561,7 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+$link-decoration: none; //underline !default; //custom-jia
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -640,9 +644,9 @@ $border-widths: (
   4: 4px,
   5: 5px
 ) !default;
-$border-style: solid !default;
-$border-color: $gray-300 !default;
-$border-color-translucent: rgba($black, 0.175) !default;
+$border-style:                solid !default;
+$border-color:                $primary-300; //$gray-300 !default; //custom-jia
+$border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -735,8 +739,7 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.2 !default; //1.25 !default;custom-Lu
-$line-height-lg: 2 !default;
+$line-height-sm: 1.2 !default; //1.2;// 1.25 !default;//custom-Lu
 
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
@@ -1812,17 +1815,17 @@ $figure-caption-color: var(--#{$prefix}secondary-color) !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size: null !default;
-$breadcrumb-padding-y: 0 !default;
-$breadcrumb-padding-x: 0 !default;
-$breadcrumb-item-padding-x: 0.5rem !default;
-$breadcrumb-margin-bottom: 1rem !default;
-$breadcrumb-bg: null !default;
-$breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider: quote('/') !default;
-$breadcrumb-divider-flipped: $breadcrumb-divider !default;
-$breadcrumb-border-radius: null !default;
+$breadcrumb-font-size:              null !default;
+$breadcrumb-padding-y:              0 !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding-x:         .5rem !default;
+$breadcrumb-margin-bottom:          0; //1rem !default; //custom-jia
+$breadcrumb-bg:                     null !default;
+$breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
+$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider-flipped:        $breadcrumb-divider !default;
+$breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
 
 // Carousel
