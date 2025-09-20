@@ -102,11 +102,6 @@ $button-padding-s: 12px;
   }
 }
 
-// 🔴 向後相容性：讓 btn-outline-primary 繼承 btn-outline 的樣式
-.btn-outline-primary {
-  @extend .btn-outline;
-}
-
 // 新增 btn-ghost 樣式
 .btn-ghost{
   background-color: transparent;
