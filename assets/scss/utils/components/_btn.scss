@@ -63,10 +63,10 @@ $button-padding-s: 12px;
     color:$primary-900;
     background-color: $primary-300;
   }
- &.is-disalbed{
+  &.is-disalbed{
   background-color: $neutral-200;
   color:$neutral-50;
- }
+  }
   
 }
 
@@ -102,3 +102,25 @@ $button-padding-s: 12px;
   }
 }
 
+// 新增 btn-ghost 樣式
+.btn-ghost{
+  background-color: transparent;
+  border: none;
+  color: $btn-text-color;
+  cursor: pointer;
+  padding: 8px 16px;
+
+  &:hover{
+    color: $alert;
+    background-color: transparent;
+  }
+
+  &.active{
+    color: $alert;
+    background-color: transparent;
+
+    .iconFav{
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+}

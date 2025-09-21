@@ -58,6 +58,35 @@ const mainSwiper = new Swiper(".mainSwiper", {
   
 });
 
+// 商品詳情頁
+// 下單數量
+const input = document.getElementById('orderNum');
+const btnIncrease = document.querySelector('.btn-increase');
+const btnDecrease = document.querySelector('.btn-decrease');
+
+btnIncrease.addEventListener('click', () => {
+  if (input.value < input.max) {
+    input.value = parseInt(input.value) + 1;
+  }
+});
+
+btnDecrease.addEventListener('click', () => {
+  if (input.value > input.min) {
+    input.value = parseInt(input.value) - 1;
+  }
+});
+
+// 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
+document.querySelectorAll(".btn-ghost").forEach(icon => {
+  icon.addEventListener("click", () => icon.classList.toggle("active"));
+});
+
+// 商品輪播縮列圖中的 .active ( 商品詳情頁 )
+document.querySelectorAll(".btnSwiper").forEach(icon => {
+  icon.addEventListener("click", () => icon.classList.toggle("active"));
+});
+
+// 結帳頁
 // 🔧 除錯用的控制台輸出
 console.log('Head Swiper initialized:', headSwiper);
 console.log('Main Swiper initialized:', mainSwiper);
@@ -103,3 +132,4 @@ if (url.includes('cart.html')) {
 } else if (url.includes('order-complete.html')) {
   setActiveStep(3);
 }
+
