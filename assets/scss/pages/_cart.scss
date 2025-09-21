@@ -44,3 +44,47 @@
      }
 
 }
+
+.table-24 > :not(caption) > * > * {
+  padding-left: 24px;  
+  padding-right: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+
+// .table-0 > :not(caption) > * > * {
+//   padding-left: 24px;  
+//   padding-right: 24px;
+//   padding-top: 0px;
+//   padding-bottom: 0px;
+
+// }
+
+.table-24 .form-check-input {
+  display:block;         /* 讓 margin auto 有效 */
+  margin: 0 auto;        /* 水平置中 */
+  float:none;            /* 拿掉預設 float */
+  text-align: center
+}
+
+.table-24 .form-check {
+  display:block;         /* 讓 margin auto 有效 */
+  margin: 0 auto;        /* 水平置中 */
+  float:none;            /* 拿掉預設 float */
+  text-align: center
+}
+
+.z-index-1{
+     z-index: 2;
+}
+
+
+.delete-position{
+     position:absolute;
+     right: -12px;
+     top: 0;
+
+
+}

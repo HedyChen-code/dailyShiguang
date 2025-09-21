@@ -29,33 +29,39 @@
     <%- include('./layout/header'); -%>
     <!-- process引入(購物流程區塊) -->
     <%- include('./layout/process'); -%>
-    <main class="bg-color">
-      <section class="border bg-white border-primary-300  border-1 mb-9">
+    <main class="bg-color pb-lg-13">
+      <!-- 手機板 -->
+      <section class="border bg-white border-primary-300  border-1 mb-9  d-lg-none">
         <div class="container">
-          <div class="form-check d-lg-flex">
-            <input class="form-check-input border-black" type="checkbox" value="" id="flexCheckDefault">
+          <div class="form-check">
+            <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label ps-3" for="flexCheckDefault">
               商品
             </label>
-            <div class="d-none d-lg-flex Ps-lg-486">
-              <p class="fs-9">單價</p>
-              <p class="fs-9">數量</p>
-              <p class="fs-9">總價</p>
-            </div>
           </div>
           <div class="form-check bg-primary-50">
-            <input class="form-check-input border-black" type="checkbox" value="" id="flexCheckDefault" >
+            <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
             <label class="form-check-label ps-3" for="flexCheckDefault">
               賣家名稱
             </label>
           </div>
-          <div class="d-flex justify-content-between my-3">
+          <div class="d-flex justify-content-start my-3 position-relative">
+            <button type="button" class="btn d-flex align-items-center text-alert delete-position p-5">
+                <span class="material-icons-outlined fs-7 ms-0">delete_forever</span>
+            </button>
             <div class="form-check align-center">
-              <input class="form-check-input border-black" type="checkbox" value="" id="flexCheckDefault" >
+              <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
             </div>
-            <div>
-              <img src="../assets/images/img of product/product=sofaBed.jpg" alt="sofa"  class="sofa-img mb-3 mx-5">
-              <div class="input-group number-input border rounded-2">
+            <img src="../assets/images/img of product/product=sofaBed.jpg" alt="sofa"  class="sofa-img mb-3">
+            <div class="py-2 ms-5">
+              <p class="fs-6 mb-3">亞麻灰沙發床</p>
+              <div class="mb-5">
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可自取</span>
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可宅配</span>
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">9 成新</span>
+              </div>
+              <p class="fs-8 text-primary-900 mb-3">單價：NTD＄2,399</p>
+              <div class="input-group number-input border rounded-2 mb-3" style="width: 124px;">
                 <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
                   <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
@@ -64,19 +70,164 @@
                   <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
+              <p class="fs-5 text-primary-700">NTD ＄237,501</p>
             </div>
-            <div class="py-2">
-              <p class="fs-6 mb-3">亞麻灰沙發床</p>
-              <div class="mb-12">
-                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
-                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可宅配</span>
-                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">9 成新</span>
-              </div>
-              <p >NTD＄237,501</p>
-            </div>
+
           </div>
+          <div class="d-flex justify-content-start my-3 position-relative">
+            <button type="button" class="btn d-flex align-items-center text-alert delete-position p-5">
+                <span class="material-icons-outlined fs-7 ms-0">delete_forever</span>
+            </button>
+            <div class="form-check align-center">
+              <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
+            </div>
+            <img src="../assets/images/img of product/product=sofaBed.jpg" alt="sofa"  class="sofa-img mb-3">
+            <div class="py-2 ms-5">
+              <p class="fs-6 mb-3">日式矮茶几桌</p>
+              <div class="mb-5">
+                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
+              </div>
+              <p class="fs-8 text-primary-900 mb-3">單價：NTD $2,599</p>
+              <div class="input-group number-input border rounded-2 mb-3" style="width: 124px;">
+                <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+                  <span class="material-icons-outlined ms-0 align-center">remove</span>
+                </button>
+                <input type="number" class="form-control text-center fs-8 px-2 border-0" value="1" min="0" step="1" aria-label="數量">
+                <button class="btn btn-white py-2 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                  <span class="material-icons-outlined ms-0  align-center">add</span>
+                </button>
+              </div>
+              <p class="fs-5 text-primary-700">NTD ＄2,599</p>
+            </div>
+
+          </div>          
         </div>
-      </section>  
+      </section> 
+
+      <!-- 桌機板 -->
+      <section class="">
+        <div class="container d-lg-block d-none border bg-white border-primary-300  border-1 py-10 px-7 ">
+          <table class="table  table-borderless align-middle table-24 pb-7 border-bottom border-neutral-200 mb-7">
+            <colgroup>
+              <col style="width:72px;">   <!-- 勾選框 -->
+              <col style="width:40%;">    <!-- 商品 -->
+              <col style="width:14.2%;">    <!-- 單價 -->
+              <col style="width:14.2%;">    <!-- 數量 -->
+              <col style="width:14.2%;">    <!-- 總數 -->
+              <col style="width:11.7%;">    <!-- 操作 -->
+            </colgroup>
+            <thead>
+              <tr scope="col ">
+                <th class="form-check text-align-bottom"><input class="form-check-input border-black fs-4 fw-bold m-0 "  type="checkbox" value="" id="flexCheckDefault"></th>
+                <th class="text-neutral-900 fs-lg-2">商品</th>
+                <th class="text-primary-900 fs-lg-4 text-center align-middle">單價</th>
+                <th class="text-primary-900 fs-lg-4 text-center align-middle">數量</th>
+                <th class="text-primary-900 fs-lg-4 text-center align-middle">總數</th>
+                <th class="text-primary-900 fs-lg-4 text-center"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-primary-100 ">
+                <th scope="row" class="text-align-center bg-primary-100"><input class="form-check-input border-black fs-4 fw-bold "  type="checkbox" value="" id="flexCheckDefault"></th>
+                <td class="text-primary-900 fs-3 bg-primary-100">賣家名稱</td>
+                <td class="bg-primary-100"></td>
+                <td class="bg-primary-100"></td>
+                <td class="bg-primary-100"></td>
+                <td class="bg-primary-100"></td>
+              </tr>
+              <tr class="">
+                <th scope="row"  class="text-align-center"><input class="form-check-input border-black fs-4 fw-bold"  type="checkbox" value="" id="flexCheckDefault"></th>
+                <td class="d-lg-flex justify-content-lg-start">
+                  <img src="../assets/images/img of product/product=sofaBed.jpg" alt="" style="height: 150px; width: 200;">
+                  <div class="ms-9 d-flex flex-column justify-content-center ">
+                    <p class="fs-3 mb-3">亞麻灰沙發床</p>
+                    <div>
+                      <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
+                      <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可宅配</span>
+                      <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">9 成新</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="fs-5" >NTD＄2,399</td>
+                <td>              
+                  <div class="input-group number-input border rounded-2">
+                    <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+                      <span class="material-icons-outlined ms-0 align-center">remove</span>
+                    </button>
+                    <input type="number" class="form-control text-center fs-8 px-2 border-0" value="99" min="0" step="1" aria-label="數量">
+                    <button class="btn btn-white py-2 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                      <span class="material-icons-outlined ms-0  align-center">add</span>
+                    </button>
+                  </div>
+                </td>
+                <td class="fs-5">NTD＄237,501</td>
+                <td>
+                  <button type="button" class="btn d-flex align-items-center text-alert">
+                    <span class="material-icons-outlined fs-4 ms-0">delete_forever</span>
+                    <span class="h5 mb-0">刪除</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="">
+                <th scope="row"  class="text-align-center"><input class="form-check-input border-black fs-4 fw-bold"  type="checkbox" value="" id="flexCheckDefault"></th>
+                <td class="d-lg-flex justify-content-lg-start">
+                  <img src="../assets/images/img of product/product=sofaBed.jpg" alt="" style="height: 150px; width: 200;">
+                  <div class="ms-9 d-flex flex-column justify-content-center ">
+                    <p class="fs-3 mb-3">日式矮茶几桌</p>
+                    <div>
+                      <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="fs-5" >NTD＄2,399</td>
+                <td>              
+                  <div class="input-group number-input border rounded-2">
+                    <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+                      <span class="material-icons-outlined ms-0 align-center">remove</span>
+                    </button>
+                    <input type="number" class="form-control text-center fs-8 px-2 border-0" value="99" min="0" step="1" aria-label="數量">
+                    <button class="btn btn-white py-2 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                      <span class="material-icons-outlined ms-0  align-center">add</span>
+                    </button>
+                  </div>
+                </td>
+                <td class="fs-5">NTD＄237,501</td>
+                <td>
+                  <button type="button" class="btn d-flex align-items-center text-alert">
+                    <span class="material-icons-outlined fs-4 ms-0">delete_forever</span>
+                    <span class="h5 mb-0">刪除</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+              <div
+                class=" bottom-0 start-0 w-100 px-5"
+              >
+                <div
+                  class="container-lg pe-lg-64 d-flex justify-content-between align-items-center justify-content-lg-end"
+                >
+                  <div class="me-lg-10">
+                    <p class="fs-8 fs-lg-7 mb-2 mb-lg-0 text-neutral-900 text-end">
+                      總金額（<span class="text-primary-700">100</span> 個商品）
+                    </p>
+                    <p class="fs-5 fs-lg-2 text-primary-700 lh-sm">NTD $240,100</p>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="fs-lg-2 lh-lg-sm text-primary-900 bg-primary-500 py-3 py-lg-7 btn-next border-0"
+                    >
+                      下一步
+                    </button>
+                  </div>
+                </div>
+              </div>
+          
+
+      </section>
+      
+
       <section class="border-top bg-white border-primary-300 border-1 py-5 d-lg-none">
           <div class="container">
             <p class="fs-5 mb-9">猜你喜歡</p>
@@ -185,7 +336,7 @@
         <!-- 固定在頁面下的總計 -->
     <section
       id="sticky-footer"
-      class="position-fixed bottom-0 start-0 w-100 px-5 py-9 bg-primary-50 border-top border-neutral-500"
+      class="position-fixed bottom-0 start-0 w-100 px-5 py-9 bg-primary-50 border-top border-neutral-500 z-index-1"
     >
       <div
         class="container-lg pe-lg-64 d-flex justify-content-between align-items-center justify-content-lg-end"
@@ -213,5 +364,6 @@
     <!-- 腳本引入 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+
   </body>
 </html>
