@@ -1,0 +1,92 @@
+.member{
+  &:hover{
+    color:$primary-700;
+  }
+}
+.headerLogo{
+  img{
+    width: 44px;
+    height: 44px;
+  }
+}
+#headerInputColumn::placeholder {
+  color: $neutral-600; /* 改成你想要的顏色 */
+  opacity: 1;     /* 預設有透明度，建議設為 1 才會是原色 */
+}
+.headerSearch{
+   flex: 1 1 0;      /* 可以伸縮 */
+  max-width: 620px; /* 最寬不超過 620px */
+}
+.dropdown-toggle svg {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+// .icon {
+//   display: inline-block;
+//   width: 24px;          /* 想要多大就改這兩行 */
+//   height: 24px;
+//   background-color: currentColor;
+//   -webkit-mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+//           mask: url("/assets/images/icons/type=account_filled.svg") no-repeat center / contain;
+//   vertical-align: middle; /* 和文字置中對齊 */
+//   &:hover{
+//     color:$primary-700;
+//   }
+// }
+
+// .icon {
+//   display: inline-block;
+//   width: 24px;
+//   height: 24px;
+//   vertical-align: middle; /* 和文字置中對齊 */
+// }
+
+// /* 確保 SVG 填滿父容器並繼承顏色 */
+// .icon svg {
+//   display: block; /* 避免 SVG 下方有空白 */
+//   width: 100%;
+//   height: 100%;
+//   fill: currentColor; /* 讓 SVG 的填充顏色繼承 .icon 的 color 屬性 */
+// }
+
+// /* 這是你希望的初始顏色 */
+// .text-primary-700 {
+//   color: #A36B28; /* 假設這是你的 $primary-700 顏色 */
+// }
+
+// /* Hover 效果 */
+// .icon:hover {
+//   color: #69441B; /* 假設這是你 hover 時的 $primary-700 的深色版本 */
+// }
+// .icon-member {
+//   display: inline-block;
+//   width: 24px; /* 想要的大小 */
+//   height: 24px;
+//   background-color: currentColor;
+//   -webkit-mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+//           mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+//   vertical-align: middle;
+//   // &:hover {
+//   //   background-color: $primary-900; // hover 時改變
+//   // }
+// }
+
+.headerDropdown {
+  .dropdown-item {
+    &:hover,
+    &:focus {
+      background-color: $primary-300 !important;
+      color: $primary-900 !important;
+    }
+    .icon-member {
+       display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: currentColor; // 跟隨文字顏色
+    -webkit-mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+          mask: url("/assets/images/icons/type=member.svg") no-repeat center / contain;
+  vertical-align: middle;
+  }
+  }
+}

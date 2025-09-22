@@ -1,0 +1,14 @@
+.checkout-product-img {
+  width: 100px;
+  height: 100px;
+  @media (min-width: 992px) {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .Py-lg-13 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}

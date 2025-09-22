@@ -1,0 +1,126 @@
+//以下為textbtn設定
+// 預設顏色變數
+$btn-text-color: $primary-900; // default 深咖啡
+$btn-text-hover: $primary-500; // hover 橘色
+$btn-text-active: $primary-900; // active 深咖啡
+
+.textbtn {
+  border: none;
+  background: transparent;
+  font-weight: 400;
+  color: $btn-text-color;
+  cursor: pointer;
+
+  // 尺寸
+  &.btn-lg {
+    font-size: 1.25rem; // L
+  }
+
+  &.btn-sm {
+    font-size: 0.875rem; // S
+  }
+
+  // 狀態
+  &:hover {
+    color: $btn-text-hover;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $btn-text-active;
+    text-decoration: underline;
+  }
+}
+
+
+//以下為btn 設定
+// _buttons.scss
+
+// 基礎按鈕樣式
+
+
+// _variables.scss
+$color-primary: $primary-500;
+$color-fill: #F6B846;
+$color-disabled: #E0E0E0;
+
+$button-height-l: 40px;
+$button-height-s: 32px;
+$button-padding-l: 16px;
+$button-padding-s: 12px;
+.btn{
+  color:$primary-900;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: none;
+  border-radius: 0%;
+  line-height: 1.2;
+  span{
+    margin-left: 4px;;
+  }
+
+  &:hover{
+    color:$primary-900;
+    background-color: $primary-300;
+  }
+  &.is-disalbed{
+  background-color: $neutral-200;
+  color:$neutral-50;
+  }
+  
+}
+
+// .btn-outline-primary{
+//   &.is-disalbed{
+//   background-color: $neutral-200;
+//   color:$neutral-50;
+//   border: 1px solid $neutral-50;
+//  }
+// }
+// 🔴 新增：btn-outline 類別
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid $primary-700;
+  color: $primary-700;
+  
+  &:hover {
+    background-color: $primary-700;
+    border-color: $primary-700;
+    color: white;
+  }
+  
+  &:active {
+    background-color: $primary-800;
+    border-color: $primary-800;
+    color: white;
+  }
+  
+  &.is-disalbed {
+    background-color: $neutral-200;
+    color: $neutral-50;
+    border: 1px solid $neutral-50;
+  }
+}
+
+// 新增 btn-ghost 樣式
+.btn-ghost{
+  background-color: transparent;
+  border: none;
+  color: $btn-text-color;
+  cursor: pointer;
+  padding: 8px 16px;
+
+  &:hover{
+    color: $alert;
+    background-color: transparent;
+  }
+
+  &.active{
+    color: $alert;
+    background-color: transparent;
+
+    .iconFav{
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+}

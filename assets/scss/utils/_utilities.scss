@@ -1,0 +1,50 @@
+// Bootstrap
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// 在 bootstrap/utilities/api 之前，插入 map-merge
+$utilities: map-merge(
+  $utilities,
+  (
+    'font-size':
+      map-merge(
+        map-get($utilities, 'font-size'),
+        (
+          responsive: true
+        )
+      )
+  )
+);
+// 行高(可使用響應式用法)
+$utilities: map-merge(
+  $utilities,
+  (
+    'line-height': (
+      property: line-height,
+      class: lh,
+      responsive: true,
+      values: (
+        1: 1,
+        sm: 1.2,
+        base: 1.5,
+        lg: 2
+      )
+    )
+  )
+);
+
+// 取消 border 的 !important
+$utilities: map-merge(
+  $utilities,
+  (
+    "border": (class: border, property: border, values: (null: 1px solid var(--bs-border-color), 0: 0), responsive: true, important: false),
+    "border-top": (class: border-top, property: border-top, values: (null: 1px solid var(--bs-border-color), 0: 0), responsive: true, important: false),
+    "border-end": (class: border-end, property: border-inline-end, values: (null: 1px solid var(--bs-border-color), 0: 0), responsive: true, important: false),
+    "border-bottom": (class: border-bottom, property: border-bottom, values: (null: 1px solid var(--bs-border-color), 0: 0), responsive: true, important: false),
+    "border-start": (class: border-start, property: border-inline-start, values: (null: 1px solid var(--bs-border-color), 0: 0), responsive: true, important: false),
+  )
+);
+
+
+
+// 重新 build utilities
+@import '../../node_modules/bootstrap/scss/utilities/api';

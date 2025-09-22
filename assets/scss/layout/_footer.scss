@@ -1,0 +1,96 @@
+
+//購買流程
+.PurchaseProcessTitle{
+  border-radius: 9px;
+  font-size: 18px;
+  @media (min-width:992px) {
+    font-size: 28px;
+    
+  }
+}
+.orderProcess{
+  width: 224px;
+  height: 208px;
+  img{
+    width: 124px;
+    height: 124px;
+  }
+  @media (min-width:992px) {
+    min-width: 142px;
+    height: 142px;
+  }
+}
+.PurchaseProcessText{
+  font-size: 18px;
+  color: $neutral-900;
+  @media (min-width:992px) {
+    font-size:28px;
+    color: $primary-900;
+  }
+}
+.headerLogo-bottom{
+  img{
+  width: 60px;
+  height: 60px;
+  @media (min-width:992px) {
+  width: 100px;
+  height: 100px;
+  }
+ 
+  }
+}
+
+//商品分類
+.headerLogo-bottom{
+  flex: 1;
+}
+.category{
+  flex: 1;
+  a{
+    color: $primary-900;
+    text-decoration: none;
+    flex:1;
+    // display: block; //新增
+    font-size: 14px;
+    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-left: 12px;
+    @media (min-width:992px) {
+      font-size: 20px;
+      padding-bottom: 8px;
+      padding-top: 8px;
+    }
+  }
+  &-title{
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid $neutral-700;
+    display: block;
+    @media (min-width:992px) {
+      display: inline-block; // ✅ 保留 margin-bottom
+      vertical-align: bottom; // 可選：讓中英文對齊更好看
+      margin-bottom: 16px;
+    }
+  }
+}
+.contactUs{
+  flex: 1;
+
+  &-title{
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid $neutral-700;
+    display: block;
+    @media (min-width:992px) {
+      display: inline-block; // ✅ 保留 margin-bottom
+      vertical-align: bottom; // 可選：讓中英文對齊更好看
+      margin-bottom: 16px;
+    }
+  }
+}
+.footer{
+  color: $neutral-900;
+ @media (min-width:992px) {
+  color: $primary-900;
+ }
+}
