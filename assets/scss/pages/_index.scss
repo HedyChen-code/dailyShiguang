@@ -1,3 +1,8 @@
+@mixin computer{
+  @media (min-with:992px){
+    @content
+  }
+}
 body {
   font-family: CustomFont;
 }
@@ -160,7 +165,7 @@ border: 1px solid $primary-300;
     height: 400px;
     object-fit:cover;
     // object-fit 可設定其圖片內容與外框的關係，使用 cover 即表示內容會縮放到整個外框。
-    @media(min-width: 992px){
+    @include computer{
       height: 100%;
     }
   }
@@ -270,7 +275,7 @@ border: 1px solid $primary-300;
   height: 312px; // 手機版與 slogan 同高
   flex: 1;
   
-  @media(min-width: 992px){
+  @include computer{
     height: 936px; // 桌面版與 brandPromote 同高
   }
   
@@ -295,7 +300,7 @@ border: 1px solid $primary-300;
 
 
   // transform: rotate(-0.5turn);
-  @media(min-width: 992px){
+  @include computer{
     height: 936px; // 桌面版與 brandPromote 同高
   }
 }
