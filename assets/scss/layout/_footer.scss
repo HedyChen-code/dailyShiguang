@@ -1,21 +1,13 @@
-<<<<<<< HEAD
 @mixin computer {
   @media (min-width:992px) {
     @content;
   }
 }
-=======
-
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
 //購買流程
 .PurchaseProcessTitle{
   border-radius: 9px;
   font-size: 18px;
-<<<<<<< HEAD
   @include computer {
-=======
-  @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
     font-size: 28px;
     
   }
@@ -27,11 +19,7 @@
     width: 124px;
     height: 124px;
   }
-<<<<<<< HEAD
   @include computer {
-=======
-  @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
     min-width: 142px;
     height: 142px;
   }
@@ -39,11 +27,7 @@
 .PurchaseProcessText{
   font-size: 18px;
   color: $neutral-900;
-<<<<<<< HEAD
   @include computer {
-=======
-  @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
     font-size:28px;
     color: $primary-900;
   }
@@ -52,11 +36,7 @@
   img{
   width: 60px;
   height: 60px;
-<<<<<<< HEAD
   @include computer {
-=======
-  @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
   width: 100px;
   height: 100px;
   }
@@ -79,11 +59,7 @@
     padding-bottom: 14px;
     padding-top: 12px;
     padding-left: 12px;
-<<<<<<< HEAD
     @include computer {
-=======
-    @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
       font-size: 20px;
       padding-bottom: 8px;
       padding-top: 8px;
@@ -94,11 +70,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $neutral-700;
     display: block;
-<<<<<<< HEAD
     @include computer {
-=======
-    @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
       display: inline-block; // ✅ 保留 margin-bottom
       vertical-align: bottom; // 可選：讓中英文對齊更好看
       margin-bottom: 16px;
@@ -113,11 +85,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $neutral-700;
     display: block;
-<<<<<<< HEAD
     @include computer {
-=======
-    @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
       display: inline-block; // ✅ 保留 margin-bottom
       vertical-align: bottom; // 可選：讓中英文對齊更好看
       margin-bottom: 16px;
@@ -126,11 +94,7 @@
 }
 .footer{
   color: $neutral-900;
-<<<<<<< HEAD
  @include computer {
-=======
- @media (min-width:992px) {
->>>>>>> 3b2d880d893406e9bb37841418bd7cb644b6cb8b
   color: $primary-900;
  }
 }
