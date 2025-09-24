@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-list</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 分類選單 - Section 1 -->
+    <div class="container py-10">
+        <div class="swiper-navigation-container">
+          <!-- 左右 overlay -->
+          <div class="swiper-overlay left d-none d-lg-block"></div>
+          <div class="swiper-overlay right d-none d-lg-block"></div>
+          <!-- 左邊 Mask -->
+          <div class="swiper-mask d-none d-lg-block"></div>
+          <!-- 主要 swiper -->
+          <div class="swiper-wrapper-area">
+            <div class="swiper headSwiper-freez">
+              <ul class="swiper-wrapper">
+                <!-- slides -->
+                <li
+                class="swiper-slide flex-column justify-content-center align-items-center mobile-n"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img08, type=outline, size=L.svg"
+                  alt="裝飾/藝品"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    裝飾/藝品
+                  </a>
+                </div>
+              </li>
+
+                <li
+                  class="swiper-slide d-flex flex-column justify-content-center align-items-center active"
+                >
+                  <img
+                    src="/assets/images/categoryitemimg/item=img01, type=color, size=S.svg"
+                    alt="客廳家具"
+                    class="card-img-actived"
+                  />
+                  <div class="card-content">
+                    <a
+                      href="#"
+                      class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                    >
+                      客廳家具
+                    </a>
+                  </div>
+                </li>
+                <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img02, type=outline, size=L.svg"
+                  alt="小型家具"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    小型家具
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img03, type=outline, size=L.svg"
+                  alt="辦公家具"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    辦公家具
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img04, type=outline, size=L.svg"
+                  alt="大型家電"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    大型家電
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img05, type=outline, size=L.svg"
+                  alt="小型家電"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    小型家電
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img06, type=outline, size=L.svg"
+                  alt="櫥櫃"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    櫥櫃
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="swiper-slide d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/categoryitemimg/item=img07, type=outline, size=L.svg"
+                  alt="桌椅"
+                  class="card-img"
+                />
+                <div class="card-content">
+                  <a
+                    href="#"
+                    class="fs-8 fs-lg-7 text-primary-900 fs-5 text-decoration-none stretched-link"
+                  >
+                    桌椅
+                  </a>
+                </div>
+              </li>
+
+             
+              </ul>
+            </div>
+            <!-- 導航按鈕 -->
+            <div class="swiper-button-prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 列表結果區塊 -->
+     <section class="my-lg-13">
+      <div class="container">
+        <!-- 結果標題區 -->
+        <div class="mb-9 justify-content-lg-between justify-content-center align-items-end result-desktop">
+          <div class="d-inline-flex align-items-center">
+            <p class="text-primary-900 fs-5 me-2 mb-0 py-2">
+              共
+              <span class="text-primary-600">256</span>
+              個結果
+            </p>
+          </div>
+          <div class="dropdwn d-lg-block ">
+            <!-- Dropdown -->
+            <button type="button" class="btn btn-outline-primary fs-5  py-3 d-flex dropdown-toggle align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+              上架時間（新到舊）
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><button class="dropdown-item fs-5 " type="button">上架時間（新到舊）</button></li>
+              <li><button class="dropdown-item fs-5 " type="button">上架時間（舊到新）</button></li>
+              <li><button class="dropdown-item fs-5 " type="button">價格（高到低）</button></li>
+              <li><button class="dropdown-item fs-5 " type="button">價格（低到高）</button></li>
+            </ul>
+          </div>
+          
+        </div>
+        <!-- 手機版結果標題區 -->
+        <div class=" mb-9 justify-content-between align-items-center result-mobile">
+            <div class="d-inline-flex align-items-center">
+              <p class="text-primary-900 fs-8 me-2 mb-0 py-2">
+                共
+                <span class="text-primary-600">256</span>
+                個結果
+              </p>
+            </div>
+            <div class="dropdwn d-lg-block ">
+                <!--手機版 Dropdown -->
+            <button type="button" class="btn btn-outline-primary fs-8  py-3 d-flex dropdown-toggle align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                上架時間（新到舊）
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item fs-8 " type="button">上架時間（新到舊）</button></li>
+                <li><button class="dropdown-item fs-8 " type="button">上架時間（舊到新）</button></li>
+                <li><button class="dropdown-item fs-8 " type="button">價格（高到低）</button></li>
+                <li><button class="dropdown-item fs-8 " type="button">價格（低到高）</button></li>
+              </ul>
+            </div>
+            
+          </div>
+        <!-- 商品網格 -->
+        <div class="row">
+          <!-- 商品 1 -->
+          <div class="col-6 col-lg-3  ">
+            <div class="product-card">
+              <div class="card rounded-0 ">
+                <img
+                  src="/assets/images/img of product/sofaBed.jpg"
+                  class="card-img-top rounded-0"
+                  alt="亞麻灰 3 人沙發床"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    亞麻灰 3 人沙發床
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>2,599</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 商品 2 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/bedsideTable.jpg"
+                  class="card-img-top rounded-0"
+                  alt="原木雙人沙發椅"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    原木雙人沙發椅
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>1,800</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 商品 3 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/woodBookcase.jpg"
+                  class="card-img-top rounded-0"
+                  alt="黑玻木框茶几組"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    黑玻木框茶几組
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>1,500</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 商品 4 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/aircon.jpg"
+                  class="card-img-top rounded-0"
+                  alt="實木原色電視櫃"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    實木原色電視櫃
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>1,400</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 商品 5 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/orange-sofa.png"
+                  class="card-img-top rounded-0"
+                  alt="復古橘色皮沙發"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    復古橘色皮沙發
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>2,300</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 商品 6 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/folder-table.png"
+                  class="card-img-top rounded-0"
+                  alt="可摺疊客廳桌"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    可摺疊客廳桌
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>800</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 商品 7 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/white-tv-cabinet.png"
+                  class="card-img-top rounded-0"
+                  alt="簡約白色電視櫃"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    簡約白色電視櫃
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>2,090</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 商品 8 -->
+          <div class="col-6 col-lg-3">
+            <div class="product-card">
+              <div class="card rounded-0">
+                <img
+                  src="/assets/images/img of product/low-cabinet.png"
+                  class="card-img-top rounded-0"
+                  alt="日式矮茶几桌"
+                />
+                <a class="material-symbols-outlined">favorite</a>
+                <div class="card-body">
+                  <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                    日式矮茶几桌
+                  </h5>
+                  <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                    <span class="me-2">NT$</span>
+                    <span>2,599</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <section class="pagination d-flex justify-content-center py-5">
+            <div class="pagination-container ">
+                <ul class="d-flex">
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#"><img src="/assets/images/icons/Previous-page.svg" alt="上一頁"></a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#">1</a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#">2</a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#">3</a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#">...</a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#">10</a></li>
+                    <li class="page-btn-container"><a class="page-btn fs-5" href="#"><img src="/assets/images/icons/Next page.svg" alt="下一頁"></a></li>
+                </ul>
+                
+            </div>
+
+        </section>
+
+    </section>
+         <!-- 推廣app區塊 -->
+
+         <div class="d-flex flex-column flex-lg-row brandPromote bg-primary-50 mb-15">
+            <!-- 左半邊圖片區 -->
+            <div class="appImgArea d-flex flex-column order-2 order-lg-1">
+              <div class="appImgArea-top d-none d-lg-block"></div>
+              <div class="appImgArea-middle p-5 p-lg-0">
+                <div class="appImgArea-middle-wrapper">
+                  <img
+                    src="/assets/images/appImg/appImg.png"
+                    alt=""
+                    class="background-img"
+                  />
+                  <img
+                    src="/assets/images/appImg/appHandImg.png"
+                    alt=""
+                    class="phone-img"
+                  />
+                </div>
+              </div>
+              <div class="appImgArea-bottom d-none d-lg-block"></div>
+            </div>
+            <!-- 右半邊文字區  -->
+            <div
+              class="apptextArea d-flex align-items-center justify-content-center order-1 order-lg-2"
+            >
+              <div class="slogan-textarea d-flex flex-column align-items-center">
+                <h5 class="text-primary-900 decorated-title fs-lg-1">
+                  APP 版本全新上線
+                </h5>
+                <div class="slogan-textarea-buttons">
+                  <img
+                    src="/assets/images/appImg/google Store.svg"
+                    alt="google play 下載按鈕"
+                  />
+                  <img
+                    src="/assets/images/appImg/app Store.svg"
+                    alt="App Store 下載按鈕"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+    
+</div>
+     <!-- footer引入 -->
+      <%- include('./layout/footer'); -%>
+     <!-- 腳本引入 -->
+ 
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script type="module" src="../main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</body>
+  
+</html>
