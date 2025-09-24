@@ -1,0 +1,178 @@
+// 外容器 border
+.borderOuter{
+  border-left: none;
+  border-right: none;
+  @media (min-width: 992px){
+    border-top: 1px solid $primary-300;
+    border-left: 1px solid $primary-300;
+    border-right:1px solid $primary-300;
+  }
+}
+.borderTopNone{
+  border-top: none;
+  @media (min-width: 992px){
+    border-top: 1px solid $primary-300;
+  }
+}
+
+// 商品圖輪播區
+.prodGallery .pdImg{
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  // border: 2px solid $primary-300;
+}
+
+// PC 版 輪播縮列圖
+.prodGallery {
+  .carousel-indicators.smallImg{
+    max-width: 100%;
+    width: 600px;
+  }
+  .carousel-indicators.smallImg .btnSwiper-wrapper{
+    width: 90%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  /* 縮圖按鈕外框：去除預設點點樣式 */
+  .carousel-indicators.smallImg [data-bs-slide-to]{
+    width: 100px; 
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    background: transparent; 
+    text-indent: 0;
+    display: flex;
+    flex-shrink: 0;      // 最小不要縮
+    min-width: 100px;    // 就算要縮也不能小於 100px
+  }
+  .carousel-indicators.smallImg [data-bs-target] img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+    /* ===== 客製左右控制鈕（橘色圓形） ===== */
+  .carousel-control-prev,
+  .carousel-control-next { 
+    width: auto; top: 90%; transform: translateY(-50%); 
+  }
+
+  /* 先把預設 icon 隱藏，改用偽元素畫箭頭也可；這裡直接換成圓底色 */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background: none; width: 40px; height: 40px; position: relative;
+  }
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before{
+    content: ""; position: absolute; inset: 0;
+    border-radius: 50%; background: $primary-500;
+  }
+  .carousel-control-prev-icon::after,
+  .carousel-control-next-icon::after{
+    /* 純 CSS 箭頭 */
+    content: ""; position: absolute; top: 50%; left: 50%;
+    width: 10px; height: 10px; border: 2px solid #fff; border-left: 0; border-top: 0;
+    transform: translate(-40%, -50%) rotate(135deg);
+  }
+  .carousel-control-next-icon::after{
+    transform: translate(-60%, -50%) rotate(315deg);
+  }
+
+  .carousel-indicators.smallImg .btnSwiper{
+    border: 2px solid transparent;   /* 一開始就佔位，避免切換時抖動 */
+    opacity: .6;                      /* 預設淡一點 */
+    transition: opacity .5s ease,    /* 淡入淡出 */
+    border-color .35s ease; /* 邊框色漸變 */
+  }
+  .carousel-indicators.smallImg .btnSwiper.active{
+    border: 2px solid $primary-500;
+    opacity: 1;
+  }
+  /* hover / focus 時提高不透明度 */
+  .smallImg .carousel-control-prev:hover,
+  .smallImg .carousel-control-prev:focus,
+  .smallImg .carousel-control-next:hover,
+  .smallImg .carousel-control-next:focus {
+    opacity: var(--bs-carousel-control-hover-opacity, .9);
+  }
+  /* 隱藏水平捲軸 */
+  .carousel-indicators.smallImg .btnSwiper-wrapper::-webkit-scrollbar{
+    height: 0;                
+  }
+}
+
+// PC 版 縮略圖與左右箭頭
+.prodGallery .pc-prev, .prodGallery .pc-next{
+  transform: translateY(0);
+}
+
+
+// / 下單區
+.input-group-order{
+  width: auto;
+  border-color: #DBDBDB;
+  border-radius: 4px;
+}
+.orderNum{
+  flex: 0 0 50px !important;
+  width: 50px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.orderNum:disabled {
+  background-color: white !important; 
+  opacity: 1;  
+}
+.input-group-order button{
+  margin: 4px !important;
+  cursor: pointer;
+}
+.input-group-order button span{
+  font-size: 24px;
+  padding: 4px !important;
+  margin: 0;
+}
+.btnOrder{
+  padding: 0;
+  &:hover{
+    background: inherit !important;
+  }
+}
+
+.btnBuy{
+  flex: 1;
+}
+
+// 賣家資訊
+.sellerPhoto{
+  width: 100px;
+  height: 100px;
+
+@media (min-width: 992px){
+  width: 120px;
+  height: 120px;
+}
+}
+
+// 產品描述
+.descImg{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+
+  @media (min-width: 992px){
+    aspect-ratio: 4 / 3;
+  }
+}
+
+// 猜你喜歡
+.bgWhite{
+  background-color: #fff;
+}
