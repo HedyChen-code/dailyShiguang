@@ -1,13 +1,8 @@
-@mixin computer {
-  @media (min-width:992px) {
-    @content;
-  }
-}
 //購買流程
 .PurchaseProcessTitle{
   border-radius: 9px;
   font-size: 18px;
-  @include computer {
+  @media (min-width:992px) {
     font-size: 28px;
     
   }
@@ -19,7 +14,7 @@
     width: 124px;
     height: 124px;
   }
-  @include computer {
+  @media (min-width:992px) {
     min-width: 142px;
     height: 142px;
   }
@@ -27,7 +22,7 @@
 .PurchaseProcessText{
   font-size: 18px;
   color: $neutral-900;
-  @include computer {
+  @media (min-width:992px) {
     font-size:28px;
     color: $primary-900;
   }
@@ -36,7 +31,7 @@
   img{
   width: 60px;
   height: 60px;
-  @include computer {
+  @media (min-width:992px) {
   width: 100px;
   height: 100px;
   }
@@ -59,7 +54,7 @@
     padding-bottom: 14px;
     padding-top: 12px;
     padding-left: 12px;
-    @include computer {
+    @media (min-width:992px) {
       font-size: 20px;
       padding-bottom: 8px;
       padding-top: 8px;
@@ -70,7 +65,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $neutral-700;
     display: block;
-    @include computer {
+    @media (min-width:992px) {
       display: inline-block; // ✅ 保留 margin-bottom
       vertical-align: bottom; // 可選：讓中英文對齊更好看
       margin-bottom: 16px;
@@ -85,7 +80,7 @@
     margin-bottom: 8px;
     border-bottom: 1px solid $neutral-700;
     display: block;
-    @include computer {
+    @media (min-width:992px) {
       display: inline-block; // ✅ 保留 margin-bottom
       vertical-align: bottom; // 可選：讓中英文對齊更好看
       margin-bottom: 16px;
@@ -94,7 +89,7 @@
 }
 .footer{
   color: $neutral-900;
- @include computer {
+ @media (min-width:992px) {
   color: $primary-900;
  }
 }
