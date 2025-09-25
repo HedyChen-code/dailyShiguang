@@ -1,4 +1,3 @@
-
 body {
   font-family: CustomFont;
 }
@@ -161,7 +160,7 @@ border: 1px solid $primary-300;
     height: 400px;
     object-fit:cover;
     // object-fit 可設定其圖片內容與外框的關係，使用 cover 即表示內容會縮放到整個外框。
-    @media (min-width:992px){
+    @media(min-width: 992px){
       height: 100%;
     }
   }
