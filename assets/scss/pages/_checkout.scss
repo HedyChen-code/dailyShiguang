@@ -6,9 +6,54 @@
     height: 150px;
   }
 }
+.checkout {
+  .form-check {
+    border: 1px solid $neutral-500;
+    background-color: $neutral-50;
+    &-input {
+      font-size: 19px;
+      margin: 10.5px;
+    }
+  }
+  .form-check.active-border {
+    border: 1px solid $primary-600;
+    background-color: $primary-100;
+  }
+  .w-64 {
+    width: 64px;
+  }
+}
+.w-160 {
+  width: 160px;
+}
+.mb-104 {
+  margin-bottom: 104px;
+}
+
 @media (min-width: 992px) {
-  .Py-lg-13 {
-    padding-top: 13px;
-    padding-bottom: 13px;
+  .Py-lg-10 {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-260 {
+    width: 260px;
+  }
+  .pe-lg-64 {
+    padding-right: 64px;
+  }
+  .checkout {
+    .w-lg-auto {
+      width: auto;
+    }
+  }
+  .border-top-lg-1-neutral-200 {
+    border-top: 1px solid $neutral-200 !important;
+  }
+  .border-lg-end {
+    border-bottom: 0px !important;
+    border-right: 1px solid $neutral-900;
   }
 }

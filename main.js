@@ -82,9 +82,31 @@ document.querySelectorAll(".btn-ghost").forEach(icon => {
 });
 
 // 商品輪播縮列圖中的 .active ( 商品詳情頁 )
-document.querySelectorAll(".btnSwiper").forEach(icon => {
-  icon.addEventListener("click", () => icon.classList.toggle("active"));
+// 1) 取到所有縮圖按鈕
+const carouselEl = document.querySelector('#prodCarousel');
+const thumbs = document.querySelectorAll('.carousel-indicators.smallImg [data-bs-slide-to]');
+
+// 2) 依索引設定 active（只保留一個）
+function setActiveByIndex(i){
+  thumbs.forEach(b => {
+    const idx = Number(b.dataset.bsSlideTo);
+    b.classList.toggle('active', idx === i);
+  });
+}
+
+// 3) 點縮圖就先切外觀
+thumbs.forEach(b => {
+  b.addEventListener('click', () => {
+    const i = Number(b.dataset.bsSlideTo);
+    setActiveByIndex(i);
+  });
 });
+
+// 4) 輪播真正完成切換（含左右箭頭/滑動/自動）再同步一次
+carouselEl.addEventListener('slid.bs.carousel', e => {
+  setActiveByIndex(e.to);   // Bootstrap 事件物件會帶 from/to
+});
+
 
 // 結帳頁
 // 🔧 除錯用的控制台輸出
@@ -116,9 +138,9 @@ function setActiveStep(stepNumber) {
   });
   lines.forEach((line, index) => {
     if (stepNumber == 1) {
-      line.classList.add('dashed');
+      line.classList.add('gray');
     }else if( stepNumber == 2 & index == 1) {
-      line.classList.add('dashed');
+      line.classList.add('gray');
     }
   });
 }
@@ -133,3 +155,77 @@ if (url.includes('cart.html')) {
   setActiveStep(3);
 }
 
+
+// 結帳頁面選取寄送資訊時變更CSS
+const radios = document.querySelectorAll('input[type="radio"][name="shipping-information-radio"]');
+const radios2 = document.querySelectorAll('input[type="radio"][name="shipping-creditcard-radio"]');
+
+  function updateBorders() {
+    document.querySelectorAll('.form-check').forEach(el => el.classList.remove('active-border'));
+    radios.forEach(radio => {
+      if (radio.checked) {
+        radio.closest('.form-check').classList.add('active-border');
+      }
+    });
+    radios2.forEach(radio => {
+      if (radio.checked) {
+        radio.closest('.form-check').classList.add('active-border');
+      }
+    });
+    
+  }
+  radios.forEach(radio => {
+    radio.addEventListener('change', updateBorders);
+  });
+  radios2.forEach(radio => {
+    radio.addEventListener('change', updateBorders);
+  });
+  
+  // 初始呼叫一次以設定預設 checked 的CSS
+  updateBorders();
+  
+
+//結帳頁面釘選在下方的總計 使用gsap在指定位置取消釘選
+gsap.registerPlugin(ScrollTrigger);
+
+const footer = document.getElementById("sticky-footer");
+
+let triggerInstance = null;
+
+function setupScrollTrigger() {
+  // 移除先前註冊的 ScrollTrigger（如果有的話）
+  if (triggerInstance) {
+    triggerInstance.kill();
+    triggerInstance = null;
+  }
+
+  if (window.innerWidth >= 992) {
+    // 桌面版才註冊
+    triggerInstance = ScrollTrigger.create({
+      trigger: "#pay",
+      start: "top bottom",
+      end: "bottom center",
+      onEnter: () => {
+        gsap.to(footer, { y: 100, opacity: 0, duration: 0.3 });
+      },
+      onLeaveBack: () => {
+        gsap.to(footer, { y: 0, opacity: 1, duration: 0.3 });
+      }
+    });
+  } else {
+    // 手機版，恢復 footer 狀態
+    gsap.to(footer, { y: 0, opacity: 1, duration: 0.3 });
+  }
+}
+
+// 初始化一次
+setupScrollTrigger();
+
+// 加 debounce 防止 resize 過於頻繁觸發
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    setupScrollTrigger();
+  }, 200);
+});

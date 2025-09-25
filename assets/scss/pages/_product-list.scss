@@ -1,0 +1,166 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+//Swiper
+
+// swiper 遮罩
+.swiper-overlay {
+  position: absolute;
+  top: 0; // top: 0; →； 讓元素頂到父容器的最上方。
+  bottom: 0; // bottom: 0; → 讓元素頂到父容器的最下方。
+//   因為 .swiper-overlay 用的是 position: absolute;，它會相對於最近的定位父層（這裡是 .swiper-navigation-container）定位。
+// 這樣兩行合起來，overlay 就會「從上到下佔滿整個高度」，形成一條直條遮罩。
+  width: 100px; /* 可以依需求調整 */
+  z-index: 5;  /* 小於按鈕 z-index, 但要大於 slides */
+  pointer-events: none; /* 讓滑動不受影響 */
+}
+/* 左邊 overlay */
+.swiper-overlay.left {
+  left: -20px;
+  background: $white;
+  width: 190px; 
+}
+
+.swiper-slide{
+  width: auto;
+  padding:0px 16px;
+  @media (max-width:992px) {
+    padding: 0px 8px;}
+}
+
+//category-section
+
+.headSwiper-freez .card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid $primary-300;
+  border-radius:50%;
+  @media (max-width:992px) {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $primary-300;
+  }
+  
+  }
+
+.mobile-n{
+  display: flex;
+  @media (max-width:992px) {
+    display: none;;
+    }
+ 
+}
+
+.card-img-actived {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid $primary-300;
+  border-radius:50%;
+  background-color: $primary-50;
+  @media (max-width:992px) {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $primary-300;
+  }
+}
+
+
+//Result
+.result-desktop{
+  display: flex;
+  @media (max-width:992px) {
+  display: none;
+  }
+}
+
+.result-mobile{
+  display: none;
+  @media (max-width:992px) {
+  display: flex;
+  }
+
+}
+
+.result{
+  font-size: 20px;
+
+}
+
+
+//Dropdown
+
+
+
+.btn-outline-primary:hover{
+  background-color: $white;
+  color: $primary-700;
+}
+
+.btn-outline-primary:active{
+  color: $primary-700;
+}
+
+
+.btn-outline-primary.show{
+  background-color: $white;
+  color: $primary-700;
+}
+
+
+.dropdown-menu{
+    border-radius: 0px;
+    border-color: $primary-500;
+    border-style: solid;
+}
+
+.dropdown-item{
+    color: $primary-700;
+    
+}
+
+.dropdown-item:hover{
+    color: $primary-700;
+    background-color: $primary-400;
+}
+
+//product-card
+.product-card{
+    border:0.54px solid $primary-300;
+    margin-bottom: 24px;
+    @media (min-width:992px) {
+      border:1px solid $primary-300;
+    }
+    img{
+      position: relative;
+      object-fit: cover;
+      height: 120px;
+     @media (min-width:992px) {
+    height: 221px;
+    }
+  }
+    .material-symbols-outlined{
+      color: $white;
+      position: absolute;
+      top: 12px;;
+      right: 12px;
+    }
+
+  }
+
+  //pagination
+
+  .page-btn-container{
+    display: flex;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-btn{
+    color: $primary-700;
+    padding: 10px opx;
+  }
