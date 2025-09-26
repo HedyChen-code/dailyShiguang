@@ -1,19 +1,19 @@
-@media (min-width: 992px) {
-  // 自製row col
-  .my-row-lg {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-  }
-  //共7欄
-  $columns: 7;
+// @media (min-width: 992px) {
+//   // 自製row col
+//   .my-row-lg {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -8px;
+//     margin-right: -8px;
+//   }
+//   //共7欄
+//   $columns: 7;
 
-  @for $i from 1 through $columns {
-    .my-col-lg-#{$i} {
-      padding-left: 8px;
-      padding-right: 8px;
-      width: (100% / $columns) * $i;
-    }
-  }
-}
+//   @for $i from 1 through $columns {
+//     .my-col-lg-#{$i} {
+//       padding-left: 8px;
+//       padding-right: 8px;
+//       width: (100% / $columns) * $i;
+//     }
+//   }
+// }
