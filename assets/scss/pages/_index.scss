@@ -1,25 +1,24 @@
-@mixin computer{
-  @media (min-with:992px){
-    @content
+@mixin computer {
+  @media (min-with: 992px) {
+    @content;
   }
 }
 body {
   font-family: CustomFont;
 }
-.swiper-navigation-container{
-position: relative; /* 重要：讓箭頭相對於 container 定位 */
-position: relative;
-
+.swiper-navigation-container {
+  position: relative; /* 重要：讓箭頭相對於 container 定位 */
+  position: relative;
 }
 // swiper 遮罩
 .swiper-overlay {
   position: absolute;
   top: 0; // top: 0; →； 讓元素頂到父容器的最上方。
   bottom: 0; // bottom: 0; → 讓元素頂到父容器的最下方。
-//   因為 .swiper-overlay 用的是 position: absolute;，它會相對於最近的定位父層（這裡是 .swiper-navigation-container）定位。
-// 這樣兩行合起來，overlay 就會「從上到下佔滿整個高度」，形成一條直條遮罩。
+  //   因為 .swiper-overlay 用的是 position: absolute;，它會相對於最近的定位父層（這裡是 .swiper-navigation-container）定位。
+  // 這樣兩行合起來，overlay 就會「從上到下佔滿整個高度」，形成一條直條遮罩。
   width: 100px; /* 可以依需求調整 */
-  z-index: 5;  /* 小於按鈕 z-index, 但要大於 slides */
+  z-index: 5; /* 小於按鈕 z-index, 但要大於 slides */
   pointer-events: none; /* 讓滑動不受影響 */
 }
 /* 左邊 overlay */
@@ -33,37 +32,36 @@ position: relative;
   background: linear-gradient(to left, #fff 80%, transparent);
 }
 
-.custom-pagination-wrapper{
+.custom-pagination-wrapper {
   display: flex;
-  justify-content: center ; /* 水平置中 */
+  justify-content: center; /* 水平置中 */
   align-items: center;
   gap: 60px; /* 箭頭和分頁點之間的間距 */
   position: relative;
   z-index: 10;
 }
-.swiper-pagination-bullet{
-      // transform: translateY(-30%);
-      margin-right: 12px;
-      // margin-left: 6px;
-      width: 12px;
-      height: 12px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      background-color: white;
-      border:1px solid $neutral-500;
-      opacity: 1;
-      // background: rgba(0, 0, 0, 0.2);
-      transform: translateY(-40%);
-      &-active{
-      color: #fff;
-      background: $primary-600;
-      
-    }
+.swiper-pagination-bullet {
+  // transform: translateY(-30%);
+  margin-right: 12px;
+  // margin-left: 6px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid $neutral-500;
+  opacity: 1;
+  // background: rgba(0, 0, 0, 0.2);
+  transform: translateY(-40%);
+  &-active {
+    color: #fff;
+    background: $primary-600;
+  }
 }
 .custom-pagination-wrapper .swiper-button-prev,
 .custom-pagination-wrapper .swiper-button-next {
-  position: absolute;   /* 重點：取消 Swiper 預設的絕對定位 */
+  position: absolute; /* 重點：取消 Swiper 預設的絕對定位 */
   z-index: 100;
   width: 40px;
   height: 40px;
@@ -74,13 +72,12 @@ position: relative;
   // display: flex;
   // justify-content: center;
   color: $primary-900;
-
 }
-.custom-pagination-wrapper .swiper-button-prev{
-  left: 43%; 
+.custom-pagination-wrapper .swiper-button-prev {
+  left: 43%;
 }
-.custom-pagination-wrapper .swiper-button-next{
-  right: 43%; 
+.custom-pagination-wrapper .swiper-button-next {
+  right: 43%;
 }
 
 .custom-pagination-wrapper .swiper-button-prev::after,
@@ -91,7 +88,7 @@ position: relative;
 // 左右按鈕
 .swiper-button-next,
 .swiper-button-prev {
-  z-index: 10;// 調整 z-index 確保按鈕在最上層
+  z-index: 10; // 調整 z-index 確保按鈕在最上層
 }
 .swiper-button-prev {
   left: -20px; /* 負值讓箭頭跑到容器外 */
@@ -101,28 +98,27 @@ position: relative;
   right: -20px;
 }
 .headSwiper .card-img {
-width: 150px;
-height: 150px;
-object-fit: cover;
-border: 2px solid $primary-300;
-border-radius:50%;
-@media (max-width:992px) {
-width: 60px;
-height: 60px;
-border: 1px solid $primary-300;
-}
-
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid $primary-300;
+  border-radius: 50%;
+  @media (max-width: 992px) {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $primary-300;
+  }
 }
 // .card-content {
 //   padding: 16px;
 // }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  display: none; 
+  display: none;
 }
 .swiper-button-next i,
 .swiper-button-prev i {
-  font-size: 16px; 
+  font-size: 16px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -137,7 +133,7 @@ border: 1px solid $primary-300;
   top: 45%;
   transform: translateY(-50%);
   z-index: 10;
-  @media (max-width:976px){
+  @media (max-width: 976px) {
     display: none;
   }
 }
@@ -151,121 +147,116 @@ border: 1px solid $primary-300;
   background-color: #333;
 }
 
-
 // 主視覺
-.mainSwiper  {
+.mainSwiper {
   height: auto;
   //因為每張照片不同，所以這裡使用 height: auto; 將所有 .swiper-slide 設定為自適應高度。下面的 height: 100%; 會使圖片內容填滿外部容器的高度。
-  
-  img {
 
+  img {
     display: block;
     width: 100%;
     // height: 100%;
     height: 400px;
-    object-fit:cover;
+    object-fit: cover;
     // object-fit 可設定其圖片內容與外框的關係，使用 cover 即表示內容會縮放到整個外框。
-    @include computer{
+    @include computer {
       height: 100%;
     }
   }
-  .swiper-slide .card-img-overlay{
-  
+  .swiper-slide .card-img-overlay {
     padding: 57px 0 0 0;
-    @media (min-width:992px) {
+    @media (min-width: 992px) {
       padding-right: 160px;
     }
-
   }
-
 }
 
 //最新產品
-.hotProd,.newtestProd{
-
+.hotProd,
+.newtestProd {
   text-align: center;
-  @media (min-width:992px) {
-  text-align: start;
+  @media (min-width: 992px) {
+    text-align: start;
   }
-  
 }
-.hotProdtext,.newtestProdtext, .orderProcessTitle{
+.hotProdtext,
+.newtestProdtext,
+.orderProcessTitle {
   border-bottom: 4px solid $primary-500;
-  &-english{
-    @media (min-width:992px) {
-      padding-top:19px;
+  &-english {
+    @media (min-width: 992px) {
+      padding-top: 19px;
     }
-    
   }
 }
-.latestCard,.hotSelling{
-    border:0.54px solid $primary-300;
-    @media (min-width:992px) {
-      border:1px solid $primary-300;
-    }
-    img{
-      position: relative;
-      object-fit: cover;
-      height: 120px;
-      @media (min-width:992px) {
-      height: 221px;
-      }
+.latestCard,
+.hotSelling {
+  border: 0.54px solid $primary-300;
+  @media (min-width: 992px) {
+    border: 1px solid $primary-300;
   }
-    .material-symbols-outlined{
-      color: white;
-      position: absolute;
-      top: 12px;;
-      right: 12px;
+  img {
+    position: relative;
+    object-fit: cover;
+    height: 120px;
+    @media (min-width: 992px) {
+      height: 221px;
     }
+  }
+  .material-symbols-outlined {
+    color: white;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
 }
 //文宣
 
-
-.slogan, .apptextArea{
+.slogan,
+.apptextArea {
   background-color: $primary-50;
   min-width: 312px;
   height: 312px;
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     height: auto;
     background-color: white;
     width: auto;
     flex: 1;
     // width: 50%;
     // flex-shrink: 1;
-    margin-top:136px;
-    img{
+    margin-top: 136px;
+    img {
       width: 200px;
       height: 230px;
     }
-    
   }
 }
-.brandPromote{
-  @media (min-width:992px) {
+.brandPromote {
+  @media (min-width: 992px) {
     height: 936px;
   }
 }
-.slogan-textarea{
-    display: flex;
-    width: 614px;
-    gap:15.63px;
-    &-buttons{
-      @media (min-width:992px) {
+.slogan-textarea {
+  display: flex;
+  width: 614px;
+  gap: 15.63px;
+  &-buttons {
+    @media (min-width: 992px) {
       display: flex;
-      gap:40px;
-      }
+      gap: 40px;
     }
-    img{
-      max-width: 139.19px; // 設定最大寬度，避免圖片太大
-      width: 100%; // 讓圖片在容器內自動縮放
-      height: auto; // 保持圖片比例
-      @media (min-width:992px) {
-      max-width: 287px; // 設定最大寬度，避免圖片太大 
-      }
+  }
+  img {
+    max-width: 139.19px; // 設定最大寬度，避免圖片太大
+    width: 100%; // 讓圖片在容器內自動縮放
+    height: auto; // 保持圖片比例
+    @media (min-width: 992px) {
+      max-width: 287px; // 設定最大寬度，避免圖片太大
     }
-    &-paragraph{
-      width: 77%;
-    }
+  }
+  &-paragraph {
+    width: 77%;
+  }
 }
 
 .sloganImgArea {
@@ -274,119 +265,115 @@ border: 1px solid $primary-300;
   min-width: 214.38px;
   height: 312px; // 手機版與 slogan 同高
   flex: 1;
-  
-  @include computer{
+
+  @include computer {
     height: 936px; // 桌面版與 brandPromote 同高
   }
-  
+
   img {
     object-fit: cover;
     object-position: center;
-    @media (min-width:992px) {
-      right: calc(100%/12);
-      top:calc(100%/23.4);
+    @media (min-width: 992px) {
+      right: calc(100% / 12);
+      top: calc(100% / 23.4);
       // max-height: 70.1%;
-      max-width: 100%; 
+      max-width: 100%;
       position: absolute;
     }
   }
 }
-.appImgArea{ 
+.appImgArea {
   background-color: white;
   position: relative;
   min-width: 214.38px;
   height: 312px; // 手機版與 slogan 同高
   flex: 1;
 
-
   // transform: rotate(-0.5turn);
-  @include computer{
+  @include computer {
     height: 936px; // 桌面版與 brandPromote 同高
   }
 }
-.sloganImgArea-top, .appImgArea-top{
-  
+.sloganImgArea-top,
+.appImgArea-top {
   background-color: $primary-50;
   flex-shrink: 0; // 防止被壓縮
-  @media (min-width:992px) {
-    height: calc(100%/6.88235);
+  @media (min-width: 992px) {
+    height: calc(100% / 6.88235);
   }
 }
-.sloganImgArea-middle{
+.sloganImgArea-middle {
   flex: 1; // 佔據剩餘的所有空間
 }
-.appImgArea-middle{
+.appImgArea-middle {
   flex: 1; // 佔據剩餘的所有空間
   position: relative;
   background-color: white;
 }
 
-.sloganImgArea-bottom,.appImgArea-bottom{
-  height: calc(100%/6.88235);
+.sloganImgArea-bottom,
+.appImgArea-bottom {
+  height: calc(100% / 6.88235);
   background-color: $primary-50;
   flex-shrink: 0; // 防止被壓縮
 }
 // 背景圖片樣式
-  .appImgArea-middle-wrapper {
-    object-fit: cover;
-    object-position: center;
-    @media (min-width:992px) {
-
-      position: absolute;
-      top: -96px; /* 往上位移 */
-      left: 80px; /* 往右位移 */
-      width: 100%; 
-      z-index: 1;
-    }
+.appImgArea-middle-wrapper {
+  object-fit: cover;
+  object-position: center;
+  @media (min-width: 992px) {
+    position: absolute;
+    top: -96px; /* 往上位移 */
+    left: 80px; /* 往右位移 */
+    width: 100%;
+    z-index: 1;
   }
-  .background-img{
+}
+.background-img {
   width: 100%;
   display: block;
   transform: scaleX(-1); // /鏡像反轉/
   filter: blur(6px); //圖片變模糊
-  }
-  // // 手機圖片樣式 - 居中疊加
-  .phone-img {
+}
+// // 手機圖片樣式 - 居中疊加
+.phone-img {
   position: absolute;
 
   left: 50%;
   transform: translate(-50%, -100%);
   width: 59.7%;
   z-index: 2;
-
-  }
+}
 .decorated-title {
-      position: relative;
-      text-align: center;
-      font-size: 20px;
-      color: #8B4513;
-      font-weight: normal;
-      margin: 40px 0;
-      display: inline-block;
-      width: 100%;
-      @media (min-width:992px) {
-      font-size: 24px;
-      }
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: #8b4513;
+  font-weight: normal;
+  margin: 40px 0;
+  display: inline-block;
+  width: 100%;
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
 }
 
 .decorated-title::before,
 .decorated-title::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 39.06px;
-      height: 1px;
-      background-color: $primary-900;
-      transform: translateY(-50%);
-      @media (min-width:992px) {
-        width: 100px;
-      }
-
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 39.06px;
+  height: 1px;
+  background-color: $primary-900;
+  transform: translateY(-50%);
+  @media (min-width: 992px) {
+    width: 100px;
+  }
 }
 .decorated-title::before {
-      transform: translateX(-108px);
+  transform: translateX(-108px);
 }
 .decorated-title::after {
-      transform: translateX(8px);
+  transform: translateX(8px);
 }
-
