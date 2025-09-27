@@ -1,5 +1,8 @@
 $shadow-color-1: rgba(0, 0, 0, 0.1);
 $shadow-color-2: rgba(0, 0, 0, 0.09);
+$shadow-color-3: rgba(0, 0, 0, 0.05);
+$shadow-color-4: rgba(0, 0, 0, 0.01);
+$shadow-color-5: rgba(0, 0, 0, 0);
 
 
 .card{
@@ -8,7 +11,9 @@ $shadow-color-2: rgba(0, 0, 0, 0.09);
     &:hover{
     box-shadow: 
     1px 2px 5px 0px $shadow-color-1,
-    6px 8px 10px 0px $shadow-color-2;
+    6px 8px 10px 0px $shadow-color-2,
+    13px 17px 13px 0px $shadow-color-3,
+    23px 31px 15px 0px $shadow-color-4,
+    36px 48px 17px 0px $shadow-color-5;
     }
-    
 }

@@ -54,6 +54,11 @@ if (url.includes("cart.html")) {
   setActiveStep(3);
 }
 
+  // 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
+  document.querySelectorAll(".btn-ghost").forEach((icon) => {
+    icon.addEventListener("click", () => icon.classList.toggle("active"));
+  });
+
 //首頁
 function initializeHomePage() {
   AOS.init({
@@ -132,11 +137,6 @@ function initializeProductPage() {
     if (input.value > input.min) {
       input.value = parseInt(input.value) - 1;
     }
-  });
-
-  // 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
-  document.querySelectorAll(".btn-ghost").forEach((icon) => {
-    icon.addEventListener("click", () => icon.classList.toggle("active"));
   });
 
   // 商品輪播縮列圖中的 .active ( 商品詳情頁 )
