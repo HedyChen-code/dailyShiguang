@@ -63,12 +63,14 @@
                 <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">9 成新</span>
               </div>
               <p class="fs-8 text-primary-900 mb-3">單價：NTD＄2,399</p>
-              <div class="input-group number-input border rounded-2 mb-3" style="width: 124px;">
-                <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+              <div class="input-group number-input border rounded-2 border-neutral-200 mb-3" style="width: 124px;height: 32px;">
+                 <button class="btn btn-white  py-1 px-3 lh-1" type="button" id="btn-decrease" aria-label="減一">
                   <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
-                <input type="number" class="form-control text-center fs-8 px-2 border-0" value="99" min="0" step="1" aria-label="數量">
-                <button class="btn btn-white py-2 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                <div clas=" px-3">
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200"  id="orderNum" value="99" min="0" step="1" aria-label="數量">
+                </div>
+                <button class="btn btn-white py-1 px-3 lh-1" type="button" id="btn-increase" aria-label="加一">
                   <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
@@ -90,12 +92,14 @@
                 <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
               </div>
               <p class="fs-8 text-primary-900 mb-3">單價：NTD $2,599</p>
-              <div class="input-group number-input border rounded-2 mb-3" style="width: 124px;">
-                <button class="btn btn-white  py-2 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+              <div class="input-group number-input border rounded-2 border-neutral-200 mb-3 align-items-center" style="width: 124px;height: 32px;">
+                <button class="btn btn-white  py-1 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
                   <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
-                <input type="number" class="form-control text-center fs-8 px-2 border-0" value="1" min="0" step="1" aria-label="數量">
-                <button class="btn btn-white py-2 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                <div clas=" px-3">
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
+                </div>
+                <button class="btn btn-white py-1 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
                   <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
@@ -155,11 +159,13 @@
             </div>
             <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 2,399</div>
             <div class="d-lg-flex flex-column justify-content-center align-items-center">
-              <div class="input-group number-input border rounded-2s" style="width: 136px; height: 46px;">
+              <div class="input-group number-input border rounded-2 border-neutral-200 align-items-center" style="width: 136px; height: 46px;">
                 <button class="btn btn-white  py-3 px-4 lh-1" type="button" id="btn-minus" aria-label="減一">
                   <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
-                <input type="number" class="form-control text-center fs-8 border-0" value="99" min="0" step="1" aria-label="數量">
+                <div clas=" px-1">
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
+                </div>
                 <button class="btn btn-white py-3 px-4 lh-1" type="button" id="btn-plus" aria-label="加一">
                   <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
@@ -189,16 +195,19 @@
             </div>
             <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 2,399</div>
             <div class="d-lg-flex flex-column justify-content-center align-items-center">
-              <div class="input-group number-input border rounded-2s" style="width: 136px; height: 46px;">
+              <div class="input-group number-input border rounded-2 border-neutral-200 align-items-center" style="width: 136px; height: 46px;">
                 <button class="btn btn-white  py-3 px-4 lh-1" type="button" id="btn-minus" aria-label="減一">
                   <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
-                <input type="number" class="form-control text-center fs-8 border-0" value="99" min="0" step="1" aria-label="數量">
+                <div clas=" px-1">
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
+                </div>
                 <button class="btn btn-white py-3 px-4 lh-1" type="button" id="btn-plus" aria-label="加一">
                   <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
             </div>
+
             <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 237,501</div>
             <button type="button" class="btn d-flex align-items-center text-alert">
                <span class="material-icons-outlined fs-4 ms-0">delete_forever</span><span class="h5 mb-0">刪除</span> 
