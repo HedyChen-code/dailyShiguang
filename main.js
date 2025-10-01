@@ -14,6 +14,11 @@ if (url.includes("index.html")) {
   initializeCheckoutPage();
 }
 
+// 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
+  document.querySelectorAll(".btn-ghost").forEach((icon) => {
+    icon.addEventListener("click", () => icon.classList.toggle("active"));
+  });
+
 // 購物流程區塊判斷在哪頁該如何顯示(數字+文字+虛線)
 function setActiveStep(stepNumber) {
   const steps = document.querySelectorAll(".process-number");
@@ -97,12 +102,6 @@ if (url.includes("cart.html")) {
     resizeTimeout = setTimeout(() => {
       setupScrollTrigger();
     }, 200);
-  });
-
-
-// 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
-  document.querySelectorAll(".btn-ghost").forEach((icon) => {
-    icon.addEventListener("click", () => icon.classList.toggle("active"));
   });
 
 //首頁
