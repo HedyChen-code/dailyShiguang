@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>完成會員註冊</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section>
+      <div class="container">
+        <div class="memberpage d-flex">
+          <div
+            class="member-content d-flex justify-content-center align-items-center gap-9 flex-column flex-lg-row"
+          >
+            <img
+              src="/assets/images/Result-success.svg"
+              alt="一個大大的打勾"
+              class="member-content-img"
+            />
+            <div class="w-100">
+              <h1
+                class="mb-lg-7 mb-5 py-6 py-lg-3 text-neutral-800 fs-3 fs-lg-1 text-center"
+              >
+                完成會員註冊
+              </h1>
+              <p
+                class="fs-lg-5 fs-7 text-neutral-700 mb-lg-12 mb-5 text-center"
+              >
+                您仍需要完成會員資料的填寫才能使用交易功能
+              </p>
+              <div class="d-flex gap-9 mb-5">
+                <button class="btn btn-outline-primary fs-lg-4 fs-7 w-100">
+                  先回去購物
+                </button>
+                <button class="btn btn-primary fs-lg-4 fs-7 w-100">
+                  前往完成會員資料
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer引入 -->
+    <%- include('./layout/footer'); -%>
+    <!-- 腳本引入 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </body>
+</html>
