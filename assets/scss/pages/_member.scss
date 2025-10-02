@@ -1,0 +1,54 @@
+@mixin computer{
+  @media(min-width: 992px){
+	@content;
+  }
+}
+.memberpage {
+     min-height: 452px;
+     @include computer{
+     min-height: 712px;  
+     }
+}
+.member-sidebar {
+  width: 306px;        /* 固定寬度 */
+  flex-shrink: 0;      /* 不要被壓縮 */
+//   background: #f5f5f5; /* 側邊欄底色，可自行改 */
+  img{
+width: 94px;
+height: 94px;
+  }
+  a{
+    color:#64A1F3;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+.member-content {
+  flex: 1; /* 吃掉剩下空間 */
+
+.member-content-img {
+    // 小螢幕預設處理
+    max-width: 300px;
+    @include computer {
+      max-width: 100%;
+    }
+  }
+}
+.member-sidebar-avatar {
+    border-bottom: 1px solid $neutral-200;
+}
+.list-group{
+ a{
+   color: $primary-700;     
+}
+}
+.active{
+        background-color: $primary-600 !important;
+    }
+.member-content{
+    img{
+        max-width: 600px;
+    }
+}
+
+    

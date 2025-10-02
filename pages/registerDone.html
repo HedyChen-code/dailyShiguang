@@ -22,41 +22,36 @@
   <body>
     <%- include('./layout/header'); -%>
     <section>
-      <div class="memberpage d-flex">
-        <!-- 左半側sidebar -->
-        <div class="mx-9">
-          <div class="member-sidebar">
-            <div class="d-flex gap-3 mt-9 pb-11 mb-11 member-sidebar-avatar">
-              <img src="/assets/images/avatar.png" alt="" />
-              <div class="w-100">
-                <h4 class="px-5 mt-3">拾光君</h4>
-                <a href="#" class="d-flex gap-2 mx-5">
-                  <span class="material-symbols-outlined align-bottom">
-                    edit
-                  </span>
-                  <p>編輯個人資訊</p>
-                </a>
+      <div class="container">
+        <div class="memberpage d-flex">
+          <div
+            class="member-content d-flex justify-content-center align-items-center gap-9 flex-column flex-lg-row"
+          >
+            <img
+              src="/assets/images/Result-success.svg"
+              alt="一個大大的打勾"
+              class="member-content-img"
+            />
+            <div class="w-100">
+              <h1
+                class="mb-lg-7 mb-5 py-6 py-lg-3 text-neutral-800 fs-3 fs-lg-1 text-center"
+              >
+                完成會員註冊
+              </h1>
+              <p
+                class="fs-lg-5 fs-7 text-neutral-700 mb-lg-12 mb-5 text-center"
+              >
+                您仍需要完成會員資料的填寫才能使用交易功能
+              </p>
+              <div class="d-flex gap-9 mb-5">
+                <button class="btn btn-outline-primary fs-lg-4 fs-7 w-100">
+                  先回去購物
+                </button>
+                <button class="btn btn-primary fs-lg-4 fs-7 w-100">
+                  前往完成會員資料
+                </button>
               </div>
             </div>
-
-        <!-- 主要畫面 -->
-        <div
-          class="member-content d-flex justify-content-center align-items-center"
-        >
-          <img
-            src="/assets/images/Result-success.svg"
-            alt="一個大大的打勾"
-            class="img-fluid"
-          />
-          <div>
-            <h1>還沒有任何購買紀錄</h1>
-            <button
-              class="btn btn-primary d-flex align-items-center fs-5 w-100 justify-content-center"
-            >
-              前往選購!<span class="material-symbols-outlined align-bottom">
-                arrow_forward_ios
-              </span>
-            </button>
           </div>
         </div>
       </div>

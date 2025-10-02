@@ -1,0 +1,49 @@
+@mixin computer {
+    @media(min-width: 992px){
+        @content;
+    }
+}
+.primary-500-square {
+    color: $primary-900;
+    background-color: $primary-500;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;   // 垂直置中
+    justify-content: center; // 水平置中
+    padding: auto 0;
+    @include computer{
+        width: 40px;
+        height: 40px;
+    }
+}
+.primary-700-dashline {
+    width: 20px; 
+    height: 0; 
+    border-top: 4px solid $primary-700;
+    margin-left:  11.75px;
+    margin-right:  11.75px;
+    @include computer{
+        width: 100px;
+        margin-left:  24px;
+        margin-right:  24px;
+
+    }
+}
+.neutral-100-square {
+    color: $neutral-500;
+    background-color: $neutral-100;
+    border: 1px solid $neutral-200;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;   // 垂直置中
+    justify-content: center; // 水平置中
+    padding: auto 0;
+    @include computer{
+        width: 40px;
+        height: 40px;
+    }
+}

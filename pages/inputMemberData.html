@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section>
+      <div class="container my-lg-14 my-0">
+        <!-- 上方顯示目前階段 -->
+        <ul
+          class="py-lg-9 py-8 mb-lg-9 d-flex align-items-center justify-content-center"
+        >
+          <li
+            class="d-flex gap-3 gap-lg-7 flex-column flex-lg-row justify-content-center align-items-center"
+          >
+            <p class="primary-500-square">1</p>
+            <p class="fs-lg-4 fs-9">手機驗證</p>
+          </li>
+          <li class="primary-700-dashline"></li>
+          <li
+            class="d-flex gap-3 gap-lg-7 flex-column flex-lg-row justify-content-center align-items-center"
+          >
+            <p class="primary-500-square">2</p>
+            <p class="fs-lg-4 fs-9">填寫會員資料</p>
+          </li>
+          <li class="primary-700-dashline"></li>
+          <li
+            class="d-flex gap-3 gap-lg-7 flex-column flex-lg-row justify-content-center align-items-center"
+          >
+            <p class="neutral-100-square">3</p>
+            <p class="fs-lg-4 fs-9 text-neutral-500">確認密碼</p>
+          </li>
+        </ul>
+
+        <!-- 表格部分 -->
+        <form
+          class="row g-3 needs-validation justify-content-center align-items-center"
+          novalidate
+        >
+          <!-- 填寫會員資料 -->
+          <h1 class="col-md-10 fs-3 fs-lg-1 mb-lg-13 mb-9">填寫會員資料</h1>
+          <div class="col-md-10 position-relative">
+            <label for="validationTooltip01" class="form-label">姓名</label
+            ><span class="text-danger">*</span>
+            <input
+              type="text"
+              class="form-control text-neutral-700"
+              id="validationTooltip01"
+              placeholder="請填入姓名"
+              required
+            />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-10 position-relative">
+            <label for="validationTooltip02" class="form-label">電子信箱</label
+            ><span class="text-danger">*</span>
+            <input
+              type="mail"
+              class="form-control"
+              id="validationTooltip02"
+              placeholder="請輸入電子信箱"
+              required
+            />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-10 position-relative">
+            <label for="validationTooltip03" class="form-label">生日</label>
+            <span class="text-danger">*</span>
+
+            <div class="date-selector">
+              <div class="row g-3">
+                <div class="col-4">
+                  <select class="form-select" id="year">
+                    <option value="">年</option>
+                  </select>
+                </div>
+
+                <div class="col-4">
+                  <select class="form-select" id="month">
+                    <option value="">月</option>
+                  </select>
+                </div>
+
+                <div class="col-4">
+                  <select class="form-select" id="day">
+                    <option value="">日</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 性別 (按鈕化 radio) -->
+          <div class="col-md-10">
+            <label class="form-label d-block mb-3">
+              性別 <span class="text-danger">*</span>
+            </label>
+
+            <div class="d-flex gap-3 flex-column flex-lg-row">
+              <!-- 男性 -->
+              <input
+                type="radio"
+                class="btn-check"
+                name="gender"
+                id="male"
+                required
+              />
+              <label class="btn btn-outline-primary flex-fill" for="male">
+                男性
+              </label>
+
+              <!-- 女性 -->
+              <input
+                type="radio"
+                class="btn-check"
+                name="gender"
+                id="female"
+                required
+              />
+              <label class="btn btn-outline-primary flex-fill" for="female">
+                女性
+              </label>
+
+              <!-- 不便透露 -->
+              <input
+                type="radio"
+                class="btn-check"
+                name="gender"
+                id="secret"
+                required
+              />
+              <label class="btn btn-outline-primary flex-fill" for="secret">
+                不便透露
+              </label>
+            </div>
+          </div>
+          <div class="col-6 col-md-5 d-grid mt-lg-12 mt-9">
+            <button class="btn btn-primary-outline" type="button">
+              上一步
+            </button>
+          </div>
+          <div class="col-6 col-md-5 d-grid mt-lg-12 mt-9">
+            <button class="btn btn-primary" type="button">下一步</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer引入 -->
+    <%- include('./layout/footer'); -%>
+    <!-- 腳本引入 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+
+      // 動態生成年份 (1950-2024)
+      const yearSelect = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      for (let year = currentYear; year >= 1950; year--) {
+        const option = document.createElement("option");
+        option.value = year;
+        option.textContent = year;
+        if (year === 1995) option.selected = true;
+        yearSelect.appendChild(option);
+      }
+
+      // 動態生成月份 (1-12)
+      const monthSelect = document.getElementById("month");
+      for (let month = 1; month <= 12; month++) {
+        const option = document.createElement("option");
+        option.value = month;
+        option.textContent = month;
+        if (month === 10) option.selected = true;
+        monthSelect.appendChild(option);
+      }
+
+      // 動態生成日期 (1-31)
+      const daySelect = document.getElementById("day");
+      function updateDays() {
+        const year = parseInt(yearSelect.value) || 2000;
+        const month = parseInt(monthSelect.value) || 1;
+        const daysInMonth = new Date(year, month, 0).getDate();
+
+        const currentDay = daySelect.value;
+        daySelect.innerHTML = '<option value="">日期</option>';
+
+        for (let day = 1; day <= daysInMonth; day++) {
+          const option = document.createElement("option");
+          option.value = day;
+          option.textContent = day;
+          if (day == currentDay || (day === 5 && !currentDay)) {
+            option.selected = true;
+          }
+          daySelect.appendChild(option);
+        }
+      }
+
+      updateDays();
+      yearSelect.addEventListener("change", updateDays);
+      monthSelect.addEventListener("change", updateDays);
+    </script>
+  </body>
+</html>
