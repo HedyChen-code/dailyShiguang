@@ -17,11 +17,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link  
+    <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" 
-   
-    >
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
   </head>
 
   <body>
@@ -29,53 +28,91 @@
     <%- include('./layout/header'); -%>
 
     <main class="py-8 py-lg-13 border-bottom border-neutral-200 mb-11 mb-lg-15">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col col-lg-6">
-                    <h1 class="fs-3 fs-lg-1 text-neutral-800 mb-9 mb-lg-12">登入</h1>
-                    <div class="py-5 py-lg-0 mb-5">
-                        <div class="mb-5">
-                            <input type="number" class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500" id="phoneNumber" placeholder="請輸入電話號碼/電子信箱">
-                        </div>
-                        <div class="mb-5">
-                            <input type="number" class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500" id="phoneNumber" placeholder="請輸入密碼">
-                        </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6">
+            <h1 class="fs-3 fs-lg-1 text-neutral-800 mb-9 mb-lg-12">登入</h1>
+            <div class="py-5 py-lg-0 mb-5">
+              <div class="mb-5">
+                <input
+                  type="number"
+                  class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500"
+                  id="phoneNumber"
+                  placeholder="請輸入電話號碼/電子信箱"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="number"
+                  class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500"
+                  id="phoneNumber"
+                  placeholder="請輸入密碼"
+                />
+              </div>
 
-                        <a href="index.html">
-                            <button type="button" class="fs-5 lh-lg-sm text-primary-900 bg-primary-500 w-100 border-0 py-5 align-middle" >
-                                下一步<span class="material-icons-outlined ms-2 fs-4">chevron_right</span>
-                            </button>
-                        </a>
-                    </div>
-                    <a href="" class="text-info text-decoration">忘記密碼?</a>
-                    <div class="d-flex align-items-center py-7 py-lg-12">
-                        <hr class="flex-grow-1 my-5">
-                        <span class="mx-9 fs-7 fs-lg-5 text-neutral-300 lh-1">或</span>
-                        <hr class="flex-grow-1 my-5">
-                    </div>
-                    <div class="py-5 py-lg-0 mb-lg-12 d-lg-flex justify-content-space">
-                        <button type="button" class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50 mb-5 mb-lg-0 me-9" >
-                            <img src="/assets/images/icons/fb.png" alt="" class="me-2" style="height:24px ;width: 24px;">
-                            <span class=" fs-7 fs-lg-5 text-primary-700 lh-1">透過 Facebook 登入</span>
-                        </button>
-                        <button type="button" class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50" >
-                            <img src="/assets/images/icons/google.png" alt="" class="me-2" style="height:24px ;width: 24px;">
-                            <span class=" fs-7 fs-lg-5 text-primary-700 lh-1">透過 Google 登入</span>
-                        </button>
-                
-                    </div>
-                    <div class=" d-flex justify-content-center align-items-center">
-                        <p class="text-neutral-600  fs-7 fs-lg-5">還沒有帳號？</p>
-                        <a href="register.html">
-                            <button type="button" class="fs-5 lh-lg-sm 1h-sm py-5 border-0 bg-white" >
-                                <span class=" fs-8 fs-lg-5 text-primary-900 ">點擊這裡註冊</span>
-                            </button>
-                        </a>
-                    </div>
-
-                </div>
+              <a href="index.html">
+                <button
+                  type="button"
+                  class="fs-5 lh-lg-sm text-primary-900 bg-primary-500 w-100 border-0 py-5 align-middle"
+                >
+                  下一步<span class="material-icons-outlined ms-2 fs-4"
+                    >chevron_right</span
+                  >
+                </button>
+              </a>
             </div>
-       </div>
+            <a href="" class="text-info text-decoration">忘記密碼?</a>
+            <div class="d-flex align-items-center py-7 py-lg-12">
+              <hr class="flex-grow-1 my-5" />
+              <span class="mx-9 fs-7 fs-lg-5 text-neutral-300 lh-1">或</span>
+              <hr class="flex-grow-1 my-5" />
+            </div>
+            <div class="py-5 py-lg-0 mb-lg-12 d-lg-flex justify-content-space">
+              <button
+                type="button"
+                class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50 mb-5 mb-lg-0 me-9"
+              >
+                <img
+                  src="/assets/images/icons/fb.png"
+                  alt=""
+                  class="me-2"
+                  style="height: 24px; width: 24px"
+                />
+                <span class="fs-7 fs-lg-5 text-primary-700 lh-1"
+                  >透過 Facebook 登入</span
+                >
+              </button>
+              <button
+                type="button"
+                class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50"
+              >
+                <img
+                  src="/assets/images/icons/google.png"
+                  alt=""
+                  class="me-2"
+                  style="height: 24px; width: 24px"
+                />
+                <span class="fs-7 fs-lg-5 text-primary-700 lh-1"
+                  >透過 Google 登入</span
+                >
+              </button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="text-neutral-600 fs-7 fs-lg-5">還沒有帳號？</p>
+              <a href="register.html">
+                <button
+                  type="button"
+                  class="fs-5 lh-lg-sm 1h-sm py-5 border-0 bg-white"
+                >
+                  <span class="fs-8 fs-lg-5 text-primary-900"
+                    >點擊這裡註冊</span
+                  >
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- footery引入 -->
     <%- include('./layout/footer'); -%>
@@ -85,6 +122,6 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>
