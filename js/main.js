@@ -1,6 +1,24 @@
 import "../assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+// 取得網址參數
+  const urlParams = new URLSearchParams(window.location.search);
+  const isLoggedInParam = urlParams.get('isLoggedIn'); // 取得 isLoggedIn 的值，會是字串或 null
+
+  const userAvatar = document.getElementById('user-avatar');
+  const loginBtn = document.getElementById('loginBtn');
+
+  // 判斷是否登入，參數是 "true" 字串才算登入
+  const isLoggedIn = isLoggedInParam === 'true';
+
+  if (isLoggedIn) {
+    userAvatar.classList.remove('d-none');
+    loginBtn.classList.add('d-none');
+  } else {
+    userAvatar.classList.add('d-none');
+    loginBtn.classList.remove('d-none');
+  }
+
 // 購物流程區塊判斷在哪頁該如何顯示(數字+文字+虛線)
 function setActiveStep(stepNumber) {
   const steps = document.querySelectorAll(".process-number");
