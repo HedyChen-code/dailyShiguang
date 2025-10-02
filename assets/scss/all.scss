@@ -43,6 +43,7 @@
 
 // 自訂元件
 @import '/assets/scss/utils/components/btn.scss';
+@import '/assets/scss/utils/components/card.scss';
 
 // 頁面與 layout
 @import './base/base.scss';
@@ -53,6 +54,10 @@
 @import './pages/index.scss';
 @import './pages/product-detail.scss';
 @import './pages/checkout.scss';
-@import './pages/product-list';
+@import './pages/cart.scss';
+@import './pages/product-list.scss';
+@import './pages/order-complete';
+@import './pages/login';
+
 @import './pages/member';
 @import './pages/inputMemberData';
