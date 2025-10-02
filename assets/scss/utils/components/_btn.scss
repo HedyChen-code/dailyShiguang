@@ -32,42 +32,39 @@ $btn-text-active: $primary-900; // active 深咖啡
   }
 }
 
-
 //以下為btn 設定
 // _buttons.scss
 
 // 基礎按鈕樣式
 
-
 // _variables.scss
 $color-primary: $primary-500;
-$color-fill: #F6B846;
-$color-disabled: #E0E0E0;
+$color-fill: #f6b846;
+$color-disabled: #e0e0e0;
 
 $button-height-l: 40px;
 $button-height-s: 32px;
 $button-padding-l: 16px;
 $button-padding-s: 12px;
-.btn{
-  color:$primary-900;
+.btn {
+  color: $primary-900;
   padding-top: 4px;
   padding-bottom: 4px;
   border: none;
   border-radius: 0%;
   line-height: 1.2;
-  span{
-    margin-left: 4px;;
+  span {
+    margin-left: 4px;
   }
 
-  &:hover{
-    color:$primary-900;
+  &:hover {
+    color: $primary-900;
     background-color: $primary-300;
   }
-  &.is-disalbed{
-  background-color: $neutral-200;
-  color:$neutral-50;
+  &.is-disalbed {
+    background-color: $neutral-200;
+    color: $neutral-50;
   }
-  
 }
 
 // .btn-outline-primary{
@@ -82,19 +79,19 @@ $button-padding-s: 12px;
   background-color: transparent;
   border: 1px solid $primary-700;
   color: $primary-700;
-  
+
   &:hover {
     background-color: $primary-700;
     border-color: $primary-700;
     color: white;
   }
-  
+
   &:active {
     background-color: $primary-800;
     border-color: $primary-800;
     color: white;
   }
-  
+
   &.is-disalbed {
     background-color: $neutral-200;
     color: $neutral-50;
@@ -103,22 +100,22 @@ $button-padding-s: 12px;
 }
 
 // 新增 btn-ghost 樣式
-.btn-ghost{
+.btn-ghost {
   background-color: transparent;
   border: none;
   color: $btn-text-color;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: $favorite !important;
     background-color: transparent;
   }
 
-  &.active{
+  &.active {
     color: $favorite;
     background-color: transparent;
 
-    .iconFav{
+    .iconFav {
       font-variation-settings: 'FILL' 1;
     }
   }

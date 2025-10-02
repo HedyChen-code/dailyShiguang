@@ -1,8 +1,3 @@
-// 收藏按鈕 .iconFav 的 .active ( 商品詳情頁 )
-  document.querySelectorAll(".btn-ghost").forEach((icon) => {
-    icon.addEventListener("click", () => icon.classList.toggle("active"));
-  });
-
 // 下單數量
   const input = document.getElementById("orderNum");
   const btnIncrease = document.querySelector(".btn-increase");
