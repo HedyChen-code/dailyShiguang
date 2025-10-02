@@ -164,3 +164,19 @@ a{
     color: $primary-700;
     padding: 10px opx;
   }
+
+  @media (min-width: 992px) {
+    .appImgArea-middle-wrapper {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+.background-img {
+  width: 100%;
+  display: block;
+  transform: scaleX(-1);
+  filter: blur(6px);
+}

@@ -88,3 +88,35 @@
 .product2{
   grid-area: product2;
 }
+
+
+// /* 讓外框是方正框、內容無縫貼齊 */
+// .number-input {
+//   background: #fff;
+// }
+
+// /* 左右按鈕固定寬度、取消過多 padding，滿高對齊 */
+// .number-input .btn {
+//   width: 44px;              /* 按鈕寬度可依需要調整 */
+//   height: 100%;
+//   border: 0;                /* 外框由容器提供 */
+//   background: #fff;
+//   box-shadow: none;
+// }
+
+// /* 中間輸入框：只顯示左右直線分隔，其他邊無框線 */
+// .number-input .qty-input {
+//   flex: 1 1 auto;
+//   height: 100%;
+//   border: 0;                /* 先清掉預設 */
+//   border-left: 1px solid var(--bs-border-color);
+//   border-right: 1px solid var(--bs-border-color);
+//   outline: none;
+//   font-size: 16px;          /* 對齊圖一文字大小 */
+// }
+
+// /* 讓 icon 更貼近圖一的視覺（可選） */
+// .material-icons-outlined {
+//   line-height: 1;
+//   font-size: 20px;
+// }
