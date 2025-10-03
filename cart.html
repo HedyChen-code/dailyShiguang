@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車頁</title>
+    <title>cart</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,13 +17,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
+    <link  
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    />
-    <script type="module" crossorigin src="/dailyShiguang/assets/main-BtmDZeLy.js"></script>
-    <script type="module" crossorigin src="/dailyShiguang/assets/stickyFooterScrollTrigger-Dr_0QVXF.js"></script>
-    <link rel="stylesheet" crossorigin href="/dailyShiguang/assets/main-C9l6nFIT.css">
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" 
+   
+    >
+    <script type="module" crossorigin src="/dailyShiguang/assets/main-B9kZuj-E.js"></script>
+    <link rel="stylesheet" crossorigin href="/dailyShiguang/assets/main-DAuKeL3O.css">
   </head>
 
   <body>
@@ -55,7 +55,7 @@
       <!-- logo -->
       <div class="headerLogo">
         <a
-          href="index.html"
+          href="#"
           class="text-decoration-none d-flex align-items-center gap-0"
         >
           <img
@@ -79,7 +79,6 @@
           placeholder="搜尋，拾回你的理想家具"
         />
         <button
-          type="button"
           class="btn btn-primary position-absolute top-50 end-0 translate-middle-y me-3"
         >
           搜尋
@@ -121,15 +120,14 @@
           </span>
         </button>
         <!-- 手機版購物車 -->
-        <a class="btn p-3 text-neutral-900 d-lg-none" href="../pages/cart.html">
+        <button class="btn p-3 text-neutral-900 d-lg-none">
           <span class="material-symbols-outlined align-bottom">
             shopping_cart
           </span>
-        </a>
+        </button>
         <!-- 電腦版購物車 -->
-        <a
+        <button
           class="btn p-3 text-neutral-900 rounded-circle bg-white p-2 d-none d-lg-block"
-          href="cart.html"
         >
           <div class="position-relative">
             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.8%2020C8.36%2020%207.98333%2019.8433%207.67%2019.53C7.35667%2019.2167%207.2%2018.84%207.2%2018.4C7.2%2017.96%207.35667%2017.5833%207.67%2017.27C7.98333%2016.9567%208.36%2016.8%208.8%2016.8C9.24%2016.8%209.61667%2016.9567%209.93%2017.27C10.2433%2017.5833%2010.4%2017.96%2010.4%2018.4C10.4%2018.84%2010.2433%2019.2167%209.93%2019.53C9.61667%2019.8433%209.24%2020%208.8%2020ZM16.8%2020C16.36%2020%2015.9833%2019.8433%2015.67%2019.53C15.3567%2019.2167%2015.2%2018.84%2015.2%2018.4C15.2%2017.96%2015.3567%2017.5833%2015.67%2017.27C15.9833%2016.9567%2016.36%2016.8%2016.8%2016.8C17.24%2016.8%2017.6167%2016.9567%2017.93%2017.27C18.2433%2017.5833%2018.4%2017.96%2018.4%2018.4C18.4%2018.84%2018.2433%2019.2167%2017.93%2019.53C17.6167%2019.8433%2017.24%2020%2016.8%2020ZM7.36%205.6H19.16C19.4667%205.6%2019.7%205.73667%2019.86%206.01C20.02%206.28333%2020.0267%206.56%2019.88%206.84L17.04%2011.96C16.8933%2012.2267%2016.6967%2012.4333%2016.45%2012.58C16.2033%2012.7267%2015.9333%2012.8%2015.64%2012.8H9.68L8.8%2014.4H18.4V16H8.8C8.2%2016%207.74667%2015.7367%207.44%2015.21C7.13333%2014.6833%207.12%2014.16%207.4%2013.64L8.48%2011.68L5.6%205.6H4V4H6.6L7.36%205.6Z'%20fill='%23614C2B'/%3e%3c/svg%3e" alt="" />
@@ -139,24 +137,14 @@
               <span class="visually-hidden">New alerts</span>
             </span>
           </div>
-        </a>
-        <!-- 下拉選單 -->
-        <button
-          class="member btn btn-outline-primary bg-white px-7 d-flex align-items-center"
-          type="button"
-          onclick="location.href='https://hedychen-code.github.io/dailyShiguang/login.html'"
-          id="loginBtn"
-        >
-          <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.4737%2025.9716C14.5249%2025.247%2015.5708%2024.6854%2016.6113%2024.2866C17.6518%2023.8876%2018.7814%2023.6882%2020%2023.6882C21.2186%2023.6882%2022.3509%2023.8876%2023.3968%2024.2866C24.4426%2024.6854%2025.4911%2025.247%2026.5424%2025.9716C27.3076%2025.0851%2027.8761%2024.1489%2028.2479%2023.1632C28.6196%2022.1774%2028.8055%2021.123%2028.8055%2020C28.8055%2017.5168%2027.9588%2015.4284%2026.2653%2013.7347C24.5716%2012.0412%2022.4832%2011.1945%2020%2011.1945C17.5168%2011.1945%2015.4284%2012.0412%2013.7347%2013.7347C12.0412%2015.4284%2011.1945%2017.5168%2011.1945%2020C11.1945%2021.123%2011.3831%2022.1774%2011.7603%2023.1632C12.1375%2024.1489%2012.7086%2025.0851%2013.4737%2025.9716ZM19.9942%2020.5971C19.0481%2020.5971%2018.2521%2020.2724%2017.6063%2019.6229C16.9605%2018.9732%2016.6376%2018.1754%2016.6376%2017.2292C16.6376%2016.2829%2016.9625%2015.4868%2017.6121%2014.8411C18.2616%2014.1953%2019.0595%2013.8724%2020.0058%2013.8724C20.9519%2013.8724%2021.7479%2014.1972%2022.3937%2014.8468C23.0395%2015.4963%2023.3624%2016.2942%2023.3624%2017.2405C23.3624%2018.1868%2023.0375%2018.9828%2022.3879%2019.6284C21.7384%2020.2742%2020.9405%2020.5971%2019.9942%2020.5971ZM20.0124%2030C18.6262%2030%2017.3259%2029.7389%2016.1113%2029.2166C14.8966%2028.6943%2013.8355%2027.9787%2012.9282%2027.0697C12.0206%2026.161%2011.3057%2025.102%2010.7834%2023.8929C10.2611%2022.6838%2010%2021.3855%2010%2019.9982C10%2018.6108%2010.2611%2017.3132%2010.7834%2016.1053C11.3057%2014.8974%2012.0213%2013.839%2012.9303%2012.9303C13.839%2012.0213%2014.898%2011.3057%2016.1071%2010.7834C17.3162%2010.2611%2018.6145%2010%2020.0018%2010C21.3892%2010%2022.6868%2010.2611%2023.8947%2010.7834C25.1026%2011.3057%2026.161%2012.0213%2027.0697%2012.9303C27.9787%2013.839%2028.6943%2014.8976%2029.2166%2016.1061C29.7389%2017.3145%2030%2018.6083%2030%2019.9876C30%2021.3738%2029.7389%2022.6741%2029.2166%2023.8887C28.6943%2025.1034%2027.9787%2026.1645%2027.0697%2027.0718C26.161%2027.9794%2025.1024%2028.6943%2023.8939%2029.2166C22.6855%2029.7389%2021.3917%2030%2020.0124%2030ZM20%2028.8055C20.9784%2028.8055%2021.9433%2028.65%2022.8947%2028.3389C23.8461%2028.0279%2024.7422%2027.5249%2025.5829%2026.83C24.7422%2026.2119%2023.8518%2025.7328%2022.9118%2025.3926C21.972%2025.0526%2021.0014%2024.8826%2020%2024.8826C18.9986%2024.8826%2018.0262%2025.051%2017.0829%2025.3876C16.1396%2025.7243%2015.2543%2026.2051%2014.4271%2026.83C15.2611%2027.5249%2016.1539%2028.0279%2017.1053%2028.3389C18.0567%2028.65%2019.0216%2028.8055%2020%2028.8055ZM20.0013%2019.4029C20.6306%2019.4029%2021.149%2019.1986%2021.5566%2018.79C21.9643%2018.3816%2022.1682%2017.8627%2022.1682%2017.2334C22.1682%2016.6041%2021.9639%2016.0857%2021.5553%2015.6782C21.1468%2015.2706%2020.628%2015.0668%2019.9987%2015.0668C19.3694%2015.0668%2018.851%2015.2711%2018.4434%2015.6795C18.0357%2016.0881%2017.8318%2016.607%2017.8318%2017.2363C17.8318%2017.8656%2018.0361%2018.384%2018.4447%2018.7916C18.8532%2019.1991%2019.372%2019.4029%2020.0013%2019.4029Z'%20fill='%23B7751E'/%3e%3c/svg%3e" alt="一個人頭代表會員" />
-          登入/註冊
         </button>
+        <!-- 下拉選單 -->
         <div class="dropdown d-none d-lg-block">
           <button
             class="member btn btn-outline-primary bg-white dropdown-toggle px-7 d-flex align-items-center"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            id="user-avatar"
           >
             <!-- <span class="icon text-primary-700 me-6"></span> -->
             <img
@@ -173,7 +161,7 @@
               <li>
                 <a
                   class="dropdown-item text-primary-700 mb-2 p-0"
-                  href="myAccount.html"
+                  href="#"
                   class=""
                 >
                   <img
@@ -193,10 +181,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item text-primary-700 mb-2 p-0"
-                  href="member.html"
-                >
+                <a class="dropdown-item text-primary-700 mb-2 p-0" href="#">
                   <img
                     src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2029.5C13.3013%2029.5%2012.71%2029.258%2012.226%2028.774C11.742%2028.29%2011.5%2027.7002%2011.5%2027.0045V24.5H14.5V10.6922L15.8848%2011.8847L17.2885%2010.6922L18.6923%2011.8847L20.0963%2010.6922L21.5%2011.8847L22.9038%2010.6922L24.3077%2011.8847L25.7115%2010.6922L27.1152%2011.8847L28.5%2010.6922V27C28.5%2027.6987%2028.258%2028.29%2027.774%2028.774C27.29%2029.258%2026.6987%2029.5%2026%2029.5H14ZM26%2028C26.2833%2028%2026.5208%2027.9042%2026.7125%2027.7125C26.9042%2027.5208%2027%2027.2833%2027%2027V13H16V24.5H25V27C25%2027.2833%2025.0958%2027.5208%2025.2875%2027.7125C25.4792%2027.9042%2025.7167%2028%2026%2028ZM17.1923%2016.75V15.25H22.8652V16.75H17.1923ZM17.1923%2019.75V18.25H22.8652V19.75H17.1923ZM24.9423%2016.8845C24.6974%2016.8845%2024.4888%2016.7983%2024.3163%2016.626C24.1439%2016.4535%2024.0577%2016.2448%2024.0577%2016C24.0577%2015.7552%2024.1439%2015.5465%2024.3163%2015.374C24.4888%2015.2017%2024.6974%2015.1155%2024.9423%2015.1155C25.1871%2015.1155%2025.3958%2015.2017%2025.5682%2015.374C25.7407%2015.5465%2025.827%2015.7552%2025.827%2016C25.827%2016.2448%2025.7407%2016.4535%2025.5682%2016.626C25.3958%2016.7983%2025.1871%2016.8845%2024.9423%2016.8845ZM24.9423%2019.8845C24.6974%2019.8845%2024.4888%2019.7983%2024.3163%2019.626C24.1439%2019.4535%2024.0577%2019.2448%2024.0577%2019C24.0577%2018.7552%2024.1439%2018.5465%2024.3163%2018.374C24.4888%2018.2017%2024.6974%2018.1155%2024.9423%2018.1155C25.1871%2018.1155%2025.3958%2018.2017%2025.5682%2018.374C25.7407%2018.5465%2025.827%2018.7552%2025.827%2019C25.827%2019.2448%2025.7407%2019.4535%2025.5682%2019.626C25.3958%2019.7983%2025.1871%2019.8845%2024.9423%2019.8845ZM14%2028H23.5V26H13V27C13%2027.2833%2013.0958%2027.5208%2013.2875%2027.7125C13.4792%2027.9042%2013.7167%2028%2014%2028Z'%20fill='%23B7751E'/%3e%3c/svg%3e"
                     alt="訂單的圖案"
@@ -337,429 +322,195 @@
 </section>
     <main class="bg-color pb-lg-13">
       <!-- 手機板 -->
-      <section
-        class="border bg-white border-primary-300 border-1 mb-9 d-lg-none"
-      >
+      <section class="border bg-white border-primary-300  border-1 mb-9  d-lg-none">
         <div class="container">
           <div class="Py-9">
-            <input
-              class="form-check-input border-black fs-7"
-              type="checkbox"
-              value=""
-              id="flexCheckDefault"
-            />
-            <label
-              class="form-check-label ps-3 text-primary-900"
-              for="flexCheckDefault"
-            >
+            <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label ps-3 text-primary-900" for="flexCheckDefault">
               商品
             </label>
           </div>
           <div class="Mx-12 ps-5 bg-primary-100">
             <div class="Py-9">
-              <input
-                class="form-check-input border-black fs-7"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label
-                class="form-check-label ps-3 text-primary-900"
-                for="flexCheckDefault"
-              >
+              <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
+              <label class="form-check-label ps-3 text-primary-900" for="flexCheckDefault">
                 賣家名稱
               </label>
             </div>
           </div>
           <div class="d-flex justify-content-start my-3 position-relative">
-            <button
-              type="button"
-              class="btn d-flex align-items-center text-alert delete-position p-5"
-            >
-              <span class="material-icons-outlined fs-7 ms-0"
-                >delete_forever</span
-              >
+            <button type="button" class="btn d-flex align-items-center text-alert delete-position p-5">
+                <span class="material-icons-outlined fs-7 ms-0">delete_forever</span>
             </button>
             <div class="form-check align-center">
-              <input
-                class="form-check-input border-black fs-7"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
+              <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
             </div>
-            <img
-              src="/dailyShiguang/assets/product_sofaBed-D1EWp8kn.jpg"
-              alt="sofa"
-              class="sofa-img mb-3"
-            />
+            <img src="/dailyShiguang/assets/product_sofaBed-D1EWp8kn.jpg" alt="sofa"  class="sofa-img mb-3">
             <div class="py-2 ms-5">
               <p class="fs-6 mb-3">亞麻灰沙發床</p>
               <div class="mb-5">
-                <span
-                  class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                  >可自取</span
-                >
-                <span
-                  class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                  >可宅配</span
-                >
-                <span
-                  class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                  >9 成新</span
-                >
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可自取</span>
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可宅配</span>
+                <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">9 成新</span>
               </div>
               <p class="fs-8 text-primary-900 mb-3">單價：NTD＄2,399</p>
-              <div
-                class="input-group number-input border rounded-2 border-neutral-200 mb-3"
-                style="width: 124px; height: 32px"
-              >
-                <button
-                  class="btn btn-white py-1 px-3 lh-1"
-                  type="button"
-                  id="btn-decrease"
-                  aria-label="減一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >remove</span
-                  >
+              <div class="input-group number-input border rounded-2 border-neutral-200 mb-3" style="width: 124px;height: 32px;">
+                 <button class="btn btn-white  py-1 px-3 lh-1" type="button" id="btn-decrease" aria-label="減一">
+                  <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
                 <div clas=" px-3">
-                  <input
-                    type="text"
-                    class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200"
-                    id="orderNum"
-                    value="99"
-                    min="0"
-                    step="1"
-                    aria-label="數量"
-                  />
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200"  id="orderNum" value="99" min="0" step="1" aria-label="數量">
                 </div>
-                <button
-                  class="btn btn-white py-1 px-3 lh-1"
-                  type="button"
-                  id="btn-increase"
-                  aria-label="加一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >add</span
-                  >
+                <button class="btn btn-white py-1 px-3 lh-1" type="button" id="btn-increase" aria-label="加一">
+                  <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
               <p class="fs-5 text-primary-700">NTD ＄237,501</p>
             </div>
+
           </div>
           <div class="d-flex justify-content-start my-3 position-relative">
-            <button
-              type="button"
-              class="btn d-flex align-items-center text-alert delete-position p-5"
-            >
-              <span class="material-icons-outlined fs-7 ms-0"
-                >delete_forever</span
-              >
+            <button type="button" class="btn d-flex align-items-center text-alert delete-position p-5">
+                <span class="material-icons-outlined fs-7 ms-0">delete_forever</span>
             </button>
             <div class="form-check align-center">
-              <input
-                class="form-check-input border-black fs-7"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
+              <input class="form-check-input border-black fs-7" type="checkbox" value="" id="flexCheckDefault" >
             </div>
-            <img
-              src="/dailyShiguang/assets/product_ymli_06-CZm1Fa7W.jpg"
-              alt="sofa"
-              class="sofa-img mb-3"
-            />
+            <img src="/dailyShiguang/assets/product_ymli_06-CZm1Fa7W.jpg" alt="sofa"  class="sofa-img mb-3">
             <div class="py-2 ms-5">
               <p class="fs-6 mb-3">日式矮茶几桌</p>
               <div class="mb-5">
-                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2"
-                  >可自取</span
-                >
+                <span class="fs-8 text-primary-900 bg-neutral-200 p-2 me-2">可自取</span>
               </div>
               <p class="fs-8 text-primary-900 mb-3">單價：NTD $2,599</p>
-              <div
-                class="input-group number-input border rounded-2 border-neutral-200 mb-3 align-items-center"
-                style="width: 124px; height: 32px"
-              >
-                <button
-                  class="btn btn-white py-1 px-3 lh-1"
-                  type="button"
-                  id="btn-minus"
-                  aria-label="減一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >remove</span
-                  >
+              <div class="input-group number-input border rounded-2 border-neutral-200 mb-3 align-items-center" style="width: 124px;height: 32px;">
+                <button class="btn btn-white  py-1 px-3 lh-1" type="button" id="btn-minus" aria-label="減一">
+                  <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
                 <div clas=" px-3">
-                  <input
-                    type="text"
-                    class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200"
-                    value="99"
-                    min="0"
-                    step="1"
-                    aria-label="數量"
-                  />
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end p-0 my-2 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
                 </div>
-                <button
-                  class="btn btn-white py-1 px-3 lh-1"
-                  type="button"
-                  id="btn-plus"
-                  aria-label="加一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >add</span
-                  >
+                <button class="btn btn-white py-1 px-3 lh-1" type="button" id="btn-plus" aria-label="加一">
+                  <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
               <p class="fs-5 text-primary-700">NTD ＄2,599</p>
             </div>
-          </div>
+
+          </div>          
         </div>
-      </section>
+      </section> 
 
       <!-- 桌機板 -->
       <section class="">
-        <div
-          class="container d-lg-block d-none border bg-white border-primary-300 border-1 py-10 px-7"
-        >
+        <div class="container d-lg-block d-none border bg-white border-primary-300 border-1 py-10 px-7">
           <div class="cart pb-7 mb-7 border-bottom border-neutral-200">
-            <div class="d-lg-flex justify-content-center align-items-center">
-              <input
-                class="form-check-input border-black fs-4 fw-bold m-0"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
+
+            <div class="d-lg-flex justify-content-center align-items-center ">
+                <input class="form-check-input border-black fs-4 fw-bold m-0 " type="checkbox" value="" id="flexCheckDefault">
             </div>
             <div class="text-primary-900 fs-lg-4 align-middle">商品</div>
-            <div class="text-primary-900 fs-lg-4 text-center align-middle">
-              單價
-            </div>
-            <div class="text-primary-900 fs-lg-4 text-center align-middle">
-              數量
-            </div>
-            <div class="text-primary-900 fs-lg-4 text-center align-middle">
-              總數
-            </div>
+            <div class="text-primary-900 fs-lg-4 text-center align-middle">單價</div>
+            <div class="text-primary-900 fs-lg-4 text-center align-middle">數量</div>
+            <div class="text-primary-900 fs-lg-4 text-center align-middle ">總數</div>
+            <div class=""></div>   
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div
-              class="d-lg-flex justify-content-center align-items-center bg-primary-100"
-            >
-              <input
-                class="form-check-input border-black fs-4 fw-bold m-0"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-            </div>
-            <div
-              class="text-primary-900 fs-3 bg-primary-100 lh-1 d-lg-flex align-items-center"
-            >
-              賣家名稱
-            </div>
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div> 
+            <div class=""></div>        
+            <div class="d-lg-flex justify-content-center align-items-center  bg-primary-100">
+              <input class="form-check-input border-black fs-4 fw-bold m-0 " type="checkbox" value="" id="flexCheckDefault">
+            </div>           
+            <div class="text-primary-900 fs-3 bg-primary-100 lh-1 d-lg-flex align-items-center ">賣家名稱</div>
             <div class="bg-primary-100"></div>
             <div class="bg-primary-100"></div>
             <div class="bg-primary-100"></div>
             <div class="bg-primary-100"></div>
             <div class=""></div>
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div> 
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class="d-lg-flex justify-content-center align-items-center">
-              <input
-                class="form-check-input border-black fs-4 fw-bold m-0"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
+            <div class="d-lg-flex justify-content-center align-items-center ">
+              <input class="form-check-input border-black fs-4 fw-bold m-0 " type="checkbox" value="" id="flexCheckDefault">
             </div>
-            <div class="d-lg-flex">
-              <img
-                src="/dailyShiguang/assets/product_sofaBed-D1EWp8kn.jpg"
-                alt="sofa"
-                class="sofa-img me-9"
-              />
+            <div class="d-lg-flex ">
+              <img src="/dailyShiguang/assets/product_sofaBed-D1EWp8kn.jpg" alt="sofa"  class="sofa-img me-9">
               <div class="d-lg-flex flex-column justify-content-center">
                 <p class="fs-6 mb-3">亞麻灰沙發床</p>
                 <div class="">
-                  <span
-                    class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                    >可自取</span
-                  >
-                  <span
-                    class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                    >可宅配</span
-                  >
-                  <span
-                    class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                    >9 成新</span
-                  >
+                  <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可自取</span>
+                  <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可宅配</span>
+                  <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">9 成新</span>
                 </div>
               </div>
             </div>
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              NT$ 2,399
-            </div>
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              <div
-                class="input-group number-input border rounded-2 border-neutral-200 align-items-center"
-                style="width: 136px; height: 46px"
-              >
-                <button
-                  class="btn btn-white py-3 px-4 lh-1"
-                  type="button"
-                  id="btn-minus"
-                  aria-label="減一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >remove</span
-                  >
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 2,399</div>
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">
+              <div class="input-group number-input border rounded-2 border-neutral-200 align-items-center" style="width: 136px; height: 46px;">
+                <button class="btn btn-white  py-3 px-4 lh-1" type="button" id="btn-minus" aria-label="減一">
+                  <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
                 <div clas=" px-1">
-                  <input
-                    type="text"
-                    class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200"
-                    value="99"
-                    min="0"
-                    step="1"
-                    aria-label="數量"
-                  />
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
                 </div>
-                <button
-                  class="btn btn-white py-3 px-4 lh-1"
-                  type="button"
-                  id="btn-plus"
-                  aria-label="加一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >add</span
-                  >
+                <button class="btn btn-white py-3 px-4 lh-1" type="button" id="btn-plus" aria-label="加一">
+                  <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
             </div>
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              NT$ 237,501
-            </div>
-            <button
-              type="button"
-              class="btn d-flex align-items-center text-alert"
-            >
-              <span class="material-icons-outlined fs-4 ms-0"
-                >delete_forever</span
-              ><span class="h5 mb-0">刪除</span>
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 237,501</div>
+            <button type="button" class="btn d-flex align-items-center text-alert">
+               <span class="material-icons-outlined fs-4 ms-0">delete_forever</span><span class="h5 mb-0">刪除</span> 
             </button>
             <div class=""></div>
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div>   
+            <div class=""></div> 
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class="d-lg-flex justify-content-center align-items-center">
-              <input
-                class="form-check-input border-black fs-4 fw-bold m-0"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
+            <div class="d-lg-flex justify-content-center align-items-center ">
+              <input class="form-check-input border-black fs-4 fw-bold m-0 " type="checkbox" value="" id="flexCheckDefault">
             </div>
-            <div class="d-lg-flex">
-              <img
-                src="/dailyShiguang/assets/product_ymli_06-CZm1Fa7W.jpg"
-                alt="sofa"
-                class="sofa-img me-9"
-              />
+            <div class="d-lg-flex ">
+              <img src="/dailyShiguang/assets/product_ymli_06-CZm1Fa7W.jpg" alt="sofa"  class="sofa-img me-9">
               <div class="d-lg-flex flex-column justify-content-center">
                 <p class="fs-6 mb-3">日式矮茶几桌</p>
                 <div class="">
-                  <span
-                    class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2"
-                    >可自取</span
-                  >
+                  <span class="fs-8 text-primary-900 bg-neutral-200 py-2 px-3 me-2">可自取</span>
                 </div>
               </div>
             </div>
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              NT$ 2,399
-            </div>
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              <div
-                class="input-group number-input border rounded-2 border-neutral-200 align-items-center"
-                style="width: 136px; height: 46px"
-              >
-                <button
-                  class="btn btn-white py-3 px-4 lh-1"
-                  type="button"
-                  id="btn-minus"
-                  aria-label="減一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >remove</span
-                  >
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 2,399</div>
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">
+              <div class="input-group number-input border rounded-2 border-neutral-200 align-items-center" style="width: 136px; height: 46px;">
+                <button class="btn btn-white  py-3 px-4 lh-1" type="button" id="btn-minus" aria-label="減一">
+                  <span class="material-icons-outlined ms-0 align-center">remove</span>
                 </button>
                 <div clas=" px-1">
-                  <input
-                    type="text"
-                    class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200"
-                    value="99"
-                    min="0"
-                    step="1"
-                    aria-label="數量"
-                  />
+                  <input type="text" class="form-control text-center fs-8 border-0 border-start border-end mx-1 rounded-0 border-neutral-200" value="99" min="0" step="1" aria-label="數量">
                 </div>
-                <button
-                  class="btn btn-white py-3 px-4 lh-1"
-                  type="button"
-                  id="btn-plus"
-                  aria-label="加一"
-                >
-                  <span class="material-icons-outlined ms-0 align-center"
-                    >add</span
-                  >
+                <button class="btn btn-white py-3 px-4 lh-1" type="button" id="btn-plus" aria-label="加一">
+                  <span class="material-icons-outlined ms-0  align-center">add</span>
                 </button>
               </div>
             </div>
 
-            <div
-              class="d-lg-flex flex-column justify-content-center align-items-center"
-            >
-              NT$ 237,501
-            </div>
-            <button
-              type="button"
-              class="btn d-flex align-items-center text-alert"
-            >
-              <span class="material-icons-outlined fs-4 ms-0"
-                >delete_forever</span
-              ><span class="h5 mb-0">刪除</span>
+            <div class="d-lg-flex flex-column justify-content-center align-items-center">NT$ 237,501</div>
+            <button type="button" class="btn d-flex align-items-center text-alert">
+               <span class="material-icons-outlined fs-4 ms-0">delete_forever</span><span class="h5 mb-0">刪除</span> 
             </button>
+
           </div>
 
+          
+
           <!-- footer -->
-          <div class="bottom-0 start-0 w-100" id="pay">
-            <div
-              class="d-flex justify-content-between align-items-center justify-content-lg-end"
-            >
+          <div class=" bottom-0 start-0 w-100  "  id="pay">
+            <div class="d-flex justify-content-between align-items-center justify-content-lg-end" >
               <div class="me-lg-10">
                 <p class="fs-8 fs-lg-7 mb-2 mb-lg-0 text-neutral-900 text-end">
                   總金額（<span class="text-primary-700">100</span> 個商品）
@@ -768,142 +519,125 @@
               </div>
               <div>
                 <a href="checkout.html">
-                  <button
-                    type="button"
-                    class="fs-lg-2 lh-lg-sm text-primary-900 bg-primary-500 py-3 py-lg-7 btn-next border-0"
-                  >
+                  <button type="button" class="fs-lg-2 lh-lg-sm text-primary-900 bg-primary-500 py-3 py-lg-7 btn-next border-0" >
                     下一步
                   </button>
                 </a>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section
-        class="border-top bg-white border-primary-300 border-1 py-5 d-lg-none"
-      >
-        <div class="container">
-          <p class="fs-5 mb-9">猜你喜歡</p>
-          <!-- 商品網格 -->
-          <div class="row">
-            <!-- 商品 1 -->
-            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
-              <div class="latestCard guesscard">
-                <div class="card rounded-0">
-                  <img
-                    src="/dailyShiguang/assets/woodBookcase2-DlJBCSgm.jpg"
-                    class="card-img-top rounded-0"
-                    alt="白藍書櫃"
-                  />
-                  <span
-                    class="material-symbols-outlined fs-2"
-                    style="top: 8px; right: 8px"
-                    >favorite</span
-                  >
-                  <div class="card-body p-3">
-                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
-                      白藍書櫃
-                    </h5>
-                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
-                      <span class="me-2">NT$</span>
-                      <span>2,599</span>
-                    </p>
+      
+
+      <section class="border-top bg-white border-primary-300 border-1 py-5 d-lg-none">
+          <div class="container">
+            <p class="fs-5 mb-9">猜你喜歡</p>
+            <!-- 商品網格 -->
+            <div class="row">
+              <!-- 商品 1 -->
+              <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="latestCard guesscard">
+                  <div class="card rounded-0">
+                    <img
+                      src="/dailyShiguang/assets/woodBookcase2-DlJBCSgm.jpg"
+                      class="card-img-top rounded-0"
+                      alt="白藍書櫃"
+                    />
+                    <span class="material-symbols-outlined fs-2" style="top: 8px; right: 8px;">favorite</span>
+                    <div class="card-body p-3">
+                      <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                        白藍書櫃
+                      </h5>
+                      <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                        <span class="me-2">NT$</span>
+                        <span>2,599</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- 商品 2 -->
-            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
-              <div class="latestCard guesscard">
-                <div class="card rounded-0">
-                  <img
-                    src="/dailyShiguang/assets/bedsideTable-Bh5CEfeG.jpg"
-                    class="card-img-top rounded-0"
-                    alt="原木雙人沙發椅"
-                  />
-                  <span
-                    class="material-symbols-outlined fs-2"
-                    style="top: 8px; right: 8px"
-                    >favorite</span
-                  >
-                  <div class="card-body p-3">
-                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
-                      原木雙人沙發椅
-                    </h5>
-                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
-                      <span class="me-2">NT$</span>
-                      <span>1,800</span>
-                    </p>
+              <!-- 商品 2 -->
+              <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="latestCard guesscard">
+                  <div class="card rounded-0">
+                    <img
+                      src="/dailyShiguang/assets/bedsideTable-Bh5CEfeG.jpg"
+                      class="card-img-top rounded-0"
+                      alt="原木雙人沙發椅"
+                    />
+                    <span class="material-symbols-outlined fs-2"  style="top: 8px; right: 8px;">favorite</span>
+                    <div class="card-body  p-3">
+                      <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                        原木雙人沙發椅
+                      </h5>
+                      <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                        <span class="me-2">NT$</span>
+                        <span>1,800</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- 商品 3 -->
-            <div class="col-6 col-lg-3">
-              <div class="latestCard guesscard">
-                <div class="card rounded-0">
-                  <img
-                    src="/dailyShiguang/assets/table-CgNYms2j.png"
-                    class="card-img-top rounded-0"
-                    alt="黑玻木框茶几組"
-                  />
-                  <span
-                    class="material-symbols-outlined fs-2"
-                    style="top: 8px; right: 8px"
-                    >favorite</span
-                  >
-                  <div class="card-body p-3">
-                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
-                      黑玻木框茶几組
-                    </h5>
-                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
-                      <span class="me-2">NT$</span>
-                      <span>1,500</span>
-                    </p>
+              <!-- 商品 3 -->
+              <div class="col-6 col-lg-3">
+                <div class="latestCard guesscard">
+                  <div class="card rounded-0">
+                    <img
+                      src="/dailyShiguang/assets/table-CgNYms2j.png"
+                      class="card-img-top rounded-0"
+                      alt="黑玻木框茶几組"
+                    />
+                    <span class="material-symbols-outlined fs-2"  style="top: 8px; right: 8px;">favorite</span>
+                    <div class="card-body  p-3">
+                      <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                        黑玻木框茶几組
+                      </h5>
+                      <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                        <span class="me-2">NT$</span>
+                        <span>1,500</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- 商品 4 -->
-            <div class="col-6 col-lg-3">
-              <div class="latestCard guesscard">
-                <div class="card rounded-0">
-                  <img
-                    src="/dailyShiguang/assets/woodtv-m9hqG7su.png"
-                    class="card-img-top rounded-0"
-                    alt="實木原色電視櫃"
-                  />
-                  <span
-                    class="material-symbols-outlined fs-2"
-                    style="top: 8px; right: 8px"
-                    >favorite</span
-                  >
-                  <div class="card-body p-3">
-                    <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
-                      實木原色電視櫃
-                    </h5>
-                    <p class="card-text text-primary-500 fs-lg-5 fs-8">
-                      <span class="me-2">NT$</span>
-                      <span>1,400</span>
-                    </p>
+              <!-- 商品 4 -->
+              <div class="col-6 col-lg-3">
+                <div class="latestCard guesscard">
+                  <div class="card rounded-0">
+                    <img
+                      src="/dailyShiguang/assets/woodtv-m9hqG7su.png"
+                      class="card-img-top rounded-0"
+                      alt="實木原色電視櫃"
+                    />
+                    <span class="material-symbols-outlined fs-2"  style="top: 8px; right: 8px;">favorite</span>
+                    <div class="card-body  p-3">
+                      <h5 class="card-title text-neutral-900 fs-lg-4 fs-8">
+                        實木原色電視櫃
+                      </h5>
+                      <p class="card-text text-primary-500 fs-lg-5 fs-8">
+                        <span class="me-2">NT$</span>
+                        <span>1,400</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+
       </section>
       <section class="bg-color py-5 text-center Mb-97 d-lg-none">
         <p class="text-neutral-500">已瀏覽完所有商品</p>
       </section>
     </main>
 
-    <!-- 固定在頁面下的總計 -->
+        <!-- 固定在頁面下的總計 -->
     <section
       id="sticky-footer"
       class="position-fixed bottom-0 start-0 w-100 px-5 py-9 bg-primary-50 border-top border-neutral-500 z-index-1"
@@ -1065,6 +799,6 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </body>
 </html>
