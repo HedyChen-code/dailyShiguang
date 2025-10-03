@@ -1,7 +1,5 @@
 import "../assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
-//啟動AOS
-AOS.init();
 
 // 收藏按鈕 .iconFav 的 .active
 document.querySelectorAll(".btn-ghost").forEach((icon) => {
