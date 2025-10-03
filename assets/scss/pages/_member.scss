@@ -3,12 +3,14 @@
 	@content;
   }
 }
-.memberpage {
-     min-height: 452px;
-       img{
-width: 94px;
-height: 94px;
-  }
+.member-sidebar {
+min-height: 452px;
+// width: 100%; // 手機預設全寬
+
+  img{
+    width: 94px;
+    height: 94px;
+     }
   a{
     color:#64A1F3;
     font-weight: 400;
@@ -16,30 +18,21 @@ height: 94px;
   }
      @include computer{
      min-height: 712px;  
+     width: 306px;
+     flex-shrink: 0;
      }
 }
-.member-sidebar {
-  width: 100%; // 手機預設全寬
-  @include computer {
-    width: 306px;
-    flex-shrink: 0;
-  }
-}
-
-
-
 
 .member-content {
   flex: 1; /* 吃掉剩下空間 */
-
+}
 .member-content-img {
     // 小螢幕預設處理
     max-width: 300px;
     @include computer {
-      max-width: 100%;
+      width: 100%;
     }
   }
-}
 .member-sidebar-avatar {
     border-bottom: 1px solid $neutral-200;
 }
@@ -54,10 +47,5 @@ height: 94px;
     }
 }
 
-.member-content{
-    img{
-        max-width: 600px;
-    }
-}
 
     
