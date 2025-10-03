@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- material symbols
     有軸且不指定 icon_names -->
     <link
@@ -38,7 +38,12 @@
       >
         <div class="row">
           <!-- 商品圖片輪播 -->
-          <div class="col-lg">
+          <div
+            class="col-lg"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="300"
+          >
             <div id="prodCarousel" class="carousel slide prodGallery">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -254,13 +259,31 @@
 
               <!-- 收藏、分享按鈕 -->
               <div class="py-lg-2 d-flex">
-                <button class="btn btn-ghost d-flex align-items-center" type="button">
-                  <span class="iconFav material-symbols-outlined me-2">favorite</span>
+                <button
+                  class="btn btn-ghost d-flex align-items-center"
+                  type="button"
+                >
+                  <span class="iconFav material-symbols-outlined me-2"
+                    >favorite</span
+                  >
                   <span class="fs-8 fs-lg-7">收藏</span>
                 </button>
-                <button class="btn btn-ghost d-flex align-items-center" type="button">
-                  <svg class=" me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.30775 22.4999C5.80258 22.4999 5.375 22.3249 5.025 21.9749C4.675 21.6249 4.5 21.1974 4.5 20.6922V10.3077C4.5 9.80253 4.675 9.37494 5.025 9.02494C5.375 8.67494 5.80258 8.49994 6.30775 8.49994H8.86525V9.99994H6.30775C6.23075 9.99994 6.16025 10.032 6.09625 10.0962C6.03208 10.1602 6 10.2307 6 10.3077V20.6922C6 20.7692 6.03208 20.8397 6.09625 20.9037C6.16025 20.9679 6.23075 20.9999 6.30775 20.9999H17.6923C17.7692 20.9999 17.8398 20.9679 17.9038 20.9037C17.9679 20.8397 18 20.7692 18 20.6922V10.3077C18 10.2307 17.9679 10.1602 17.9038 10.0962C17.8398 10.032 17.7692 9.99994 17.6923 9.99994H15.1348V8.49994H17.6923C18.1974 8.49994 18.625 8.67494 18.975 9.02494C19.325 9.37494 19.5 9.80253 19.5 10.3077V20.6922C19.5 21.1974 19.325 21.6249 18.975 21.9749C18.625 22.3249 18.1974 22.4999 17.6923 22.4999H6.30775ZM11.25 15.7499V4.71919L9.4 6.56919L8.34625 5.49994L12 1.84619L15.6538 5.49994L14.6 6.56919L12.75 4.71919V15.7499H11.25Z" fill="currentColor"/>
+                <button
+                  class="btn btn-ghost d-flex align-items-center"
+                  type="button"
+                >
+                  <svg
+                    class="me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.30775 22.4999C5.80258 22.4999 5.375 22.3249 5.025 21.9749C4.675 21.6249 4.5 21.1974 4.5 20.6922V10.3077C4.5 9.80253 4.675 9.37494 5.025 9.02494C5.375 8.67494 5.80258 8.49994 6.30775 8.49994H8.86525V9.99994H6.30775C6.23075 9.99994 6.16025 10.032 6.09625 10.0962C6.03208 10.1602 6 10.2307 6 10.3077V20.6922C6 20.7692 6.03208 20.8397 6.09625 20.9037C6.16025 20.9679 6.23075 20.9999 6.30775 20.9999H17.6923C17.7692 20.9999 17.8398 20.9679 17.9038 20.9037C17.9679 20.8397 18 20.7692 18 20.6922V10.3077C18 10.2307 17.9679 10.1602 17.9038 10.0962C17.8398 10.032 17.7692 9.99994 17.6923 9.99994H15.1348V8.49994H17.6923C18.1974 8.49994 18.625 8.67494 18.975 9.02494C19.325 9.37494 19.5 9.80253 19.5 10.3077V20.6922C19.5 21.1974 19.325 21.6249 18.975 21.9749C18.625 22.3249 18.1974 22.4999 17.6923 22.4999H6.30775ZM11.25 15.7499V4.71919L9.4 6.56919L8.34625 5.49994L12 1.84619L15.6538 5.49994L14.6 6.56919L12.75 4.71919V15.7499H11.25Z"
+                      fill="currentColor"
+                    />
                   </svg>
                   <span class="fs-8 fs-lg-7">分享</span>
                 </button>
@@ -612,6 +635,7 @@
     <!-- 腳本引入 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../js/product-detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script type="module" src="../js/main.js"></script>
   </body>
 </html>

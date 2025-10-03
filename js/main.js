@@ -1,6 +1,7 @@
 import "../assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
-
+//啟動AOS
+ AOS.init();
 // 取得網址參數
   const urlParams = new URLSearchParams(window.location.search);
   const isLoggedInParam = urlParams.get('isLoggedIn'); // 取得 isLoggedIn 的值，會是字串或 null
