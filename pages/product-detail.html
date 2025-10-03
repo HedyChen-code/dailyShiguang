@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- material symbols
     有軸且不指定 icon_names -->
     <link
@@ -38,7 +38,12 @@
       >
         <div class="row">
           <!-- 商品圖片輪播 -->
-          <div class="col-lg">
+          <div
+            class="col-lg"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="300"
+          >
             <div id="prodCarousel" class="carousel slide prodGallery">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -255,7 +260,7 @@
               <!-- 收藏、分享按鈕 -->
               <div class="py-lg-2 d-flex">
                 <button
-                  class="btn btn-ghost d-flex align-items-center px-7 py-3"
+                  class="btn btn-ghost d-flex align-items-center"
                   type="button"
                 >
                   <span class="iconFav material-symbols-outlined me-2"
@@ -264,7 +269,7 @@
                   <span class="fs-8 fs-lg-7">收藏</span>
                 </button>
                 <button
-                  class="btn btn-ghost d-flex align-items-center px-7 py-3"
+                  class="btn btn-ghost d-flex align-items-center"
                   type="button"
                 >
                   <svg
@@ -630,6 +635,7 @@
     <!-- 腳本引入 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../js/product-detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script type="module" src="../js/main.js"></script>
   </body>
 </html>

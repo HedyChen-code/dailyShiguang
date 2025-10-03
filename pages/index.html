@@ -28,7 +28,11 @@
     <%- include('./layout/header'); -%>
     <!-- 分類選單 - Section 1 -->
     <div class="container py-10">
-      <div class="swiper-navigation-container">
+      <div
+        class="swiper-navigation-container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+      >
         <!-- 左右 overlay -->
         <div class="swiper-overlay left d-none d-lg-block"></div>
         <div class="swiper-overlay right d-none d-lg-block"></div>
@@ -193,7 +197,7 @@
       </div>
     </div>
     <!-- 主視覺輪播 -->
-    <section class="mb-11">
+    <section class="mb-11" data-aos="fade-right">
       <div class="swiper mainSwiper">
         <div class="swiper-wrapper">
           <!-- 輪播項目 1 -->
@@ -280,7 +284,13 @@
     </section>
     <main class="pb-lg-13" style="background-color: #fafafa">
       <!-- 最新商品區塊 -->
-      <section class="mb-lg-13">
+      <section
+        class="mb-lg-13"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
         <div class="container">
           <!-- 標題區 -->
           <div
@@ -439,7 +449,7 @@
       </section>
 
       <!-- 熱門商品區塊 -->
-      <section>
+      <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
           <!-- 標題區 -->
           <div
@@ -606,6 +616,9 @@
       <!-- 文字區  -->
       <div
         class="slogan d-flex align-items-center justify-content-center position-relative"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
       >
         <img
           src="/assets/images/deco_logo.svg"
@@ -627,7 +640,13 @@
         </div>
       </div>
       <!-- 圖片區 -->
-      <div class="sloganImgArea d-flex flex-column">
+      <div
+        class="sloganImgArea d-flex flex-column"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
         <div class="sloganImgArea-top d-none d-lg-block"></div>
         <div class="sloganImgArea-middle p-5 p-lg-0">
           <img
@@ -660,6 +679,9 @@
       <!-- 購買流程圖 -->
       <section
         class="d-flex align-items-center flex-column flex-lg-row mb-lg-15 mb-11"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="800"
       >
         <div
           class="d-flex flex-column orderProcess justify-content-center align-items-center"
@@ -804,7 +826,12 @@
 
     <div class="d-flex flex-column flex-lg-row brandPromote bg-primary-50">
       <!-- 左半邊圖片區 -->
-      <div class="appImgArea d-flex flex-column order-2 order-lg-1">
+      <div
+        class="appImgArea d-flex flex-column order-2 order-lg-1"
+        data-aos="fade-up"
+        data-aos-duration="300"
+      >
+        >
         <div class="appImgArea-top d-none d-lg-block"></div>
         <div class="appImgArea-middle p-5 p-lg-0">
           <div class="appImgArea-middle-wrapper">
@@ -825,6 +852,9 @@
       <!-- 右半邊文字區  -->
       <div
         class="apptextArea d-flex align-items-center justify-content-center order-1 order-lg-2"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500"
       >
         <div class="slogan-textarea d-flex flex-column align-items-center">
           <h5 class="text-primary-900 decorated-title fs-lg-1">

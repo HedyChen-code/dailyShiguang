@@ -5,15 +5,7 @@
 }
 .memberpage {
      min-height: 452px;
-     @include computer{
-     min-height: 712px;  
-     }
-}
-.member-sidebar {
-  width: 306px;        /* 固定寬度 */
-  flex-shrink: 0;      /* 不要被壓縮 */
-//   background: #f5f5f5; /* 側邊欄底色，可自行改 */
-  img{
+       img{
 width: 94px;
 height: 94px;
   }
@@ -22,7 +14,21 @@ height: 94px;
     font-weight: 400;
     font-size: 20px;
   }
+     @include computer{
+     min-height: 712px;  
+     }
 }
+.member-sidebar {
+  width: 100%; // 手機預設全寬
+  @include computer {
+    width: 306px;
+    flex-shrink: 0;
+  }
+}
+
+
+
+
 .member-content {
   flex: 1; /* 吃掉剩下空間 */
 

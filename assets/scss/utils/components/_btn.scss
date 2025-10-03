@@ -105,6 +105,7 @@ $button-padding-s: 12px;
   border: none;
   color: $btn-text-color;
   cursor: pointer;
+  padding: 8px 16px;
 
   &:hover {
     color: $favorite !important;
