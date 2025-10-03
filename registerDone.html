@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>登入頁</title>
+    <title>完成會員註冊</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,16 +17,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" crossorigin src="/dailyShiguang/assets/main-vbd42R67.js"></script>
     <link rel="stylesheet" crossorigin href="/dailyShiguang/assets/main-B_AxNLg4.css">
   </head>
-
   <body>
-    <!-- header引入 -->
     <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -291,95 +286,48 @@
     </div>
   </nav>
 </header>
-
-    <main class="py-8 py-lg-13 border-bottom border-neutral-200 mb-11 mb-lg-15">
+    <section>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col col-lg-6">
-            <h1 class="fs-3 fs-lg-1 text-neutral-800 mb-9 mb-lg-12">登入</h1>
-            <div class="py-5 py-lg-0 mb-5">
-              <div class="mb-5">
-                <input
-                  type="number"
-                  class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500"
-                  id="phoneNumber"
-                  placeholder="請輸入電話號碼/電子信箱"
-                />
-              </div>
-              <div class="mb-5">
-                <input
-                  type="number"
-                  class="form-control py-7 py-lg-9 border-neutral-300 text-neutral-500"
-                  id="phoneNumber"
-                  placeholder="請輸入密碼"
-                />
-              </div>
-
-              <a href="index.html">
-                <button
-                  type="button"
-                  class="fs-5 lh-lg-sm text-primary-900 bg-primary-500 w-100 border-0 py-5 align-middle"
-                >
-                  下一步<span class="material-icons-outlined ms-2 fs-4"
-                    >chevron_right</span
-                  >
-                </button>
-              </a>
-            </div>
-            <a href="" class="text-info text-decoration">忘記密碼?</a>
-            <div class="d-flex align-items-center py-7 py-lg-12">
-              <hr class="flex-grow-1 my-5" />
-              <span class="mx-9 fs-7 fs-lg-5 text-neutral-300 lh-1">或</span>
-              <hr class="flex-grow-1 my-5" />
-            </div>
-            <div class="py-5 py-lg-0 mb-lg-12 d-lg-flex justify-content-space">
-              <button
-                type="button"
-                class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50 mb-5 mb-lg-0 me-9"
+        <div class="memberpage d-flex">
+          <div
+            class="member-content d-flex justify-content-center align-items-center gap-9 flex-column flex-lg-row"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20width='600'%20height='477'%20viewBox='0%200%20600%20477'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cellipse%20cx='300'%20cy='237.771'%20rx='153.747'%20ry='153.815'%20fill='%23FFFBEB'/%3e%3cpath%20d='M300%20350.249C329.704%20350.249%20358.192%20338.444%20379.196%20317.43C400.2%20296.417%20412%20267.917%20412%20238.2C412%20208.482%20400.2%20179.982%20379.196%20158.969C358.192%20137.955%20329.704%20126.15%20300%20126.15C270.296%20126.15%20241.808%20137.955%20220.804%20158.969C199.8%20179.982%20188%20208.482%20188%20238.2C188%20267.917%20199.8%20296.417%20220.804%20317.43C241.808%20338.444%20270.296%20350.249%20300%20350.249ZM349.438%20217.628L293.438%20273.653C289.325%20277.767%20282.675%20277.767%20278.606%20273.653L250.606%20245.64C246.494%20241.526%20246.494%20234.873%20250.606%20230.803C254.719%20226.732%20261.369%20226.688%20265.438%20230.803L286%20251.374L334.563%20202.746C338.675%20198.632%20345.325%20198.632%20349.394%20202.746C353.463%20206.861%20353.506%20213.514%20349.394%20217.584L349.438%20217.628Z'%20fill='%23FFC972'/%3e%3cellipse%20cx='515.628'%20cy='336.123'%20rx='12.8362'%20ry='12.8419'%20fill='%23F4DDB9'/%3e%3cellipse%20cx='37.1028'%20cy='216.888'%20rx='12.8362'%20ry='12.8419'%20fill='%23FDF8F0'/%3e%3cellipse%20cx='117.754'%20cy='355.386'%20rx='6.41787'%20ry='6.4207'%20fill='%23F4DDB9'/%3e%3cellipse%20cx='107.341'%20cy='125.383'%20rx='15.8501'%20ry='15.857'%20fill='%23FDF8F0'/%3e%3cellipse%20cx='483.601'%20cy='277.56'%20rx='7.33502'%20ry='7.33826'%20fill='%23FDF8F0'/%3e%3cellipse%20cx='490.937'%20cy='81.1868'%20rx='7.33504'%20ry='7.33826'%20fill='%23EECD98'/%3e%3cellipse%20cx='104'%20cy='73.8482'%20rx='7.33503'%20ry='7.33826'%20fill='%23F4DDB9'/%3e%3cellipse%20cx='516.609'%20cy='109.526'%20rx='11.8561'%20ry='11.8613'%20fill='%23FFE0AE'/%3e%3cellipse%20cx='123.191'%20cy='397.639'%20rx='11.856'%20ry='11.8613'%20fill='%23EECD98'/%3e%3c/svg%3e"
+              alt="一個大大的打勾"
+              class="member-content-img"
+            />
+            <div class="w-100">
+              <h1
+                class="mb-lg-7 mb-5 py-6 py-lg-3 text-neutral-800 fs-3 fs-lg-1 text-center"
               >
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAExklEQVR4AdRYz28bVRCeWTeJSyGOL42LVCnpkR5IhIQEQiKVKsGBQ1CEuNHkANcGFeJyasIpyYXkWg4xVyRI/gCkBglxAKEEqbliI0uN6cWxE9Gk1e50vpeus7bXP3azru3VTvb9mJn3fTPz/J5iUQTPyHxxJPV1eXY0ffjdaLq8mUqXsvotptJlOZNSVtsPRlUHuqm7xbEIlqbQBAzohcN7ABUfihXV0waTzDPRNBGPMdEIVT0MwFPQgS5JLHslXdo5L5nABFzgQ0OxLLEsKsYplVCvEE+4ZFLp8kaYrAQikNKIu8C5LsKhOHiNZpEVrOEdbNVuiwAicyV9uIOIdwB4NUbNqmYjizWrJ/x7LQmkFo5uicR2hGTC30VHRsdY17y8UNT91Nx/UwIpLRliJ9PxqPtgFC1Ri2ObBoPPvDvUkIAx1HS6il37KgaDpQEAXwKXF8rTpIYNbF7+sGJJfXN0y2/hOgLYPMy04accdmw4zvTOtRjduTlIa5/EK4L+5+8N0AdvXKCryTooVcux46wBW9WgduqtJPYgqpoH8Ds3h+jPu5fo5y9eoa+0/elbA+QK+t9+FKfMZxcNOcXT8MWeYLE2axWqCLyoNZyYtXqB+4joL7cvKehBApHADnwMRA++1EJp0TtVIWDSo7XmnQzbBuCfNOJXkxzWRUM7Zr6N24CrUCGgp+A9d/C8X5RGJ8ADl+jPa3zQmkcbYuGPiT7RLEXwIPrYmBG4aujCmwVDgOzYVEPtgBPvXou1ZZEvCv3+j12RvX27LTsoebNgCIjWFSaikFYE8kWHZu7/T2+vHJkv2pDvf3sWbHnm92FgoXyYZQKdKOT6680zMHP/iYl6BGtNYTNbUZZPK1B7+w4hA6302p2PD8SmLbaii36rhUtPpJVKoHlR7JYQvxnIqreUxyzF0+bJq5o99rIGv88J0AgI9Fhc24cjeiqHJvBH+lXaX36tTpqdA5jzs8HYh9cvtI/co6mbmA6oB568nsxhYFhM1BME9h61f5WgsyeHDOye9bvTwgEXcuWcZZH8G9I4MrOwB5yQ/G2Jw13PwMNw5UN6rd61jp/ZW2FCmddbZV43Xq0081U+Fr0L1Uv4ErK3rYO1JDbxdrOF/eZmXlyJcS32Cu74fvoYe/jIMddorz7aP/4V8CqtzrR8dgvLydzpOSDyq4711avlsw7AhsDxU2dNTzVkAmN9IrapGkMAZcQihlGfoM+gfIDVEECjr7LA9hIwQyoE+iYLLEtu9KsIoFNYTSyKSNfPBWDxF8kVlhOL3rlKBtxBtpyPpUfuRy4mfIXkgNi5gbZX6gggPcz2l16lXmiL8Byw1WKpIwAFVcyQ1hraPSGK5fHqsO+NwZcAQJtaU0O0uyqKwWBpAKIhAejD0BE7+J6A8TnltOZJy6Z609a6bUoAyo9Xk1vM9iSR5NB/GcIku8zOZGF5ONNqvZYE4ED3RK6wkhgnTSf6nZLTqMvS/kpCwSfbClhbBFzABfwGsz1OIj+4Y1F8XeAnJ864WSOA00AE4NdkYzUxSyDCNCfnO/i2SbPqAsdtAGsEkcAEXOeGiNbof6uJyQoZknX9L8G26tSm/wBjIxetLY32uurPHZ/YycLK8A1EPAxw9Wfe5wAAAP//Y52G4wAAAAZJREFUAwDRXQjcC1IchgAAAABJRU5ErkJggg=="
-                  alt=""
-                  class="me-2"
-                  style="height: 24px; width: 24px"
-                />
-                <span class="fs-7 fs-lg-5 text-primary-700 lh-1"
-                  >透過 Facebook 登入</span
-                >
-              </button>
-              <button
-                type="button"
-                class="fs-5 lh-lg-sm text-primary-700 w-100 border-primary-700 py-3 align-middle bg-neutral-50"
+                完成會員註冊
+              </h1>
+              <p
+                class="fs-lg-5 fs-7 text-neutral-700 mb-lg-12 mb-5 text-center"
               >
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAHaUlEQVR4AexZDXBU1RU+575NiCHEVIUkxt/RWmpbC81uVIKQZJfWdupEEoQNxVZa+zNDf+xMrcKIggVxOrV2GKe0M23p1JLGkt0yaaEjTTaoFC27i4gjUyqdMPiTsEHzRwJs9t3juTvk5e2y+/btEhKd8c09752/e8753r25e++LgI/49TEANYBdNXNKTtR+oaHX49wS8VTtjLhd70bcTj3idlGc6pwyUufqYv6fEY/r6Z4ap6f7jrkzVd8LpZxHoOeLt0zv8TjrI+6qQKEj7x0Umo8IvwdEX+GiygFwPDYiAsJ1AHAnEDwgNPyXyHccZ0AtvXWuu1ifcxtPkkUILvpbqE87Kgh3AFAtEhRm0T3uigAFzCwjhDYG8t9eT9VylrNuWQHoq636PCcLctG/4wLKss6WvsOniGhbr7vqb901c9RIpfdMstgG0Otx/nhUwF7u72S6KI2A7tZE3t6Ix7XSbgJbAE66Xc/w/P4lv/kiu4Fz9kOo4L+TP3TXuhbaiZERQMTt/L0EWGUn2ET58HRaV94ZfMFOPEsAJ+tu/RkAfhMm8VLFlwZC6+2mTAuA5+HDEuUjdgNNhB8BPJZN8SpnSgC97qqbkGijcsiSXuLV6Sc8hxdK7WzRrI4gKjreL6frIOv41+BBjserGN+TWvzNdwQfT1JnFFMCIJC7CDClLVVEQtxNBNVc7IKZHcGnZgWCL5btPjQ85usMh0fKO8KdM9uDv2CfKinBwzYDSLz4gP1pw32Ndl6R/JN/HwDeAPaufkH09dL2/V8qDQT32esCUNYZ7IgDQVhLkP20Mec5D0Dhwp5H2YHj8t2iEeE7uoT5VwRCz1q4WZrK2oMbSnOYNuagCQCiz+d9Y1p1z/XFK4+QuDRq9kvgkbBPSjGfl7o3EgxTICQAQI0aVQ1a2WkxY8WblHfDgK7kZJJCPlC+55VjyfqpkA0A1AEVAHgnnLtE8SgWLe3SLlnQraaToriFEJpL20N/igsfgpsBQCdtLteTx5TQCqpPYNE9/9e14mgcBEUdTyY4TLFgAJASF6WrJe/GIUfRiqMoykb2lL348uvp/KZCbwAAATdbFaD+qIvu+1+blU8qW93GUzSxNLTFnGccAOFNZsP5PMA0Qf9JpZ9cHampbqQ0ACDCNYY2HfNGLJzONGl6wmvNuQwAZmU6Hn8IZ9PZJk0vIOFjQFYAJq1Iq0QEmtk8DoB3cGZDKp46oSiVflJ1SMYmUeUdBwB0QiksKea4aOdhy7wmIxG8ZRJ58RyTEA6MsemeMQFTDgBI9JjrM0aAgCz3Nt16IXxn4I56c2dbvKT1YJcA/ggZLhR6t9nFACAQOswGM78nWk4rBxbQ69HL5rv+smSe2ZaJD6ydsc4uEZ55M1M8kJBw7jAAaELv5KPgiDlADJCeGbmZVg+6cEDm82mRP6wIfqNmpwnkkQq+nSmc0M7+2+xjAMBa6OfyXoZzl5oy3+2fD9tGbowXfk7NLuCpbGm435AniKl7ou9eDmX9VQ7hePvqWa+yn9EMAEqjE21WzwOjl9OqwXlwOPaJxOKVkQkBf+VqbvwMsxPSqp98/xqg/MwHetJ3JSdMADBtkb7zNyOzD39/YB6oEUh2NsnTpQbPf665cbZJlxNbs66vJF86fDy01m+fo2P+mYSNHKtMyyhLiKA/e+aTGwmYY9mqIUFFgaB9lS0NP7Dys7LVbOq7TuQ7Akgi8/KMsd0dD5YeSo6XMALKuH+pvxkIQorPRAyU5xhudj63ZPfc5sW3Z/Ifs8/ZeneJ87mGx05XbHiVtPcSdpdjPslPEmd/mqxT8nkAlDImdbUanFK8LSJapAmxz9nS+FplS+OjXFz13G0N196668vFlX+951LF39ay+NOVPFoMdrvjEq0LCNfp+cdKhis2gV5w1DoNyq2dD5e+lsopJYCDX9txEAjU55VUfax0tyDAeiDcq2l4TB8sHEAp+xUfA3EYATcD0RIOUMIUb9JxEoavfAKiJanPSgRwbBSGH4o7p7ilBKD8Qk2+pwHo54q/6IQ6nLncB6dn/RZIGzSno1ExuOSlNeW9ZqWZTwtAOYW8/ocI8NeKnwwanbEPhq9aDzJP7RakBIyu2rv6SstDlCUAVXTY27qKCDcofjIoPqWuepz0ogP3B9ZctiVTzowAVIBwU+taRFRfnRO2Gso20UQAPVIMO1/4Uc1WO7FtAVCBgstanxJa9LPMZz7Ys1NOjbBtNEausNefcWs/Ft82ANVh/9K/d4W8vttQwr2Ztt/K3y7xW3+FkOpCTa31h1b437bbT/llBUB1UBRc7vtz2Ou/niQs5g1rGxFElT5LOoUAfiGEO+z13R5e5u/Msn/cPScA8Z58Cy/37Qgt89efKhy9gkh8lVX8Xx1q5+cRAHyXwQ3xUjzEa//basS44H8g0SYphTt2Wr866PU17l+6PQAXcF0QgLG8R+rbhsJN23eGvL5HQl7/In7ODnlbKxhcMcvFoSb/1WEeMS74rmCTf82B5dsDB1fu4O37WITcnxMCIPf0F97zAwAAAP//tzfq9AAAAAZJREFUAwCUc/R/Yp2DgAAAAABJRU5ErkJggg=="
-                  alt=""
-                  class="me-2"
-                  style="height: 24px; width: 24px"
-                />
-                <span class="fs-7 fs-lg-5 text-primary-700 lh-1"
-                  >透過 Google 登入</span
-                >
-              </button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <p class="text-neutral-600 fs-7 fs-lg-5">還沒有帳號？</p>
-              <a href="register.html">
+                您仍需要完成會員資料的填寫才能使用交易功能
+              </p>
+              <div class="d-flex gap-9 mb-5">
                 <button
-                  type="button"
-                  class="fs-5 lh-lg-sm 1h-sm py-5 border-0 bg-white"
+                  onclick="location.href='https://hedychen-code.github.io/dailyShiguang/product-list.html'"
+                  class="btn btn-outline-primary fs-lg-4 fs-7 w-100"
                 >
-                  <span class="fs-8 fs-lg-5 text-primary-900"
-                    >點擊這裡註冊</span
-                  >
+                  先回去購物
                 </button>
-              </a>
+                <button
+                  onclick="location.href='https://hedychen-code.github.io/dailyShiguang/myAccount.html'"
+                  class="btn btn-primary fs-lg-4 fs-7 w-100"
+                >
+                  前往完成會員資料
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- footery引入 -->
+    </section>
+    <!-- footer引入 -->
     <footer class="footer">
   <!-- 聯絡方式 -->
   <section class="container">
@@ -518,10 +466,8 @@
   </div>
 </footer>
     <!-- 腳本引入 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </body>
 </html>
