@@ -22,9 +22,9 @@
   <body>
     <%- include('./layout/header'); -%>
     <section>
-      <div class="memberpage d-flex">
+      <div class="memberpage d-flex flex-column flex-lg-row">
         <!-- 左半側sidebar -->
-        <div class="w-100 d-block d-lg-none px-4">
+        <div class="px-4">
           <div class="member-sidebar">
             <div class="d-flex gap-3 mt-9 pb-11 mb-11 member-sidebar-avatar">
               <img src="/assets/images/avatar.png" alt="" />
@@ -105,7 +105,7 @@
         </div>
         <!-- 右半側主要畫面 -->
         <div
-          class="member-content d-none d-lg-flex flex-column container justify-content-center align-items-center gap-9"
+          class="member-content flex-column container justify-content-center align-items-center gap-9"
         >
           <p class="text-start w-100 fs-3 mt-9 d-block d-md-none">購買清單</p>
           <img
