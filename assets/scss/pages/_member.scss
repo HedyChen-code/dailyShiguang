@@ -3,8 +3,10 @@
     @content;
   }
 }
-.memberpage {
+.member-sidebar {
   min-height: 452px;
+  // width: 100%; // 手機預設全寬
+
   img {
     width: 94px;
     height: 94px;
@@ -16,11 +18,6 @@
   }
   @include computer {
     min-height: 712px;
-  }
-}
-.member-sidebar {
-  width: 100%; // 手機預設全寬
-  @include computer {
     width: 306px;
     flex-shrink: 0;
   }
@@ -28,13 +25,12 @@
 
 .member-content {
   flex: 1; /* 吃掉剩下空間 */
-
-  .member-content-img {
-    // 小螢幕預設處理
-    max-width: 300px;
-    @include computer {
-      max-width: 100%;
-    }
+}
+.member-content-img {
+  // 小螢幕預設處理
+  max-width: 300px;
+  @include computer {
+    width: 100%;
   }
 }
 .member-sidebar-avatar {
@@ -45,11 +41,8 @@
     color: $primary-700;
   }
 }
-// .active{
-//         background-color: $primary-600 !important;
-//     }
-.member-content {
-  img {
-    max-width: 600px;
+.myaccountList-group {
+  .active {
+    background-color: $primary-600 !important;
   }
 }
