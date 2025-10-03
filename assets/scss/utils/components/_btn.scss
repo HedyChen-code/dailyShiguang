@@ -117,7 +117,10 @@ $button-padding-s: 12px;
     background-color: transparent;
 
     .iconFav {
-      font-variation-settings: 'FILL' 1;
+      //font-variation-settings: 'FILL' 1;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+      color: $white !important;
+      -webkit-text-fill-color: $white;
     }
   }
 }

@@ -1,51 +1,48 @@
-@mixin computer{
-  @media(min-width: 992px){
-	@content;
+@mixin computer {
+  @media (min-width: 992px) {
+    @content;
   }
 }
 .member-sidebar {
-min-height: 452px;
-// width: 100%; // 手機預設全寬
+  min-height: 452px;
+  // width: 100%; // 手機預設全寬
 
-  img{
+  img {
     width: 94px;
     height: 94px;
-     }
-  a{
-    color:#64A1F3;
+  }
+  a {
+    color: #64a1f3;
     font-weight: 400;
     font-size: 20px;
   }
-     @include computer{
-     min-height: 712px;  
-     width: 306px;
-     flex-shrink: 0;
-     }
+  @include computer {
+    min-height: 712px;
+    width: 306px;
+    flex-shrink: 0;
+  }
 }
 
 .member-content {
   flex: 1; /* 吃掉剩下空間 */
 }
 .member-content-img {
-    // 小螢幕預設處理
-    max-width: 300px;
-    @include computer {
-      width: 100%;
-    }
+  // 小螢幕預設處理
+  max-width: 300px;
+  @include computer {
+    width: 100%;
   }
+}
 .member-sidebar-avatar {
-    border-bottom: 1px solid $neutral-200;
+  border-bottom: 1px solid $neutral-200;
 }
-.list-group{
- a{
-   color: $primary-700;     
+.list-group {
+  a {
+    color: $primary-700;
+  }
 }
+.myaccountList-group {
+  .active {
+    background-color: $primary-600 !important;
+  }
 }
-.myaccountList-group{
-.active{
-        background-color: $primary-600 !important;
-    }
-}
-
-
-    
