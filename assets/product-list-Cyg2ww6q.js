@@ -1,1 +1,0 @@
-import"./main-Bgnv5IGa.js";new Swiper(".headSwiper-freez",{autoplay:{delay:2500,disableOnInteraction:!1},spaceBetween:16,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},slidesPerView:4.5,breakpoints:{576:{slidesPerView:6.5}},loop:!1,allowTouchMove:!0});
