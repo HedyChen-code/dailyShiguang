@@ -159,9 +159,13 @@
 }
 
 // 產品描述
+.product-desc-section {
+  max-width: 1296px;
+}
+
 .descImg{
   max-width: 100%;
-  width: 100%;
+  width: 1232PX;
   height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 2;
@@ -173,5 +177,8 @@
 
 // 猜你喜歡
 .bgWhite{
-  background-color: #fff;
+  background-color: white;
+  @media (min-width: 992px){
+    background-color: $neutral-80;
+  }
 }
