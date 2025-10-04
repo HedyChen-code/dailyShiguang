@@ -105,7 +105,7 @@ $button-padding-s: 12px;
   border: none;
   color: $btn-text-color;
   cursor: pointer;
-  padding: 8px 16px;
+  // padding: 8px 16px;
 
   &:hover {
     color: $favorite !important;
@@ -121,6 +121,22 @@ $button-padding-s: 12px;
       font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
       color: $white !important;
       -webkit-text-fill-color: $white;
+    }
+  }
+}
+
+.cardBtnGhost.btn-ghost{
+  &.btn{
+    padding: 0;
+  }
+}
+
+// 商品詳情頁 - 商品介紹 - 收藏按鈕 客製化
+.notCardBtnGhost.btn-ghost{
+  &.active{
+    .iconFav {
+      color: $favorite !important;
+      -webkit-text-fill-color: $favorite;
     }
   }
 }
